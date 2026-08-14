@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data & Models (DO NOT UPLOAD)
+*.pth
+*.pkl
+*.ckpt
+*.nii.gz
+*.npy
+*.dcm
+data/raw/
+data/preprocessed/
+models/*.pth
+models/*.pkl
+models/*.onnx
+audit.db
+*.db
+.env
+secrets.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Large experiment outputs
+docs/experiments/instance1/logs/*.log
+docs/experiments/instance2/logs/*.log

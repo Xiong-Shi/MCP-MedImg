@@ -1,0 +1,90 @@
+{
+    "foreground_mean": {
+        "Dice": 0.9410053921122659,
+        "FN": 1545.75,
+        "FP": 2884.0,
+        "IoU": 0.8886322707901342,
+        "TN": 11454286.25,
+        "TP": 35684.0,
+        "n_pred": 38568.0,
+        "n_ref": 37229.75
+    },
+    "mean": {
+        "1": {
+            "Dice": 0.9410053921122659,
+            "FN": 1545.75,
+            "FP": 2884.0,
+            "IoU": 0.8886322707901342,
+            "TN": 11454286.25,
+            "TP": 35684.0,
+            "n_pred": 38568.0,
+            "n_ref": 37229.75
+        }
+    },
+    "metric_per_case": [
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9356406558777973,
+                    "FN": 2743,
+                    "FP": 2077,
+                    "IoU": 0.8790646326776395,
+                    "TN": 12248144,
+                    "TP": 35036,
+                    "n_pred": 37113,
+                    "n_ref": 37779
+                }
+            },
+            "prediction_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_results/Dataset002_Heart/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/la_017.nii.gz",
+            "reference_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_preprocessed/Dataset002_Heart/gt_segmentations/la_017.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9409848936448625,
+                    "FN": 1191,
+                    "FP": 2868,
+                    "IoU": 0.8885471869079327,
+                    "TN": 11227581,
+                    "TP": 32360,
+                    "n_pred": 35228,
+                    "n_ref": 33551
+                }
+            },
+            "prediction_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_results/Dataset002_Heart/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/la_022.nii.gz",
+            "reference_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_preprocessed/Dataset002_Heart/gt_segmentations/la_022.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.93771707776535,
+                    "FN": 749,
+                    "FP": 3483,
+                    "IoU": 0.8827376004433362,
+                    "TN": 11125510,
+                    "TP": 31858,
+                    "n_pred": 35341,
+                    "n_ref": 32607
+                }
+            },
+            "prediction_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_results/Dataset002_Heart/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/la_029.nii.gz",
+            "reference_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_preprocessed/Dataset002_Heart/gt_segmentations/la_029.nii.gz"
+        },
+        {
+            "metrics": {
+                "1": {
+                    "Dice": 0.9496789411610536,
+                    "FN": 1500,
+                    "FP": 3108,
+                    "IoU": 0.9041796631316282,
+                    "TN": 11215910,
+                    "TP": 43482,
+                    "n_pred": 46590,
+                    "n_ref": 44982
+                }
+            },
+            "prediction_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_results/Dataset002_Heart/nnUNetTrainer__nnUNetPlans__3d_fullres/fold_3/validation/la_030.nii.gz",
+            "reference_file": "/root/autodl-tmp/MCP-Medimg/data/nnUNet_preprocessed/Dataset002_Heart/gt_segmentations/la_030.nii.gz"
+        }
+    ]
+}

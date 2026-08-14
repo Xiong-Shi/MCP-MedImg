@@ -1,0 +1,1602 @@
+[
+  {
+    "case": "LIDC_0131_000_0000.nii.gz",
+    "load_time_ms": 812.13,
+    "preprocess_time_ms": 585.11,
+    "inference_time_ms": 250.19,
+    "format_time_ms": 1.11,
+    "end_to_end_ms": 1648.53
+  },
+  {
+    "case": "LIDC_0132_001_0000.nii.gz",
+    "load_time_ms": 1021.7,
+    "preprocess_time_ms": 624.98,
+    "inference_time_ms": 209.01,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 1855.99
+  },
+  {
+    "case": "LIDC_0132_002_0000.nii.gz",
+    "load_time_ms": 935.06,
+    "preprocess_time_ms": 545.18,
+    "inference_time_ms": 198.53,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 1679.13
+  },
+  {
+    "case": "LIDC_0133_003_0000.nii.gz",
+    "load_time_ms": 1723.74,
+    "preprocess_time_ms": 1317.47,
+    "inference_time_ms": 5256.94,
+    "format_time_ms": 0.42,
+    "end_to_end_ms": 8298.57
+  },
+  {
+    "case": "LIDC_0134_004_0000.nii.gz",
+    "load_time_ms": 722.69,
+    "preprocess_time_ms": 546.91,
+    "inference_time_ms": 178.47,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 1448.44
+  },
+  {
+    "case": "LIDC_0135_005_0000.nii.gz",
+    "load_time_ms": 749.8,
+    "preprocess_time_ms": 547.28,
+    "inference_time_ms": 198.05,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 1495.4
+  },
+  {
+    "case": "LIDC_0136_006_0000.nii.gz",
+    "load_time_ms": 946.25,
+    "preprocess_time_ms": 671.98,
+    "inference_time_ms": 2384.48,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 4003.0
+  },
+  {
+    "case": "LIDC_0137_007_0000.nii.gz",
+    "load_time_ms": 861.82,
+    "preprocess_time_ms": 642.44,
+    "inference_time_ms": 2373.22,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 3877.77
+  },
+  {
+    "case": "LIDC_0138_008_0000.nii.gz",
+    "load_time_ms": 1598.56,
+    "preprocess_time_ms": 1618.4,
+    "inference_time_ms": 6985.2,
+    "format_time_ms": 0.4,
+    "end_to_end_ms": 10202.55
+  },
+  {
+    "case": "LIDC_0139_009_0000.nii.gz",
+    "load_time_ms": 709.2,
+    "preprocess_time_ms": 512.26,
+    "inference_time_ms": 201.67,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 1423.49
+  },
+  {
+    "case": "LIDC_0140_010_0000.nii.gz",
+    "load_time_ms": 4082.83,
+    "preprocess_time_ms": 3767.7,
+    "inference_time_ms": 18430.96,
+    "format_time_ms": 0.43,
+    "end_to_end_ms": 26281.93
+  },
+  {
+    "case": "LIDC_0141_011_0000.nii.gz",
+    "load_time_ms": 2517.26,
+    "preprocess_time_ms": 1705.59,
+    "inference_time_ms": 9281.97,
+    "format_time_ms": 0.43,
+    "end_to_end_ms": 13505.24
+  },
+  {
+    "case": "LIDC_0142_012_0000.nii.gz",
+    "load_time_ms": 2324.23,
+    "preprocess_time_ms": 1530.81,
+    "inference_time_ms": 9300.11,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 13155.45
+  },
+  {
+    "case": "LIDC_0143_013_0000.nii.gz",
+    "load_time_ms": 813.78,
+    "preprocess_time_ms": 615.45,
+    "inference_time_ms": 2386.52,
+    "format_time_ms": 0.32,
+    "end_to_end_ms": 3816.07
+  },
+  {
+    "case": "LIDC_0144_014_0000.nii.gz",
+    "load_time_ms": 800.59,
+    "preprocess_time_ms": 642.45,
+    "inference_time_ms": 2401.85,
+    "format_time_ms": 0.38,
+    "end_to_end_ms": 3845.28
+  },
+  {
+    "case": "LIDC_0145_015_0000.nii.gz",
+    "load_time_ms": 828.83,
+    "preprocess_time_ms": 630.46,
+    "inference_time_ms": 2369.25,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 3828.84
+  },
+  {
+    "case": "LIDC_0146_016_0000.nii.gz",
+    "load_time_ms": 1774.01,
+    "preprocess_time_ms": 1472.2,
+    "inference_time_ms": 7075.28,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 10321.81
+  },
+  {
+    "case": "LIDC_0147_017_0000.nii.gz",
+    "load_time_ms": 856.49,
+    "preprocess_time_ms": 629.06,
+    "inference_time_ms": 2446.14,
+    "format_time_ms": 0.33,
+    "end_to_end_ms": 3932.02
+  },
+  {
+    "case": "LIDC_0148_018_0000.nii.gz",
+    "load_time_ms": 782.77,
+    "preprocess_time_ms": 592.63,
+    "inference_time_ms": 2403.66,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 3779.42
+  },
+  {
+    "case": "LIDC_0149_019_0000.nii.gz",
+    "load_time_ms": 873.5,
+    "preprocess_time_ms": 638.05,
+    "inference_time_ms": 2377.8,
+    "format_time_ms": 0.32,
+    "end_to_end_ms": 3889.68
+  },
+  {
+    "case": "LIDC_0150_020_0000.nii.gz",
+    "load_time_ms": 605.57,
+    "preprocess_time_ms": 459.68,
+    "inference_time_ms": 192.31,
+    "format_time_ms": 0.4,
+    "end_to_end_ms": 1257.95
+  },
+  {
+    "case": "LIDC_0151_021_0000.nii.gz",
+    "load_time_ms": 659.5,
+    "preprocess_time_ms": 511.1,
+    "inference_time_ms": 143.32,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1314.17
+  },
+  {
+    "case": "LIDC_0151_022_0000.nii.gz",
+    "load_time_ms": 704.61,
+    "preprocess_time_ms": 460.95,
+    "inference_time_ms": 199.69,
+    "format_time_ms": 0.34,
+    "end_to_end_ms": 1365.58
+  },
+  {
+    "case": "LIDC_0152_023_0000.nii.gz",
+    "load_time_ms": 779.83,
+    "preprocess_time_ms": 606.73,
+    "inference_time_ms": 2437.22,
+    "format_time_ms": 0.62,
+    "end_to_end_ms": 3824.4
+  },
+  {
+    "case": "LIDC_0153_024_0000.nii.gz",
+    "load_time_ms": 1028.92,
+    "preprocess_time_ms": 625.25,
+    "inference_time_ms": 2425.18,
+    "format_time_ms": 0.32,
+    "end_to_end_ms": 4079.67
+  },
+  {
+    "case": "LIDC_0154_025_0000.nii.gz",
+    "load_time_ms": 697.42,
+    "preprocess_time_ms": 501.21,
+    "inference_time_ms": 167.63,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 1366.57
+  },
+  {
+    "case": "LIDC_0155_026_0000.nii.gz",
+    "load_time_ms": 1352.05,
+    "preprocess_time_ms": 1085.56,
+    "inference_time_ms": 4781.59,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 7219.57
+  },
+  {
+    "case": "LIDC_0156_027_0000.nii.gz",
+    "load_time_ms": 748.53,
+    "preprocess_time_ms": 564.86,
+    "inference_time_ms": 226.3,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 1539.97
+  },
+  {
+    "case": "LIDC_0157_028_0000.nii.gz",
+    "load_time_ms": 799.98,
+    "preprocess_time_ms": 596.54,
+    "inference_time_ms": 2403.29,
+    "format_time_ms": 0.47,
+    "end_to_end_ms": 3800.27
+  },
+  {
+    "case": "LIDC_0158_029_0000.nii.gz",
+    "load_time_ms": 1536.97,
+    "preprocess_time_ms": 1145.33,
+    "inference_time_ms": 4719.41,
+    "format_time_ms": 0.3,
+    "end_to_end_ms": 7402.02
+  },
+  {
+    "case": "LIDC_0159_030_0000.nii.gz",
+    "load_time_ms": 831.36,
+    "preprocess_time_ms": 618.28,
+    "inference_time_ms": 2395.02,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 3844.97
+  },
+  {
+    "case": "LIDC_0160_031_0000.nii.gz",
+    "load_time_ms": 820.14,
+    "preprocess_time_ms": 623.65,
+    "inference_time_ms": 2438.68,
+    "format_time_ms": 0.99,
+    "end_to_end_ms": 3883.47
+  },
+  {
+    "case": "LIDC_0161_032_0000.nii.gz",
+    "load_time_ms": 1440.34,
+    "preprocess_time_ms": 1141.29,
+    "inference_time_ms": 4731.68,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 7313.6
+  },
+  {
+    "case": "LIDC_0162_033_0000.nii.gz",
+    "load_time_ms": 805.27,
+    "preprocess_time_ms": 605.89,
+    "inference_time_ms": 2433.55,
+    "format_time_ms": 0.48,
+    "end_to_end_ms": 3845.2
+  },
+  {
+    "case": "LIDC_0163_034_0000.nii.gz",
+    "load_time_ms": 769.58,
+    "preprocess_time_ms": 606.39,
+    "inference_time_ms": 2414.82,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 3791.08
+  },
+  {
+    "case": "LIDC_0164_035_0000.nii.gz",
+    "load_time_ms": 1768.4,
+    "preprocess_time_ms": 1320.28,
+    "inference_time_ms": 6917.63,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 10006.67
+  },
+  {
+    "case": "LIDC_0165_036_0000.nii.gz",
+    "load_time_ms": 814.11,
+    "preprocess_time_ms": 610.89,
+    "inference_time_ms": 2419.45,
+    "format_time_ms": 0.34,
+    "end_to_end_ms": 3844.79
+  },
+  {
+    "case": "LIDC_0166_037_0000.nii.gz",
+    "load_time_ms": 747.86,
+    "preprocess_time_ms": 597.01,
+    "inference_time_ms": 2428.2,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 3773.37
+  },
+  {
+    "case": "LIDC_0167_038_0000.nii.gz",
+    "load_time_ms": 772.67,
+    "preprocess_time_ms": 590.46,
+    "inference_time_ms": 2430.58,
+    "format_time_ms": 0.3,
+    "end_to_end_ms": 3794.01
+  },
+  {
+    "case": "LIDC_0168_039_0000.nii.gz",
+    "load_time_ms": 1311.08,
+    "preprocess_time_ms": 1041.48,
+    "inference_time_ms": 4763.93,
+    "format_time_ms": 0.7,
+    "end_to_end_ms": 7117.18
+  },
+  {
+    "case": "LIDC_0169_040_0000.nii.gz",
+    "load_time_ms": 1444.74,
+    "preprocess_time_ms": 1120.88,
+    "inference_time_ms": 4713.79,
+    "format_time_ms": 0.56,
+    "end_to_end_ms": 7279.97
+  },
+  {
+    "case": "LIDC_0170_041_0000.nii.gz",
+    "load_time_ms": 1232.07,
+    "preprocess_time_ms": 956.29,
+    "inference_time_ms": 4759.59,
+    "format_time_ms": 0.32,
+    "end_to_end_ms": 6948.28
+  },
+  {
+    "case": "LIDC_0171_042_0000.nii.gz",
+    "load_time_ms": 584.13,
+    "preprocess_time_ms": 418.85,
+    "inference_time_ms": 134.14,
+    "format_time_ms": 0.47,
+    "end_to_end_ms": 1137.6
+  },
+  {
+    "case": "LIDC_0172_043_0000.nii.gz",
+    "load_time_ms": 763.15,
+    "preprocess_time_ms": 551.01,
+    "inference_time_ms": 198.57,
+    "format_time_ms": 0.35,
+    "end_to_end_ms": 1513.08
+  },
+  {
+    "case": "LIDC_0173_044_0000.nii.gz",
+    "load_time_ms": 903.86,
+    "preprocess_time_ms": 737.67,
+    "inference_time_ms": 2373.43,
+    "format_time_ms": 0.55,
+    "end_to_end_ms": 4015.51
+  },
+  {
+    "case": "LIDC_0174_045_0000.nii.gz",
+    "load_time_ms": 805.72,
+    "preprocess_time_ms": 608.77,
+    "inference_time_ms": 2352.64,
+    "format_time_ms": 0.73,
+    "end_to_end_ms": 3767.87
+  },
+  {
+    "case": "LIDC_0175_046_0000.nii.gz",
+    "load_time_ms": 770.38,
+    "preprocess_time_ms": 613.09,
+    "inference_time_ms": 2394.21,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 3777.99
+  },
+  {
+    "case": "LIDC_0176_047_0000.nii.gz",
+    "load_time_ms": 1245.13,
+    "preprocess_time_ms": 1059.45,
+    "inference_time_ms": 4698.31,
+    "format_time_ms": 0.76,
+    "end_to_end_ms": 7003.66
+  },
+  {
+    "case": "LIDC_0177_048_0000.nii.gz",
+    "load_time_ms": 815.58,
+    "preprocess_time_ms": 606.38,
+    "inference_time_ms": 2435.58,
+    "format_time_ms": 0.35,
+    "end_to_end_ms": 3857.89
+  },
+  {
+    "case": "LIDC_0178_049_0000.nii.gz",
+    "load_time_ms": 939.76,
+    "preprocess_time_ms": 658.02,
+    "inference_time_ms": 192.21,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 1790.3
+  },
+  {
+    "case": "LIDC_0179_050_0000.nii.gz",
+    "load_time_ms": 962.14,
+    "preprocess_time_ms": 601.06,
+    "inference_time_ms": 206.57,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 1770.03
+  },
+  {
+    "case": "LIDC_0180_051_0000.nii.gz",
+    "load_time_ms": 1759.71,
+    "preprocess_time_ms": 1315.51,
+    "inference_time_ms": 4729.05,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 7804.5
+  },
+  {
+    "case": "LIDC_0181_052_0000.nii.gz",
+    "load_time_ms": 930.42,
+    "preprocess_time_ms": 681.86,
+    "inference_time_ms": 2440.18,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 4052.7
+  },
+  {
+    "case": "LIDC_0182_053_0000.nii.gz",
+    "load_time_ms": 808.94,
+    "preprocess_time_ms": 596.87,
+    "inference_time_ms": 2379.46,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 3785.5
+  },
+  {
+    "case": "LIDC_0183_054_0000.nii.gz",
+    "load_time_ms": 819.95,
+    "preprocess_time_ms": 642.94,
+    "inference_time_ms": 2436.18,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3899.33
+  },
+  {
+    "case": "LIDC_0184_055_0000.nii.gz",
+    "load_time_ms": 1037.48,
+    "preprocess_time_ms": 684.41,
+    "inference_time_ms": 2361.99,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 4084.13
+  },
+  {
+    "case": "LIDC_0185_056_0000.nii.gz",
+    "load_time_ms": 792.57,
+    "preprocess_time_ms": 587.59,
+    "inference_time_ms": 2390.23,
+    "format_time_ms": 0.32,
+    "end_to_end_ms": 3770.71
+  },
+  {
+    "case": "LIDC_0186_057_0000.nii.gz",
+    "load_time_ms": 814.63,
+    "preprocess_time_ms": 615.28,
+    "inference_time_ms": 2349.76,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 3779.92
+  },
+  {
+    "case": "LIDC_0187_058_0000.nii.gz",
+    "load_time_ms": 847.84,
+    "preprocess_time_ms": 652.23,
+    "inference_time_ms": 2399.01,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 3899.47
+  },
+  {
+    "case": "LIDC_0188_059_0000.nii.gz",
+    "load_time_ms": 678.43,
+    "preprocess_time_ms": 490.82,
+    "inference_time_ms": 180.76,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 1350.36
+  },
+  {
+    "case": "LIDC_0189_060_0000.nii.gz",
+    "load_time_ms": 730.72,
+    "preprocess_time_ms": 523.74,
+    "inference_time_ms": 137.11,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 1391.84
+  },
+  {
+    "case": "LIDC_0190_061_0000.nii.gz",
+    "load_time_ms": 795.0,
+    "preprocess_time_ms": 633.88,
+    "inference_time_ms": 159.52,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1588.65
+  },
+  {
+    "case": "LIDC_0191_062_0000.nii.gz",
+    "load_time_ms": 997.44,
+    "preprocess_time_ms": 681.33,
+    "inference_time_ms": 2424.07,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 4103.11
+  },
+  {
+    "case": "LIDC_0192_063_0000.nii.gz",
+    "load_time_ms": 1494.47,
+    "preprocess_time_ms": 1117.63,
+    "inference_time_ms": 4701.12,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 7313.46
+  },
+  {
+    "case": "LIDC_0193_064_0000.nii.gz",
+    "load_time_ms": 796.73,
+    "preprocess_time_ms": 552.53,
+    "inference_time_ms": 190.04,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 1539.54
+  },
+  {
+    "case": "LIDC_0194_065_0000.nii.gz",
+    "load_time_ms": 853.25,
+    "preprocess_time_ms": 660.61,
+    "inference_time_ms": 2388.53,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 3902.63
+  },
+  {
+    "case": "LIDC_0195_066_0000.nii.gz",
+    "load_time_ms": 796.68,
+    "preprocess_time_ms": 607.09,
+    "inference_time_ms": 2344.64,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3748.66
+  },
+  {
+    "case": "LIDC_0196_067_0000.nii.gz",
+    "load_time_ms": 802.83,
+    "preprocess_time_ms": 599.95,
+    "inference_time_ms": 2396.74,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3799.78
+  },
+  {
+    "case": "LIDC_0197_068_0000.nii.gz",
+    "load_time_ms": 785.36,
+    "preprocess_time_ms": 548.17,
+    "inference_time_ms": 152.49,
+    "format_time_ms": 0.3,
+    "end_to_end_ms": 1486.31
+  },
+  {
+    "case": "LIDC_0198_069_0000.nii.gz",
+    "load_time_ms": 783.23,
+    "preprocess_time_ms": 594.44,
+    "inference_time_ms": 2415.3,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 3793.25
+  },
+  {
+    "case": "LIDC_0199_070_0000.nii.gz",
+    "load_time_ms": 1369.37,
+    "preprocess_time_ms": 1076.92,
+    "inference_time_ms": 4761.25,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 7207.82
+  },
+  {
+    "case": "LIDC_0200_071_0000.nii.gz",
+    "load_time_ms": 744.04,
+    "preprocess_time_ms": 515.63,
+    "inference_time_ms": 179.27,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 1439.17
+  },
+  {
+    "case": "LIDC_0201_072_0000.nii.gz",
+    "load_time_ms": 858.57,
+    "preprocess_time_ms": 667.63,
+    "inference_time_ms": 2362.8,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3889.26
+  },
+  {
+    "case": "LIDC_0202_073_0000.nii.gz",
+    "load_time_ms": 701.17,
+    "preprocess_time_ms": 482.03,
+    "inference_time_ms": 196.17,
+    "format_time_ms": 0.32,
+    "end_to_end_ms": 1379.69
+  },
+  {
+    "case": "LIDC_0203_074_0000.nii.gz",
+    "load_time_ms": 883.27,
+    "preprocess_time_ms": 656.53,
+    "inference_time_ms": 2360.39,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3900.45
+  },
+  {
+    "case": "LIDC_0204_075_0000.nii.gz",
+    "load_time_ms": 814.21,
+    "preprocess_time_ms": 597.17,
+    "inference_time_ms": 2368.61,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3780.24
+  },
+  {
+    "case": "LIDC_0205_076_0000.nii.gz",
+    "load_time_ms": 818.89,
+    "preprocess_time_ms": 604.18,
+    "inference_time_ms": 2358.93,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 3782.31
+  },
+  {
+    "case": "LIDC_0206_077_0000.nii.gz",
+    "load_time_ms": 1805.67,
+    "preprocess_time_ms": 1367.83,
+    "inference_time_ms": 7050.53,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 10224.3
+  },
+  {
+    "case": "LIDC_0207_078_0000.nii.gz",
+    "load_time_ms": 1455.84,
+    "preprocess_time_ms": 1095.98,
+    "inference_time_ms": 4703.15,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 7255.23
+  },
+  {
+    "case": "LIDC_0208_079_0000.nii.gz",
+    "load_time_ms": 693.84,
+    "preprocess_time_ms": 480.19,
+    "inference_time_ms": 148.1,
+    "format_time_ms": 0.46,
+    "end_to_end_ms": 1322.6
+  },
+  {
+    "case": "LIDC_0209_080_0000.nii.gz",
+    "load_time_ms": 869.7,
+    "preprocess_time_ms": 651.53,
+    "inference_time_ms": 2392.84,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3914.33
+  },
+  {
+    "case": "LIDC_0210_081_0000.nii.gz",
+    "load_time_ms": 770.29,
+    "preprocess_time_ms": 568.61,
+    "inference_time_ms": 2437.4,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3776.55
+  },
+  {
+    "case": "LIDC_0211_082_0000.nii.gz",
+    "load_time_ms": 1341.79,
+    "preprocess_time_ms": 1068.6,
+    "inference_time_ms": 4699.61,
+    "format_time_ms": 0.3,
+    "end_to_end_ms": 7110.29
+  },
+  {
+    "case": "LIDC_0212_083_0000.nii.gz",
+    "load_time_ms": 820.65,
+    "preprocess_time_ms": 593.37,
+    "inference_time_ms": 2437.43,
+    "format_time_ms": 0.58,
+    "end_to_end_ms": 3852.03
+  },
+  {
+    "case": "LIDC_0213_084_0000.nii.gz",
+    "load_time_ms": 777.74,
+    "preprocess_time_ms": 568.82,
+    "inference_time_ms": 217.32,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 1564.16
+  },
+  {
+    "case": "LIDC_0214_085_0000.nii.gz",
+    "load_time_ms": 1148.5,
+    "preprocess_time_ms": 785.07,
+    "inference_time_ms": 2369.51,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 4303.45
+  },
+  {
+    "case": "LIDC_0215_086_0000.nii.gz",
+    "load_time_ms": 1865.11,
+    "preprocess_time_ms": 1187.17,
+    "inference_time_ms": 4856.5,
+    "format_time_ms": 0.4,
+    "end_to_end_ms": 7909.18
+  },
+  {
+    "case": "LIDC_0216_087_0000.nii.gz",
+    "load_time_ms": 857.33,
+    "preprocess_time_ms": 592.29,
+    "inference_time_ms": 2402.21,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 3852.2
+  },
+  {
+    "case": "LIDC_0217_088_0000.nii.gz",
+    "load_time_ms": 830.24,
+    "preprocess_time_ms": 596.33,
+    "inference_time_ms": 2361.06,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 3788.0
+  },
+  {
+    "case": "LIDC_0218_089_0000.nii.gz",
+    "load_time_ms": 1305.08,
+    "preprocess_time_ms": 978.25,
+    "inference_time_ms": 4713.44,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 6997.12
+  },
+  {
+    "case": "LIDC_0219_090_0000.nii.gz",
+    "load_time_ms": 822.78,
+    "preprocess_time_ms": 609.03,
+    "inference_time_ms": 2426.8,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 3858.99
+  },
+  {
+    "case": "LIDC_0220_091_0000.nii.gz",
+    "load_time_ms": 1443.55,
+    "preprocess_time_ms": 1076.35,
+    "inference_time_ms": 4790.41,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 7310.7
+  },
+  {
+    "case": "LIDC_0221_092_0000.nii.gz",
+    "load_time_ms": 841.87,
+    "preprocess_time_ms": 625.1,
+    "inference_time_ms": 2385.1,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 3852.31
+  },
+  {
+    "case": "LIDC_0222_093_0000.nii.gz",
+    "load_time_ms": 775.89,
+    "preprocess_time_ms": 579.73,
+    "inference_time_ms": 2420.62,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 3776.51
+  },
+  {
+    "case": "LIDC_0223_094_0000.nii.gz",
+    "load_time_ms": 1427.5,
+    "preprocess_time_ms": 1100.68,
+    "inference_time_ms": 4786.55,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 7315.08
+  },
+  {
+    "case": "LIDC_0224_095_0000.nii.gz",
+    "load_time_ms": 822.26,
+    "preprocess_time_ms": 601.62,
+    "inference_time_ms": 2427.96,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 3852.16
+  },
+  {
+    "case": "LIDC_0225_096_0000.nii.gz",
+    "load_time_ms": 798.07,
+    "preprocess_time_ms": 618.09,
+    "inference_time_ms": 2372.34,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3788.75
+  },
+  {
+    "case": "LIDC_0226_097_0000.nii.gz",
+    "load_time_ms": 768.37,
+    "preprocess_time_ms": 516.25,
+    "inference_time_ms": 187.01,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1471.87
+  },
+  {
+    "case": "LIDC_0227_098_0000.nii.gz",
+    "load_time_ms": 785.57,
+    "preprocess_time_ms": 605.93,
+    "inference_time_ms": 2413.15,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3804.9
+  },
+  {
+    "case": "LIDC_0228_099_0000.nii.gz",
+    "load_time_ms": 796.43,
+    "preprocess_time_ms": 548.43,
+    "inference_time_ms": 222.31,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 1567.4
+  },
+  {
+    "case": "LIDC_0229_100_0000.nii.gz",
+    "load_time_ms": 851.59,
+    "preprocess_time_ms": 627.95,
+    "inference_time_ms": 2423.11,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 3902.93
+  },
+  {
+    "case": "LIDC_0230_101_0000.nii.gz",
+    "load_time_ms": 679.47,
+    "preprocess_time_ms": 479.59,
+    "inference_time_ms": 200.5,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 1359.85
+  },
+  {
+    "case": "LIDC_0231_102_0000.nii.gz",
+    "load_time_ms": 864.13,
+    "preprocess_time_ms": 655.14,
+    "inference_time_ms": 2400.2,
+    "format_time_ms": 0.49,
+    "end_to_end_ms": 3919.96
+  },
+  {
+    "case": "LIDC_0232_103_0000.nii.gz",
+    "load_time_ms": 959.66,
+    "preprocess_time_ms": 572.05,
+    "inference_time_ms": 2445.74,
+    "format_time_ms": 0.35,
+    "end_to_end_ms": 3977.8
+  },
+  {
+    "case": "LIDC_0233_104_0000.nii.gz",
+    "load_time_ms": 855.05,
+    "preprocess_time_ms": 630.92,
+    "inference_time_ms": 2399.62,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3885.85
+  },
+  {
+    "case": "LIDC_0234_105_0000.nii.gz",
+    "load_time_ms": 794.6,
+    "preprocess_time_ms": 595.58,
+    "inference_time_ms": 2388.38,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3778.83
+  },
+  {
+    "case": "LIDC_0235_106_0000.nii.gz",
+    "load_time_ms": 851.79,
+    "preprocess_time_ms": 627.28,
+    "inference_time_ms": 2410.28,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 3889.72
+  },
+  {
+    "case": "LIDC_0236_107_0000.nii.gz",
+    "load_time_ms": 797.65,
+    "preprocess_time_ms": 595.44,
+    "inference_time_ms": 2368.26,
+    "format_time_ms": 0.33,
+    "end_to_end_ms": 3761.67
+  },
+  {
+    "case": "LIDC_0237_108_0000.nii.gz",
+    "load_time_ms": 834.35,
+    "preprocess_time_ms": 638.66,
+    "inference_time_ms": 2429.75,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 3903.04
+  },
+  {
+    "case": "LIDC_0239_109_0000.nii.gz",
+    "load_time_ms": 975.89,
+    "preprocess_time_ms": 677.26,
+    "inference_time_ms": 2433.79,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 4087.21
+  },
+  {
+    "case": "LIDC_0240_110_0000.nii.gz",
+    "load_time_ms": 773.61,
+    "preprocess_time_ms": 542.2,
+    "inference_time_ms": 160.02,
+    "format_time_ms": 0.34,
+    "end_to_end_ms": 1476.18
+  },
+  {
+    "case": "LIDC_0241_111_0000.nii.gz",
+    "load_time_ms": 2373.54,
+    "preprocess_time_ms": 1916.64,
+    "inference_time_ms": 7024.82,
+    "format_time_ms": 0.41,
+    "end_to_end_ms": 11315.41
+  },
+  {
+    "case": "LIDC_0242_112_0000.nii.gz",
+    "load_time_ms": 1181.87,
+    "preprocess_time_ms": 783.98,
+    "inference_time_ms": 2387.74,
+    "format_time_ms": 0.44,
+    "end_to_end_ms": 4354.04
+  },
+  {
+    "case": "LIDC_0243_113_0000.nii.gz",
+    "load_time_ms": 1156.89,
+    "preprocess_time_ms": 794.12,
+    "inference_time_ms": 2422.1,
+    "format_time_ms": 0.43,
+    "end_to_end_ms": 4373.55
+  },
+  {
+    "case": "LIDC_0244_114_0000.nii.gz",
+    "load_time_ms": 1089.77,
+    "preprocess_time_ms": 746.87,
+    "inference_time_ms": 2443.36,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 4280.28
+  },
+  {
+    "case": "LIDC_0245_115_0000.nii.gz",
+    "load_time_ms": 715.06,
+    "preprocess_time_ms": 511.18,
+    "inference_time_ms": 151.99,
+    "format_time_ms": 0.29,
+    "end_to_end_ms": 1378.52
+  },
+  {
+    "case": "LIDC_0246_116_0000.nii.gz",
+    "load_time_ms": 898.75,
+    "preprocess_time_ms": 658.92,
+    "inference_time_ms": 2436.93,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 3994.98
+  },
+  {
+    "case": "LIDC_0247_117_0000.nii.gz",
+    "load_time_ms": 810.26,
+    "preprocess_time_ms": 568.09,
+    "inference_time_ms": 190.49,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 1569.21
+  },
+  {
+    "case": "LIDC_0248_118_0000.nii.gz",
+    "load_time_ms": 736.91,
+    "preprocess_time_ms": 551.22,
+    "inference_time_ms": 186.17,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1474.55
+  },
+  {
+    "case": "LIDC_0249_119_0000.nii.gz",
+    "load_time_ms": 1325.43,
+    "preprocess_time_ms": 1002.23,
+    "inference_time_ms": 4692.17,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 7020.19
+  },
+  {
+    "case": "LIDC_0250_120_0000.nii.gz",
+    "load_time_ms": 829.89,
+    "preprocess_time_ms": 620.53,
+    "inference_time_ms": 2409.36,
+    "format_time_ms": 0.46,
+    "end_to_end_ms": 3860.24
+  },
+  {
+    "case": "LIDC_0251_121_0000.nii.gz",
+    "load_time_ms": 814.51,
+    "preprocess_time_ms": 611.79,
+    "inference_time_ms": 2357.55,
+    "format_time_ms": 0.4,
+    "end_to_end_ms": 3784.26
+  },
+  {
+    "case": "LIDC_0252_122_0000.nii.gz",
+    "load_time_ms": 871.24,
+    "preprocess_time_ms": 728.59,
+    "inference_time_ms": 2386.51,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3986.59
+  },
+  {
+    "case": "LIDC_0253_123_0000.nii.gz",
+    "load_time_ms": 795.89,
+    "preprocess_time_ms": 597.19,
+    "inference_time_ms": 2388.76,
+    "format_time_ms": 0.28,
+    "end_to_end_ms": 3782.12
+  },
+  {
+    "case": "LIDC_0254_124_0000.nii.gz",
+    "load_time_ms": 668.94,
+    "preprocess_time_ms": 471.46,
+    "inference_time_ms": 146.14,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1286.78
+  },
+  {
+    "case": "LIDC_0255_125_0000.nii.gz",
+    "load_time_ms": 792.83,
+    "preprocess_time_ms": 605.71,
+    "inference_time_ms": 2394.79,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 3793.57
+  },
+  {
+    "case": "LIDC_0256_126_0000.nii.gz",
+    "load_time_ms": 776.88,
+    "preprocess_time_ms": 573.07,
+    "inference_time_ms": 2424.85,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3775.06
+  },
+  {
+    "case": "LIDC_0257_127_0000.nii.gz",
+    "load_time_ms": 811.05,
+    "preprocess_time_ms": 596.17,
+    "inference_time_ms": 2379.54,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 3786.98
+  },
+  {
+    "case": "LIDC_0258_128_0000.nii.gz",
+    "load_time_ms": 780.09,
+    "preprocess_time_ms": 594.97,
+    "inference_time_ms": 2411.03,
+    "format_time_ms": 0.65,
+    "end_to_end_ms": 3786.74
+  },
+  {
+    "case": "LIDC_0259_129_0000.nii.gz",
+    "load_time_ms": 914.73,
+    "preprocess_time_ms": 675.81,
+    "inference_time_ms": 2401.31,
+    "format_time_ms": 0.34,
+    "end_to_end_ms": 3992.19
+  },
+  {
+    "case": "LIDC_0260_130_0000.nii.gz",
+    "load_time_ms": 875.0,
+    "preprocess_time_ms": 655.12,
+    "inference_time_ms": 2431.8,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3962.16
+  },
+  {
+    "case": "LIDC_0261_131_0000.nii.gz",
+    "load_time_ms": 829.59,
+    "preprocess_time_ms": 624.56,
+    "inference_time_ms": 2431.23,
+    "format_time_ms": 0.82,
+    "end_to_end_ms": 3886.21
+  },
+  {
+    "case": "LIDC_0262_132_0000.nii.gz",
+    "load_time_ms": 1480.7,
+    "preprocess_time_ms": 993.55,
+    "inference_time_ms": 4733.18,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 7207.82
+  },
+  {
+    "case": "LIDC_0263_133_0000.nii.gz",
+    "load_time_ms": 1042.25,
+    "preprocess_time_ms": 701.46,
+    "inference_time_ms": 2424.6,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 4168.58
+  },
+  {
+    "case": "LIDC_0264_134_0000.nii.gz",
+    "load_time_ms": 1361.36,
+    "preprocess_time_ms": 1186.4,
+    "inference_time_ms": 4755.25,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 7303.24
+  },
+  {
+    "case": "LIDC_0265_135_0000.nii.gz",
+    "load_time_ms": 800.96,
+    "preprocess_time_ms": 614.36,
+    "inference_time_ms": 2422.57,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3838.15
+  },
+  {
+    "case": "LIDC_0266_136_0000.nii.gz",
+    "load_time_ms": 1342.13,
+    "preprocess_time_ms": 1119.64,
+    "inference_time_ms": 4847.18,
+    "format_time_ms": 0.35,
+    "end_to_end_ms": 7309.29
+  },
+  {
+    "case": "LIDC_0267_137_0000.nii.gz",
+    "load_time_ms": 926.87,
+    "preprocess_time_ms": 670.89,
+    "inference_time_ms": 2358.96,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3956.97
+  },
+  {
+    "case": "LIDC_0268_138_0000.nii.gz",
+    "load_time_ms": 705.69,
+    "preprocess_time_ms": 501.07,
+    "inference_time_ms": 162.88,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 1369.87
+  },
+  {
+    "case": "LIDC_0269_139_0000.nii.gz",
+    "load_time_ms": 1708.6,
+    "preprocess_time_ms": 1463.54,
+    "inference_time_ms": 7057.2,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 10229.61
+  },
+  {
+    "case": "LIDC_0270_140_0000.nii.gz",
+    "load_time_ms": 887.54,
+    "preprocess_time_ms": 662.17,
+    "inference_time_ms": 2386.24,
+    "format_time_ms": 0.33,
+    "end_to_end_ms": 3936.28
+  },
+  {
+    "case": "LIDC_0271_141_0000.nii.gz",
+    "load_time_ms": 713.52,
+    "preprocess_time_ms": 493.24,
+    "inference_time_ms": 152.47,
+    "format_time_ms": 0.28,
+    "end_to_end_ms": 1359.51
+  },
+  {
+    "case": "LIDC_0272_142_0000.nii.gz",
+    "load_time_ms": 705.1,
+    "preprocess_time_ms": 501.88,
+    "inference_time_ms": 180.06,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 1387.28
+  },
+  {
+    "case": "LIDC_0273_143_0000.nii.gz",
+    "load_time_ms": 772.43,
+    "preprocess_time_ms": 591.63,
+    "inference_time_ms": 2357.04,
+    "format_time_ms": 0.32,
+    "end_to_end_ms": 3721.42
+  },
+  {
+    "case": "LIDC_0274_144_0000.nii.gz",
+    "load_time_ms": 831.49,
+    "preprocess_time_ms": 598.63,
+    "inference_time_ms": 2359.5,
+    "format_time_ms": 0.28,
+    "end_to_end_ms": 3789.9
+  },
+  {
+    "case": "LIDC_0275_145_0000.nii.gz",
+    "load_time_ms": 869.22,
+    "preprocess_time_ms": 665.75,
+    "inference_time_ms": 2445.01,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 3980.23
+  },
+  {
+    "case": "LIDC_0276_146_0000.nii.gz",
+    "load_time_ms": 826.02,
+    "preprocess_time_ms": 610.19,
+    "inference_time_ms": 2425.53,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 3862.0
+  },
+  {
+    "case": "LIDC_0277_147_0000.nii.gz",
+    "load_time_ms": 725.81,
+    "preprocess_time_ms": 507.95,
+    "inference_time_ms": 152.07,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1386.09
+  },
+  {
+    "case": "LIDC_0278_148_0000.nii.gz",
+    "load_time_ms": 1295.63,
+    "preprocess_time_ms": 980.4,
+    "inference_time_ms": 4679.01,
+    "format_time_ms": 0.33,
+    "end_to_end_ms": 6955.37
+  },
+  {
+    "case": "LIDC_0279_149_0000.nii.gz",
+    "load_time_ms": 818.39,
+    "preprocess_time_ms": 601.45,
+    "inference_time_ms": 2402.9,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3822.99
+  },
+  {
+    "case": "LIDC_0280_150_0000.nii.gz",
+    "load_time_ms": 1359.39,
+    "preprocess_time_ms": 1125.75,
+    "inference_time_ms": 4824.4,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 7309.8
+  },
+  {
+    "case": "LIDC_0281_151_0000.nii.gz",
+    "load_time_ms": 772.49,
+    "preprocess_time_ms": 533.35,
+    "inference_time_ms": 210.15,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 1516.24
+  },
+  {
+    "case": "LIDC_0282_152_0000.nii.gz",
+    "load_time_ms": 725.64,
+    "preprocess_time_ms": 514.44,
+    "inference_time_ms": 158.65,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 1399.03
+  },
+  {
+    "case": "LIDC_0283_153_0000.nii.gz",
+    "load_time_ms": 709.51,
+    "preprocess_time_ms": 481.2,
+    "inference_time_ms": 189.43,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 1380.37
+  },
+  {
+    "case": "LIDC_0284_154_0000.nii.gz",
+    "load_time_ms": 801.05,
+    "preprocess_time_ms": 585.66,
+    "inference_time_ms": 2427.96,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 3815.04
+  },
+  {
+    "case": "LIDC_0285_155_0000.nii.gz",
+    "load_time_ms": 942.61,
+    "preprocess_time_ms": 667.66,
+    "inference_time_ms": 2381.0,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 3991.58
+  },
+  {
+    "case": "LIDC_0286_156_0000.nii.gz",
+    "load_time_ms": 844.1,
+    "preprocess_time_ms": 643.41,
+    "inference_time_ms": 2385.82,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 3873.6
+  },
+  {
+    "case": "LIDC_0287_157_0000.nii.gz",
+    "load_time_ms": 676.83,
+    "preprocess_time_ms": 463.05,
+    "inference_time_ms": 140.21,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 1280.33
+  },
+  {
+    "case": "LIDC_0288_158_0000.nii.gz",
+    "load_time_ms": 1337.29,
+    "preprocess_time_ms": 1188.01,
+    "inference_time_ms": 4779.93,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 7305.46
+  },
+  {
+    "case": "LIDC_0289_159_0000.nii.gz",
+    "load_time_ms": 702.12,
+    "preprocess_time_ms": 506.27,
+    "inference_time_ms": 142.64,
+    "format_time_ms": 0.28,
+    "end_to_end_ms": 1351.31
+  },
+  {
+    "case": "LIDC_0290_160_0000.nii.gz",
+    "load_time_ms": 754.7,
+    "preprocess_time_ms": 584.89,
+    "inference_time_ms": 2368.53,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 3708.38
+  },
+  {
+    "case": "LIDC_0291_161_0000.nii.gz",
+    "load_time_ms": 1591.27,
+    "preprocess_time_ms": 1311.29,
+    "inference_time_ms": 6901.13,
+    "format_time_ms": 0.44,
+    "end_to_end_ms": 9804.12
+  },
+  {
+    "case": "LIDC_0292_162_0000.nii.gz",
+    "load_time_ms": 3072.66,
+    "preprocess_time_ms": 2624.82,
+    "inference_time_ms": 14014.78,
+    "format_time_ms": 0.66,
+    "end_to_end_ms": 19712.92
+  },
+  {
+    "case": "LIDC_0293_163_0000.nii.gz",
+    "load_time_ms": 3263.19,
+    "preprocess_time_ms": 2579.9,
+    "inference_time_ms": 13917.92,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 19761.4
+  },
+  {
+    "case": "LIDC_0294_164_0000.nii.gz",
+    "load_time_ms": 1462.6,
+    "preprocess_time_ms": 807.53,
+    "inference_time_ms": 2398.94,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 4669.31
+  },
+  {
+    "case": "LIDC_0295_165_0000.nii.gz",
+    "load_time_ms": 1756.63,
+    "preprocess_time_ms": 1459.21,
+    "inference_time_ms": 7084.6,
+    "format_time_ms": 0.35,
+    "end_to_end_ms": 10300.79
+  },
+  {
+    "case": "LIDC_0296_166_0000.nii.gz",
+    "load_time_ms": 853.0,
+    "preprocess_time_ms": 518.45,
+    "inference_time_ms": 151.94,
+    "format_time_ms": 0.28,
+    "end_to_end_ms": 1523.66
+  },
+  {
+    "case": "LIDC_0297_167_0000.nii.gz",
+    "load_time_ms": 3560.23,
+    "preprocess_time_ms": 2838.8,
+    "inference_time_ms": 16236.61,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 22635.91
+  },
+  {
+    "case": "LIDC_0298_168_0000.nii.gz",
+    "load_time_ms": 2254.59,
+    "preprocess_time_ms": 1522.79,
+    "inference_time_ms": 9252.68,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 13030.31
+  },
+  {
+    "case": "LIDC_0299_169_0000.nii.gz",
+    "load_time_ms": 3224.15,
+    "preprocess_time_ms": 2715.09,
+    "inference_time_ms": 16260.91,
+    "format_time_ms": 0.38,
+    "end_to_end_ms": 22200.53
+  },
+  {
+    "case": "LIDC_0300_170_0000.nii.gz",
+    "load_time_ms": 2657.81,
+    "preprocess_time_ms": 1951.22,
+    "inference_time_ms": 9406.59,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 14015.89
+  },
+  {
+    "case": "LIDC_0301_171_0000.nii.gz",
+    "load_time_ms": 2972.6,
+    "preprocess_time_ms": 2491.34,
+    "inference_time_ms": 16077.73,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 21541.92
+  },
+  {
+    "case": "LIDC_0302_172_0000.nii.gz",
+    "load_time_ms": 2902.42,
+    "preprocess_time_ms": 2276.53,
+    "inference_time_ms": 13843.76,
+    "format_time_ms": 0.28,
+    "end_to_end_ms": 19022.99
+  },
+  {
+    "case": "LIDC_0303_173_0000.nii.gz",
+    "load_time_ms": 877.33,
+    "preprocess_time_ms": 546.38,
+    "inference_time_ms": 148.0,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 1571.94
+  },
+  {
+    "case": "LIDC_0304_174_0000.nii.gz",
+    "load_time_ms": 1367.75,
+    "preprocess_time_ms": 889.09,
+    "inference_time_ms": 4741.02,
+    "format_time_ms": 0.34,
+    "end_to_end_ms": 6998.21
+  },
+  {
+    "case": "LIDC_0305_175_0000.nii.gz",
+    "load_time_ms": 1553.4,
+    "preprocess_time_ms": 1149.28,
+    "inference_time_ms": 4788.82,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 7491.76
+  },
+  {
+    "case": "LIDC_0306_176_0000.nii.gz",
+    "load_time_ms": 786.21,
+    "preprocess_time_ms": 528.15,
+    "inference_time_ms": 224.71,
+    "format_time_ms": 0.24,
+    "end_to_end_ms": 1539.31
+  },
+  {
+    "case": "LIDC_0307_177_0000.nii.gz",
+    "load_time_ms": 1569.31,
+    "preprocess_time_ms": 1227.34,
+    "inference_time_ms": 6929.51,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 9726.4
+  },
+  {
+    "case": "LIDC_0308_178_0000.nii.gz",
+    "load_time_ms": 3306.13,
+    "preprocess_time_ms": 3084.04,
+    "inference_time_ms": 16224.43,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 22614.85
+  },
+  {
+    "case": "LIDC_0309_179_0000.nii.gz",
+    "load_time_ms": 1581.95,
+    "preprocess_time_ms": 1048.92,
+    "inference_time_ms": 4750.37,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 7381.49
+  },
+  {
+    "case": "LIDC_0310_180_0000.nii.gz",
+    "load_time_ms": 694.85,
+    "preprocess_time_ms": 511.5,
+    "inference_time_ms": 140.56,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 1347.14
+  },
+  {
+    "case": "LIDC_0311_181_0000.nii.gz",
+    "load_time_ms": 1316.14,
+    "preprocess_time_ms": 1004.32,
+    "inference_time_ms": 4686.29,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 7007.02
+  },
+  {
+    "case": "LIDC_0312_182_0000.nii.gz",
+    "load_time_ms": 1557.59,
+    "preprocess_time_ms": 1163.39,
+    "inference_time_ms": 4759.95,
+    "format_time_ms": 0.68,
+    "end_to_end_ms": 7481.61
+  },
+  {
+    "case": "LIDC_0313_183_0000.nii.gz",
+    "load_time_ms": 1527.48,
+    "preprocess_time_ms": 1237.99,
+    "inference_time_ms": 4717.44,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 7483.19
+  },
+  {
+    "case": "LIDC_0314_184_0000.nii.gz",
+    "load_time_ms": 1752.52,
+    "preprocess_time_ms": 1219.41,
+    "inference_time_ms": 7007.64,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 9979.82
+  },
+  {
+    "case": "LIDC_0315_185_0000.nii.gz",
+    "load_time_ms": 751.57,
+    "preprocess_time_ms": 552.16,
+    "inference_time_ms": 203.92,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1507.89
+  },
+  {
+    "case": "LIDC_0315_186_0000.nii.gz",
+    "load_time_ms": 796.53,
+    "preprocess_time_ms": 514.88,
+    "inference_time_ms": 188.28,
+    "format_time_ms": 0.33,
+    "end_to_end_ms": 1500.01
+  },
+  {
+    "case": "LIDC_0316_187_0000.nii.gz",
+    "load_time_ms": 1714.08,
+    "preprocess_time_ms": 996.17,
+    "inference_time_ms": 4707.87,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 7418.4
+  },
+  {
+    "case": "LIDC_0317_188_0000.nii.gz",
+    "load_time_ms": 970.69,
+    "preprocess_time_ms": 606.8,
+    "inference_time_ms": 167.81,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 1745.55
+  },
+  {
+    "case": "LIDC_0318_189_0000.nii.gz",
+    "load_time_ms": 3619.2,
+    "preprocess_time_ms": 2062.64,
+    "inference_time_ms": 11585.4,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 17267.6
+  },
+  {
+    "case": "LIDC_0319_190_0000.nii.gz",
+    "load_time_ms": 1349.11,
+    "preprocess_time_ms": 874.85,
+    "inference_time_ms": 4761.17,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 6985.5
+  },
+  {
+    "case": "LIDC_0320_191_0000.nii.gz",
+    "load_time_ms": 1265.82,
+    "preprocess_time_ms": 824.8,
+    "inference_time_ms": 2384.92,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 4475.8
+  },
+  {
+    "case": "LIDC_0321_192_0000.nii.gz",
+    "load_time_ms": 1587.24,
+    "preprocess_time_ms": 1237.88,
+    "inference_time_ms": 6969.45,
+    "format_time_ms": 0.23,
+    "end_to_end_ms": 9794.8
+  },
+  {
+    "case": "LIDC_0322_193_0000.nii.gz",
+    "load_time_ms": 833.39,
+    "preprocess_time_ms": 581.44,
+    "inference_time_ms": 2429.29,
+    "format_time_ms": 0.34,
+    "end_to_end_ms": 3844.46
+  },
+  {
+    "case": "LIDC_0323_194_0000.nii.gz",
+    "load_time_ms": 650.97,
+    "preprocess_time_ms": 399.27,
+    "inference_time_ms": 137.89,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 1188.38
+  },
+  {
+    "case": "LIDC_0324_195_0000.nii.gz",
+    "load_time_ms": 1518.51,
+    "preprocess_time_ms": 1027.3,
+    "inference_time_ms": 4759.48,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 7305.66
+  },
+  {
+    "case": "LIDC_0325_196_0000.nii.gz",
+    "load_time_ms": 1771.69,
+    "preprocess_time_ms": 1341.44,
+    "inference_time_ms": 7067.51,
+    "format_time_ms": 0.25,
+    "end_to_end_ms": 10180.88
+  },
+  {
+    "case": "LIDC_0326_197_0000.nii.gz",
+    "load_time_ms": 1633.53,
+    "preprocess_time_ms": 1281.48,
+    "inference_time_ms": 6943.05,
+    "format_time_ms": 0.36,
+    "end_to_end_ms": 9858.43
+  },
+  {
+    "case": "LIDC_0327_198_0000.nii.gz",
+    "load_time_ms": 2986.86,
+    "preprocess_time_ms": 2782.21,
+    "inference_time_ms": 13974.48,
+    "format_time_ms": 0.43,
+    "end_to_end_ms": 19743.98
+  },
+  {
+    "case": "LIDC_0328_199_0000.nii.gz",
+    "load_time_ms": 3447.06,
+    "preprocess_time_ms": 2904.28,
+    "inference_time_ms": 13885.27,
+    "format_time_ms": 0.37,
+    "end_to_end_ms": 20236.97
+  }
+]

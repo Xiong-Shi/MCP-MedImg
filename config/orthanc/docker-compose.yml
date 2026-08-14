@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  orthanc:
+    image: orthancteam/orthanc:latest
+    container_name: mcp-medimg-orthanc
+    ports:
+      - "8042:8042"
+      - "4242:4242"
+    environment:
+      - DICOM_WEB_PLUGIN_ENABLED=true
+      - ORTHANC__DICOM_WEB__ENABLE=true
+      - ORTHANC__DICOM_WEB__ROOT=/dicom-web/
+      - ORTHANC__REMOTE_ACCESS_ALLOWED=true
+      - ORTHANC__AUTHENTICATION_ENABLED=false
+    volumes:
+      - ./data/orthanc-db:/var/lib/orthanc/db
+    restart: unless-stopped

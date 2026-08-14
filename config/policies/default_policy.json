@@ -1,0 +1,67 @@
+{
+    "permissions": {
+        "radiologist": [
+            "medical_image_analyze",
+            "medical_image_compare",
+            "verification_review",
+            "verification_finalize"
+        ],
+        "cardiologist": [
+            "medical_image_analyze",
+            "verification_review"
+        ],
+        "technician": [
+            "medical_image_analyze"
+        ],
+        "admin": [
+            "medical_image_analyze",
+            "medical_image_compare",
+            "verification_review",
+            "verification_finalize",
+            "model_register",
+            "model_deploy"
+        ],
+        "guest": []
+    },
+    "verification_rules": [
+        {
+            "modality": "CT",
+            "body_part": "CHEST",
+            "indication": "screening",
+            "inspection_type": "LUNG_CANCER_SCREENING",
+            "mode": "MANDATORY"
+        },
+        {
+            "modality": "CT",
+            "body_part": "CHEST",
+            "indication": "followup",
+            "inspection_type": "NODULE_FOLLOWUP",
+            "mode": "AUTO"
+        },
+        {
+            "modality": "MG",
+            "body_part": "BREAST",
+            "indication": "screening",
+            "inspection_type": "BREAST_SCREENING",
+            "mode": "MANDATORY"
+        },
+        {
+            "modality": "XR",
+            "body_part": "HAND",
+            "indication": "bone_age",
+            "inspection_type": "BONE_AGE_ASSESSMENT",
+            "mode": "ADVISORY"
+        }
+    ],
+    "users": {
+        "dr.smith": ["radiologist"],
+        "dr_smith": ["radiologist"],
+        "dr.jones": ["radiologist"],
+        "dr_jones": ["radiologist"],
+        "tech.lee": ["technician"],
+        "tech_lee": ["technician"],
+        "admin.wang": ["admin"],
+        "admin_wang": ["admin"],
+        "system": ["admin"]
+    }
+}

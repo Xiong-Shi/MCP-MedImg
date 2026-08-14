@@ -1,0 +1,162 @@
+[
+  {
+    "case": "la_003_0000.nii.gz",
+    "load_time_ms": 316.12,
+    "preprocess_time_ms": 282.67,
+    "inference_time_ms": 37860.18,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 38459.36
+  },
+  {
+    "case": "la_004_0000.nii.gz",
+    "load_time_ms": 293.59,
+    "preprocess_time_ms": 232.71,
+    "inference_time_ms": 30331.99,
+    "format_time_ms": 0.31,
+    "end_to_end_ms": 30858.59
+  },
+  {
+    "case": "la_005_0000.nii.gz",
+    "load_time_ms": 312.98,
+    "preprocess_time_ms": 265.62,
+    "inference_time_ms": 30687.46,
+    "format_time_ms": 0.46,
+    "end_to_end_ms": 31266.51
+  },
+  {
+    "case": "la_007_0000.nii.gz",
+    "load_time_ms": 336.12,
+    "preprocess_time_ms": 307.03,
+    "inference_time_ms": 44711.98,
+    "format_time_ms": 0.41,
+    "end_to_end_ms": 45355.54
+  },
+  {
+    "case": "la_009_0000.nii.gz",
+    "load_time_ms": 268.84,
+    "preprocess_time_ms": 206.52,
+    "inference_time_ms": 30358.66,
+    "format_time_ms": 0.26,
+    "end_to_end_ms": 30834.28
+  },
+  {
+    "case": "la_010_0000.nii.gz",
+    "load_time_ms": 313.36,
+    "preprocess_time_ms": 277.0,
+    "inference_time_ms": 30236.93,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 30827.68
+  },
+  {
+    "case": "la_011_0000.nii.gz",
+    "load_time_ms": 325.1,
+    "preprocess_time_ms": 268.07,
+    "inference_time_ms": 30490.85,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 31084.28
+  },
+  {
+    "case": "la_014_0000.nii.gz",
+    "load_time_ms": 324.03,
+    "preprocess_time_ms": 264.09,
+    "inference_time_ms": 36143.78,
+    "format_time_ms": 0.43,
+    "end_to_end_ms": 36732.33
+  },
+  {
+    "case": "la_016_0000.nii.gz",
+    "load_time_ms": 226.6,
+    "preprocess_time_ms": 179.97,
+    "inference_time_ms": 29758.34,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 30165.3
+  },
+  {
+    "case": "la_017_0000.nii.gz",
+    "load_time_ms": 303.19,
+    "preprocess_time_ms": 271.98,
+    "inference_time_ms": 30449.03,
+    "format_time_ms": 0.28,
+    "end_to_end_ms": 31024.48
+  },
+  {
+    "case": "la_018_0000.nii.gz",
+    "load_time_ms": 287.96,
+    "preprocess_time_ms": 274.33,
+    "inference_time_ms": 36072.25,
+    "format_time_ms": 0.27,
+    "end_to_end_ms": 36634.8
+  },
+  {
+    "case": "la_019_0000.nii.gz",
+    "load_time_ms": 257.11,
+    "preprocess_time_ms": 202.8,
+    "inference_time_ms": 30007.37,
+    "format_time_ms": 0.41,
+    "end_to_end_ms": 30467.69
+  },
+  {
+    "case": "la_020_0000.nii.gz",
+    "load_time_ms": 280.57,
+    "preprocess_time_ms": 233.1,
+    "inference_time_ms": 30041.22,
+    "format_time_ms": 0.41,
+    "end_to_end_ms": 30555.3
+  },
+  {
+    "case": "la_021_0000.nii.gz",
+    "load_time_ms": 264.83,
+    "preprocess_time_ms": 208.59,
+    "inference_time_ms": 30088.41,
+    "format_time_ms": 0.4,
+    "end_to_end_ms": 30562.22
+  },
+  {
+    "case": "la_022_0000.nii.gz",
+    "load_time_ms": 292.21,
+    "preprocess_time_ms": 231.39,
+    "inference_time_ms": 35710.83,
+    "format_time_ms": 0.3,
+    "end_to_end_ms": 36234.73
+  },
+  {
+    "case": "la_023_0000.nii.gz",
+    "load_time_ms": 292.37,
+    "preprocess_time_ms": 235.17,
+    "inference_time_ms": 29919.85,
+    "format_time_ms": 2.05,
+    "end_to_end_ms": 30449.45
+  },
+  {
+    "case": "la_024_0000.nii.gz",
+    "load_time_ms": 322.23,
+    "preprocess_time_ms": 268.64,
+    "inference_time_ms": 30606.79,
+    "format_time_ms": 0.38,
+    "end_to_end_ms": 31198.04
+  },
+  {
+    "case": "la_026_0000.nii.gz",
+    "load_time_ms": 312.13,
+    "preprocess_time_ms": 274.91,
+    "inference_time_ms": 30223.64,
+    "format_time_ms": 0.43,
+    "end_to_end_ms": 30811.11
+  },
+  {
+    "case": "la_029_0000.nii.gz",
+    "load_time_ms": 284.7,
+    "preprocess_time_ms": 228.56,
+    "inference_time_ms": 30067.03,
+    "format_time_ms": 0.4,
+    "end_to_end_ms": 30580.69
+  },
+  {
+    "case": "la_030_0000.nii.gz",
+    "load_time_ms": 281.53,
+    "preprocess_time_ms": 235.38,
+    "inference_time_ms": 30339.19,
+    "format_time_ms": 0.39,
+    "end_to_end_ms": 30856.49
+  }
+]

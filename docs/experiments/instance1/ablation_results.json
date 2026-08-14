@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-08-05 16:12:18",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "inference_baseline": {
+    "mean_ms": 9.280718863010406,
+    "std_ms": 0.017870469717908163,
+    "min_ms": 9.259842336177826,
+    "max_ms": 9.318657219409943
+  },
+  "layer_delays": {
+    "L1_transport": 45,
+    "L2_security": 8,
+    "L3_orchestration": 12,
+    "L4_semantics": 35
+  },
+  "ablation_results": {
+    "Full": [
+      {
+        "run": 1,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 100,
+        "total_ms": 108.53345999953855
+      },
+      {
+        "run": 2,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 100,
+        "total_ms": 116.96022656015339
+      },
+      {
+        "run": 3,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 100,
+        "total_ms": 112.10231008494698
+      },
+      {
+        "run": 4,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 100,
+        "total_ms": 107.6287431197448
+      },
+      {
+        "run": 5,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 100,
+        "total_ms": 114.85014031459535
+      }
+    ],
+    "No-Security": [
+      {
+        "run": 1,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 92,
+        "total_ms": 101.76301483456233
+      },
+      {
+        "run": 2,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 92,
+        "total_ms": 94.56171811981329
+      },
+      {
+        "run": 3,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 92,
+        "total_ms": 91.2208946384082
+      },
+      {
+        "run": 4,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 92,
+        "total_ms": 96.84943625450073
+      },
+      {
+        "run": 5,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 92,
+        "total_ms": 98.29632233319721
+      }
+    ],
+    "No-Orchestration": [
+      {
+        "run": 1,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 88,
+        "total_ms": 99.70407547014537
+      },
+      {
+        "run": 2,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 88,
+        "total_ms": 89.84778421370845
+      },
+      {
+        "run": 3,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 88,
+        "total_ms": 84.49459974133967
+      },
+      {
+        "run": 4,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 88,
+        "total_ms": 110.58803492591365
+      },
+      {
+        "run": 5,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 88,
+        "total_ms": 98.96329544882414
+      }
+    ],
+    "L1-Only": [
+      {
+        "run": 1,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 45,
+        "total_ms": 48.34032820065966
+      },
+      {
+        "run": 2,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 45,
+        "total_ms": 59.00645139673927
+      },
+      {
+        "run": 3,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 45,
+        "total_ms": 56.76561806440352
+      },
+      {
+        "run": 4,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 45,
+        "total_ms": 57.07351157294695
+      },
+      {
+        "run": 5,
+        "inference_ms": 9.280718863010406,
+        "protocol_overhead_ms": 45,
+        "total_ms": 55.68611385211275
+      }
+    ]
+  }
+}

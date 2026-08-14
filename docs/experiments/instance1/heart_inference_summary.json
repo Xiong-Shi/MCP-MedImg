@@ -1,0 +1,48 @@
+{
+  "total_cases": 20,
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4090 D",
+  "model": "nnUNetv2 MSD Heart (5-fold ensemble)",
+  "dataset": "MSD Task02 Heart",
+  "init_time_s": 2.79,
+  "load_time": {
+    "mean": 294.78,
+    "std": 26.38,
+    "p50": 292.98,
+    "p99": 334.03,
+    "min": 226.6,
+    "max": 336.12
+  },
+  "preprocess_time": {
+    "mean": 247.43,
+    "std": 31.85,
+    "p50": 249.73,
+    "p99": 302.4,
+    "min": 179.97,
+    "max": 307.03
+  },
+  "inference_time": {
+    "mean": 32205.29,
+    "std": 3807.97,
+    "p50": 30348.92,
+    "p99": 43410.14,
+    "min": 29758.34,
+    "max": 44711.98
+  },
+  "format_time": {
+    "mean": 0.45,
+    "std": 0.37,
+    "p50": 0.39,
+    "p99": 1.75,
+    "min": 0.26,
+    "max": 2.05
+  },
+  "end_to_end": {
+    "mean": 32747.94,
+    "std": 3838.82,
+    "p50": 30857.54,
+    "p99": 44045.27,
+    "min": 30165.3,
+    "max": 45355.54
+  }
+}
