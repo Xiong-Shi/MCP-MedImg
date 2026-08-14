@@ -1,6 +1,7 @@
 # MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+<!-- TODO: Add Zenodo DOI badge after registration -->
 
 > Reference implementation for the paper:  
 > "MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol"
@@ -24,8 +25,8 @@ MCP-MedImg extends the Model Context Protocol (MCP) with a four-layer protocol s
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/bailianfa/MedImg.git
-cd MedImg
+git clone https://github.com/bailianfa/MCP-MedImg.git
+cd MCP-MedImg
 pip install -r requirements.txt
 ```
 
