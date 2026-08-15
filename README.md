@@ -56,8 +56,8 @@ Due to file size limits, pretrained model weights and full preprocessed datasets
 
 | Asset | Size | Description |
 |-------|------|-------------|
-| nnU-Net 5-fold ensemble (MSD Heart) | ~1.2 GB | Trained weights, mean Dice 0.9325 |
-| LIDC-IDRI preprocessed (n=200) | ~8 GB | HU-normalized, resampled CT volumes |
+| nnU-Net 5-fold ensemble (MSD Heart) | ~1.2 GB | Trained weights, mean Dice 0.9324±0.0062 |
+| LIDC-IDRI preprocessed (n=200) | ~8 GB | HU-normalized, resampled CT volumes (inference uses randomly initialized model, not trained weights) |
 | MSD Heart preprocessed (n=20) | ~1 GB | nnU-Net v2 auto-preprocessed |
 | Benchmark logs | ~50 MB | Table 18-21 original timing logs |
 
@@ -70,7 +70,7 @@ bash scripts/download_pretrained_weights.sh
 
 | Metric | Value | Details |
 |--------|-------|---------|
-| MSD Heart 5-fold Dice | **0.9325 +/- 0.0064** | nnU-Net v2, 1000 epochs per fold |
+| MSD Heart 5-fold Dice | **0.9324 ± 0.0062** | nnU-Net v2, 1000 epochs per fold |
 | LIDC Inference (n=200) | **5.40s** mean end-to-end | RTX 4090D, 22.58M params |
 | Protocol Overhead | **567.47ms** (99.8% L1 Transport) | n=98, 3.41% measurement error |
 | Unit Tests | **132 passing, 3 skipped** | 10 validation scenarios |
