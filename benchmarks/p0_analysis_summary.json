@@ -1,0 +1,121 @@
+{
+  "lidc_analysis": {
+    "total_cases": 200,
+    "full_stats": {
+      "inference_mean_ms": 3373.6,
+      "inference_std_ms": 3514.7,
+      "inference_cv_pct": 104.2,
+      "e2e_mean_ms": 5401.4,
+      "e2e_p99_ms": 22615.1
+    },
+    "correlations": {
+      "load_vs_inference_pearson_r": 0.9552,
+      "load_vs_inference_spearman_rho": 0.8261,
+      "load_vs_e2e_pearson_r": 0.9716,
+      "preprocess_vs_inference_pearson_r": 0.9678
+    },
+    "subgroup_quartiles": {
+      "Q1_small": {
+        "count": 50,
+        "inference_mean_ms": 222.0,
+        "load_mean_ms": 757.6,
+        "e2e_mean_ms": 1507.1
+      },
+      "Q4_xlarge": {
+        "count": 50,
+        "inference_mean_ms": 7962.9,
+        "load_mean_ms": 2023.1,
+        "e2e_mean_ms": 11572.0
+      }
+    },
+    "outliers": {
+      "iqr_upper_fence_ms": 8272.1,
+      "count": 15,
+      "pct": 7.5
+    },
+    "robust_stats_excl_outliers": {
+      "inference_mean_ms": 2556.9,
+      "inference_std_ms": 1941.1,
+      "inference_cv_pct": 75.9,
+      "e2e_mean_ms": 4300.3,
+      "e2e_std_ms": 2502.2,
+      "e2e_cv_pct": 58.2
+    },
+    "bimodality": {
+      "direct_inference_cases": 49,
+      "direct_inference_mean_ms": 178.6,
+      "sliding_window_cases": 151,
+      "sliding_window_mean_ms": 4410.4,
+      "transitional_cases": 0
+    },
+    "root_cause": "Latency variance is driven by input volume heterogeneity: small volumes fit within a single 128x128x128 patch (direct inference, mean 178.6ms), while large volumes trigger sliding-window multi-patch inference (mean 4410.4ms). The distribution is strictly bimodal with zero transitional cases. Load time serves as a strong proxy for volume size (Pearson r=0.9552 with inference). The coefficient of variation drops from 104.2% to 75.9% after removing 15 IQR outliers (7.5%)."
+  },
+  "proto_analysis": {
+    "total_cases": 98,
+    "error_stats": {
+      "mean_pct": 3.41,
+      "std_pct": 4.54,
+      "median_pct": 0.61,
+      "max_pct": 24.44,
+      "p99_pct": 16.86
+    },
+    "top5_error_cases": [
+      {
+        "volume": "3.000000-Recon 2 CHEST-67131.nii.gz",
+        "error_pct": 24.44,
+        "wado_mb": 50.0,
+        "g0_ms": 145.2,
+        "g4_ms": 345.1
+      },
+      {
+        "volume": "2.000000-CHEST-01585.nii.gz",
+        "error_pct": 16.62,
+        "wado_mb": 70.1,
+        "g0_ms": 156.1,
+        "g4_ms": 607.9
+      },
+      {
+        "volume": "3112.000000-NA-40121.nii.gz",
+        "error_pct": 13.96,
+        "wado_mb": 60.5,
+        "g0_ms": 91.1,
+        "g4_ms": 393.0
+      },
+      {
+        "volume": "3185.000000-NA-66614.nii.gz",
+        "error_pct": 13.33,
+        "wado_mb": 53.7,
+        "g0_ms": 103.4,
+        "g4_ms": 487.5
+      },
+      {
+        "volume": "2.000000-BOTTOM TO TOP-22938.nii.gz",
+        "error_pct": 11.92,
+        "wado_mb": 112.7,
+        "g0_ms": 145.2,
+        "g4_ms": 823.9
+      }
+    ],
+    "robustness": {
+      "full_mean_error_pct": 3.41,
+      "remove_top1_mean_pct": 3.19,
+      "remove_top3_mean_pct": 2.94,
+      "remove_top5_mean_pct": 2.73
+    },
+    "iqr_outliers": {
+      "upper_fence_pct": 15.29,
+      "count": 2,
+      "after_removal_mean_pct": 3.05,
+      "after_removal_max_pct": 13.96
+    },
+    "g0_vs_g4inf": {
+      "g0_mean_ms": 76.78,
+      "g4_inf_mean_ms": 51.47,
+      "diff_mean_ms": 25.31,
+      "g0_vs_wado_r": -0.0693,
+      "g0_vs_rawvoxel_r": -0.0684,
+      "explanation": "G0 independent measurement yields higher values (mean 76.78ms vs 51.47ms) due to GPU cold-start / warm-up effects. The 25.31ms difference is uncorrelated with input size (G0 vs WADO_MB r=-0.069, G0 vs RawVoxel r=-0.068), confirming it reflects measurement methodology rather than protocol contamination."
+    },
+    "root_cause": "The 24.44% max error comes from a single case (Recon 2 CHEST, 50MB WADO transfer) where G0 baseline measurement jittered (G0=145.2ms vs G4=345.1ms). Error correlates strongly with G0 instability (Spearman rho=0.7432), not with protocol layers. After removing top-1 outlier, mean error drops to 3.19%. L2-L4 layers remain <1ms across all cases, confirming protocol overhead is dominated by L1 transport (WADO retrieval)."
+  }
+}

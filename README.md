@@ -75,7 +75,8 @@ bash scripts/download_pretrained_weights.sh
 | Protocol Overhead | **567.47ms** (99.8% L1 Transport) | n=98, 3.41% measurement error |
 | Unit Tests | **134 passing, 1 skipped** | 10 validation scenarios |
 
-## Security & Audit
+**Analysis Figures**: Detailed analysis charts (LIDC bimodal distribution, PROTO error robustness) are available in the Zenodo dataset:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21941869.svg)](https://doi.org/10.5281/zenodo.21941869)
 
 This implementation addresses the MCP-38 threat taxonomy for medical imaging:
 - Hierarchical PHI de-identification (Patient / Department / System level)

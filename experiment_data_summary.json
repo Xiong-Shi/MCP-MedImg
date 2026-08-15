@@ -1,0 +1,251 @@
+{
+  "project": "MCP-Medimg",
+  "generated": "2026-08-14T17:57:00+08:00",
+  "experiments": {
+    "EXP-HEART-001": {
+      "name": "MSD Heart 5-Fold Cross-Validation",
+      "dataset": "MSD Task02 Heart",
+      "task": "Left atrium segmentation",
+      "framework": "nnU-Net v2 (3d_fullres)",
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 4090D",
+        "vram_gb": 24,
+        "cuda": "12.1",
+        "pytorch": "2.3.0"
+      },
+      "training_config": {
+        "folds": 5,
+        "epochs_per_fold": 1000,
+        "batch_size": 2,
+        "patch_size": [80, 192, 160],
+        "execution_mode": "serial"
+      },
+      "results": {
+        "dice_scores": {
+          "fold_0": 0.9381,
+          "fold_1": 0.9323,
+          "fold_2": 0.9259,
+          "fold_3": 0.9410,
+          "fold_4": 0.9249,
+          "mean": 0.9324,
+          "std": 0.0062
+        },
+        "completed_at": "2026-08-08T23:03:00+08:00",
+        "training_duration_approx_days": 2.5
+      },
+      "artifacts": {
+        "weights": "checkpoint_final_fold{0-4}.pth (5 files, 235.3MB each)",
+        "logs": "training_logs/ (8 files)",
+        "configs": "config/nnUNetPlans.json + config/splits_final.json"
+      },
+      "paper_tables": ["Dice score table (Section 5.2)"]
+    },
+    "EXP-LIDC-002": {
+      "name": "LIDC Real Inference Latency Benchmark",
+      "dataset": "LIDC-IDRI (converted to NIfTI)",
+      "cases": 200,
+      "model": {
+        "architecture": "SimpleUNet3D",
+        "parameters": 22575362,
+        "parameters_approx_million": 22.6,
+        "defined_in": "scripts/real_inference.py"
+      },
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "device": "cuda"
+      },
+      "results": {
+        "load_time_ms": {
+          "mean": 1158.1, "std": 650.5, "p50": 853.12, "p99": 3560.82,
+          "min": 584.13, "max": 4082.83
+        },
+        "preprocess_time_ms": {
+          "mean": 869.33, "std": 549.24, "p50": 627.62, "p99": 2906.08,
+          "min": 399.27, "max": 3767.7
+        },
+        "inference_time_ms": {
+          "mean": 3373.62, "std": 3514.66, "p50": 2406.51, "p99": 16236.85,
+          "min": 134.14, "max": 18430.96
+        },
+        "format_time_ms": {
+          "mean": 0.33, "std": 0.13, "p50": 0.29, "p99": 0.82,
+          "min": 0.23, "max": 1.11
+        },
+        "end_to_end_ms": {
+          "mean": 5401.38, "std": 4677.65, "p50": 3875.68, "p99": 22615.06,
+          "min": 1137.6, "max": 26281.93
+        }
+      },
+      "artifacts": {
+        "summary": "benchmark_results/lidc_real_inference_summary.json",
+        "details": "benchmark_results/lidc_real_inference_details.json",
+        "reproduction_script": "scripts/real_inference.py"
+      },
+      "paper_tables": ["Table 18 (inference latency comparison)"]
+    },
+    "EXP-HEART-003": {
+      "name": "MSD Heart End-to-End Inference Latency",
+      "dataset": "MSD Task02 Heart",
+      "cases": 10,
+      "model": "nnU-Net v2 5-fold ensemble (3d_fullres)",
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "device": "cuda"
+      },
+      "results": {
+        "load_time_ms": {
+          "mean": 361.81, "std": 195.85, "p50": 296.58, "p99": 744.59,
+          "min": 189.83, "max": 745.46
+        },
+        "preprocess_inference_time_ms": {
+          "mean": 17838.64, "std": 4692.77, "p50": 18827.88, "p99": 27251.72,
+          "min": 12811.92, "max": 27791.35
+        },
+        "end_to_end_ms": {
+          "mean": 18200.45, "std": 4786.67, "p50": 19096.78, "p99": 27601.89,
+          "min": 13001.74, "max": 28103.38
+        }
+      },
+      "artifacts": {
+        "summary": "benchmark_results/heart_real_inference_summary.json",
+        "reproduction_script": "NNUNetPredictor + heart_inference_benchmark.py (deployed on instance1)"
+      },
+      "paper_tables": ["Table 18 (MSD Heart inference latency)"]
+    },
+    "EXP-HEART-004": {
+      "name": "MSD Heart Single-Fold End-to-End Inference Latency",
+      "dataset": "MSD Task02 Heart",
+      "cases": 10,
+      "model": "nnU-Net v2 single fold (fold_0, 3d_fullres)",
+      "hardware": {
+        "gpu": "NVIDIA GeForce RTX 4090 D",
+        "device": "cuda"
+      },
+      "results": {
+        "load_time_ms": {
+          "mean": 375.63, "std": 196.69, "p50": 292.07, "p99": 774.97,
+          "min": 216.86, "max": 778.76
+        },
+        "preprocess_inference_time_ms": {
+          "mean": 6123.29, "std": 3673.38, "p50": 4133.81, "p99": 15130.68,
+          "min": 3116.27, "max": 15330.41
+        },
+        "end_to_end_ms": {
+          "mean": 6498.92, "std": 3819.17, "p50": 4722.28, "p99": 15909.64,
+          "min": 3347.65, "max": 16109.17
+        }
+      },
+      "artifacts": {
+        "summary": "benchmark_results/heart_single_fold_inference_summary.json",
+        "reproduction_script": "NNUNetPredictor + heart_inference_benchmark.py (deployed on instance1)"
+      },
+      "paper_tables": ["Table 18 (MSD Heart inference latency baseline)"]
+    },
+    "EXP-PROTO-004": {
+      "name": "MCP Protocol Overhead Benchmark",
+      "method": "Probe-based direct measurement (no differential subtraction)",
+      "cases": 98,
+      "model_params": 22575362,
+      "groups": {
+        "G0_baseline": {
+          "description": "Raw inference only",
+          "mean_ms": 76.78,
+          "std_ms": 64.66,
+          "median_ms": 38.06
+        },
+        "G4_full_stack": {
+          "description": "Full MCP stack (L1+L2+L3+L4)",
+          "mean_ms": 618.94
+        },
+        "protocol_overhead": {
+          "mean_ms": 567.47,
+          "std_ms": 245.15
+        },
+        "inference_only": {
+          "mean_ms": 51.47
+        }
+      },
+      "layer_breakdown": {
+        "L1_transport": {
+          "mean_ms": 566.35,
+          "std_ms": 245.14,
+          "percentage": 99.80,
+          "sub_ops": {
+            "L1_query_ms": 327.23,
+            "L1_fetch_ms": 239.12
+          }
+        },
+        "L2_security": {
+          "mean_ms": 0.36,
+          "std_ms": 0.07,
+          "percentage": 0.06,
+          "sub_ops": {
+            "L2_deid_ms": 0.03,
+            "L2_audit_start_ms": 0.18,
+            "L2_audit_complete_ms": 0.16
+          }
+        },
+        "L3_orchestration": {
+          "mean_ms": 0.44,
+          "std_ms": 0.17,
+          "percentage": 0.08,
+          "sub_ops": {
+            "L3_registry_ms": 0.004,
+            "L3_formatter_ms": 0.43,
+            "L3_sr_ms": 0.002
+          }
+        },
+        "L4_semantics": {
+          "mean_ms": 0.32,
+          "std_ms": 0.10,
+          "percentage": 0.06,
+          "sub_ops": {
+            "L4_inspection_ms": 0.31,
+            "L4_verification_ms": 0.001,
+            "L4_state_ms": 0.004
+          }
+        }
+      },
+      "wado_stats": {
+        "mean_mb": 82.51,
+        "mean_instances": 151.45
+      },
+      "correlation": {
+        "L1_vs_wado_bytes": {
+          "spearman_rho": 0.8717,
+          "p_value": 1.68e-31,
+          "interpretation": "Strong positive correlation: L1 latency dominated by WADO transfer size"
+        }
+      },
+      "validation": {
+        "mean_error_pct": 3.41,
+        "max_error_pct": 24.44,
+        "l2_all_positive": true,
+        "l3_all_positive": true,
+        "l4_all_positive": true,
+        "l4_max_ms": 0.98
+      },
+      "artifacts": {
+        "results": "benchmark_results/protocol_overhead_results_v4.json",
+        "probe_script": "scripts/script_protocol_overhead_probe.py",
+        "reproduction": "scripts/reproduce_protocol_overhead.sh"
+      },
+      "paper_tables": ["Table 18 (G0/G4 comparison)", "Table 20 (layer breakdown)", "Table 21 (WADO stats)"]
+    }
+  },
+  "data_completeness": {
+    "msd_heart": {
+      "dice_scores": "complete (5-fold, mean=0.9324)",
+      "model_weights": "complete (5 checkpoints, 235.3MB each)",
+      "training_logs": "complete (8 files)",
+      "inference_latency": "complete (10 cases, end-to-end mean=18200.45ms, EXP-HEART-003, 2026-08-14)",
+      "inference_baseline": "complete (10 cases, single-fold mean=6498.92ms, EXP-HEART-004, 2026-08-14)"
+    },
+    "lidc": {
+      "inference_latency": "complete (200 cases, end-to-end + per-stage)",
+      "protocol_overhead": "complete (98 cases, G0-G4, 4-layer breakdown)",
+      "model_weights": "NOT INCLUDED - architecture defined in script, focus is latency not accuracy",
+      "dataset": "NOT INCLUDED - license restriction (TCIA)"
+    }
+  }
+}

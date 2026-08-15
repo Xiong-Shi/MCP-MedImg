@@ -1,0 +1,287 @@
+{
+  "project": "MCP-Medimg",
+  "version": "2.0.0",
+  "created": "2026-08-14T17:43:00+08:00",
+  "updated": "2026-08-15T11:00:00+08:00",
+  "authors": [
+    {
+      "name": "Xiong Shi",
+      "orcid": "0009-0006-2745-491X"
+    }
+  ],
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4090D (24GB VRAM)",
+    "cpu": "AMD EPYC 7K62 64-Core",
+    "platform": "AutoDL Cloud (China West B)"
+  },
+  "software": {
+    "cuda": "12.1",
+    "pytorch": "2.3.0",
+    "nnunet": "v2",
+    "os": "Ubuntu 22.04 LTS"
+  },
+  "experiments": [
+    {
+      "name": "MSD Heart 5-Fold Cross-Validation",
+      "experiment_id": "EXP-HEART-001",
+      "dataset": "MSD Task02 Heart (left atrium segmentation)",
+      "cases": 20,
+      "folds": 5,
+      "dice_scores": {
+        "fold_0": 0.9381,
+        "fold_1": 0.9323,
+        "fold_2": 0.9259,
+        "fold_3": 0.9410,
+        "fold_4": 0.9249,
+        "mean": 0.9324,
+        "std": 0.0062
+      },
+      "training_duration": "~2.5 days (serial execution)",
+      "completed": "2026-08-08T23:03:00+08:00",
+      "instance": "AutoDL Instance 1 (connect.westc.seetacloud.com:13162)"
+    },
+    {
+      "name": "MSD Heart End-to-End Inference Latency",
+      "experiment_id": "EXP-HEART-003",
+      "dataset": "MSD Task02 Heart",
+      "cases": 10,
+      "model": "nnU-Net v2 5-fold ensemble (3d_fullres)",
+      "device": "NVIDIA GeForce RTX 4090 D",
+      "cuda": "12.1",
+      "pytorch": "2.3.0+cu121",
+      "model_loading_ms": 3067.56,
+      "end_to_end_latency_ms": {
+        "mean": 18200.45,
+        "std": 4786.67,
+        "p50": 19096.78,
+        "p99": 27601.89,
+        "min": 13001.74,
+        "max": 28103.38
+      },
+      "completed": "2026-08-14",
+      "instance": "AutoDL Instance 1 (connect.westc.seetacloud.com:13162)"
+    },
+    {
+      "name": "MSD Heart Single-Fold End-to-End Inference Latency",
+      "experiment_id": "EXP-HEART-004",
+      "dataset": "MSD Task02 Heart",
+      "cases": 10,
+      "fold": "fold_0 only (baseline comparison)",
+      "model": "nnU-Net v2 single fold (3d_fullres)",
+      "device": "NVIDIA GeForce RTX 4090 D",
+      "cuda": "12.1",
+      "pytorch": "2.3.0+cu121",
+      "model_loading_ms": 2422.17,
+      "end_to_end_latency_ms": {
+        "mean": 6498.92,
+        "std": 3819.17,
+        "p50": 4722.28,
+        "p99": 15909.64,
+        "min": 3347.65,
+        "max": 16109.17
+      },
+      "load_time_ms": {
+        "mean": 375.63,
+        "std": 196.69,
+        "p50": 292.07,
+        "p99": 774.97,
+        "min": 216.86,
+        "max": 778.76
+      },
+      "preprocess_inference_time_ms": {
+        "mean": 6123.29,
+        "std": 3673.38,
+        "p50": 4133.81,
+        "p99": 15130.68,
+        "min": 3116.27,
+        "max": 15330.41
+      },
+      "completed": "2026-08-14",
+      "instance": "AutoDL Instance 1 (connect.westc.seetacloud.com:13162)",
+      "comparison_note": "5-fold ensemble (EXP-HEART-003) is 2.80x slower than single-fold (EXP-HEART-004): 18200.45ms vs 6498.92ms"
+    },
+    {
+      "name": "LIDC Real Inference Latency Benchmark",
+      "experiment_id": "EXP-LIDC-002",
+      "dataset": "LIDC-IDRI (converted to NIfTI, 200 cases)",
+      "cases": 200,
+      "model": "SimpleUNet3D (22,575,362 params, ~22.6M)",
+      "device": "NVIDIA GeForce RTX 4090 D",
+      "end_to_end_latency_ms": {
+        "mean": 5401.38,
+        "std": 4677.65,
+        "p50": 3875.68,
+        "p99": 22615.06,
+        "min": 1137.6,
+        "max": 26281.93
+      },
+      "inference_time_ms": {
+        "mean": 3373.62,
+        "std": 3514.66,
+        "p50": 2406.51,
+        "p99": 16236.85
+      },
+      "load_time_ms": {
+        "mean": 1158.1,
+        "p50": 853.12,
+        "p99": 3560.82
+      },
+      "preprocess_time_ms": {
+        "mean": 869.33,
+        "p50": 627.62,
+        "p99": 2906.08
+      },
+      "completed": "2026-08-06",
+      "instance": "AutoDL Instance 2 (connect.westc.seetacloud.com:56436, now offline)"
+    },
+    {
+      "name": "MCP Protocol Overhead Benchmark",
+      "experiment_id": "EXP-PROTO-004",
+      "description": "Probe-based direct measurement, no differential subtraction",
+      "model_params": 22575362,
+      "cases": 98,
+      "groups": {
+        "G0_baseline_mean_ms": 76.78,
+        "G0_baseline_std_ms": 64.66,
+        "G4_full_stack_mean_ms": 618.94,
+        "protocol_overhead_mean_ms": 567.47,
+        "protocol_overhead_std_ms": 245.15,
+        "inference_mean_ms": 51.47
+      },
+      "layer_means_ms": {
+        "L1_transport": 566.35,
+        "L2_security": 0.36,
+        "L3_orchestration": 0.44,
+        "L4_semantics": 0.32
+      },
+      "sub_layer_means_ms": {
+        "L1_query": 327.23,
+        "L1_fetch": 239.12,
+        "L2_deid": 0.03,
+        "L2_audit_start": 0.18,
+        "L2_audit_complete": 0.16,
+        "L3_registry": 0.004,
+        "L3_formatter": 0.43,
+        "L3_sr": 0.002,
+        "L4_inspection": 0.31,
+        "L4_verification": 0.001,
+        "L4_state": 0.004
+      },
+      "wado_mean_mb": 82.51,
+      "wado_mean_instances": 151.45,
+      "validation": {
+        "mean_error_pct": 3.41,
+        "max_error_pct": 24.44,
+        "l2_all_positive": true,
+        "l3_all_positive": true,
+        "l4_all_positive": true
+      },
+      "completed": "2026-08-06",
+      "instance": "AutoDL Instance 2 (connect.westc.seetacloud.com:56436, now offline)"
+    }
+  ],
+  "files": {
+    "model_weights": {
+      "checkpoint_final_fold0.pth": {
+        "size_bytes": 246736112,
+        "size_mb": 235.3,
+        "sha256": "c3418c12213ebc1d3628ac147f5c6ece25725c2dd88d759ad57ab88669422099"
+      },
+      "checkpoint_final_fold1.pth": {
+        "size_bytes": 246736432,
+        "size_mb": 235.3,
+        "sha256": "a3d060f9a2245bbc24c904f60be3249802a6e88a4ea366b7fcbb091aff0abc4d"
+      },
+      "checkpoint_final_fold2.pth": {
+        "size_bytes": 246736368,
+        "size_mb": 235.3,
+        "sha256": "90dd297146955afbc9397e33238cf394423290b308219afefce6e7ddbf7eca68"
+      },
+      "checkpoint_final_fold3.pth": {
+        "size_bytes": 246736048,
+        "size_mb": 235.3,
+        "sha256": "f3c134d4e9b395b36d0b504b0cb78cd5ca2ad84bcf9f3c35848a78c0ef13b1f6"
+      },
+      "checkpoint_final_fold4.pth": {
+        "size_bytes": 246736560,
+        "size_mb": 235.3,
+        "sha256": "36007b09c83dbdc15963122a4257c80de4d271db643ba3711f72c17b8ceb46bc"
+      }
+    },
+    "training_logs": [
+      "training_logs/serial_train.log",
+      "training_logs/train_fold_0.log",
+      "training_logs/train_fold_1.log",
+      "training_logs/train_fold_2.log",
+      "training_logs/train_fold_3.log",
+      "training_logs/train_fold_4.log",
+      "training_logs/setup_nnunet.log",
+      "training_logs/preprocess_final.log"
+    ],
+    "benchmark_results": {
+      "heart_real_inference_summary.json": {
+        "size_bytes": 1736,
+        "sha256": "ec05fd60e0cbfe6b0640788bf2d82a93960fb0a8dd7363e1949041eec8e8ddf7",
+        "description": "MSD Heart 10-case end-to-end inference latency (EXP-HEART-003)"
+      },
+      "heart_single_fold_inference_summary.json": {
+        "size_bytes": 2585,
+        "sha256": "63fd9f1709bcc3d9b73b8b6448452f245f1b92c287d2f38823e8f51446429143",
+        "description": "MSD Heart 10-case single-fold (fold_0) end-to-end inference latency (EXP-HEART-004)"
+      },
+      "lidc_real_inference_summary.json": {
+        "size_bytes": 813,
+        "sha256": "6a4bd446311fe6d733693dfe43ebba9913d6738363d3555d2862fb34dce89953",
+        "description": "LIDC 200-case inference latency summary statistics"
+      },
+      "lidc_real_inference_details.json": {
+        "size_bytes": 40612,
+        "sha256": "98189a95b836fbb31ce1f4718797a4dcd1c6be722e2222945664cf1cb88d8b57",
+        "description": "LIDC 200-case per-case detailed inference results"
+      },
+      "protocol_overhead_results_v4.json": {
+        "size_bytes": 132087,
+        "sha256": "e3abd76b716d152a4e130cbae9d9af38a23968bd636bef6831b09041f2146da8",
+        "description": "MCP protocol overhead benchmark (98 cases, G0-G4 groups)"
+      },
+      "p0_analysis_summary.json": {
+        "size_bytes": 4274,
+        "sha256": "601cbc081827a626fbb1b667ac0fd7619c238cbf390683f7b55b60c8f5a9ba70",
+        "description": "P0 root-cause analysis summary (LIDC bimodality + PROTO error)"
+      },
+      "figures/lidc_latency_bimodal_analysis.png": {
+        "size_bytes": 245203,
+        "sha256": "df6eed707fdf00e55546cdb956c5a8ba35d2f47dda0d43930d5e8c577cbe3efd",
+        "description": "LIDC inference latency bimodal distribution and quartile analysis (n=200)"
+      },
+      "figures/proto_validation_error_analysis.png": {
+        "size_bytes": 241624,
+        "sha256": "67b7f9fb1e4968d2d94e13b5aa549ec42c371882443e6cdd3a0a25551338bd2e",
+        "description": "PROTO-004 validation error robustness analysis (n=98)"
+      }
+    },
+    "configs": [
+      "config/nnUNetPlans.json",
+      "config/splits_final.json",
+      "configs/policy.json"
+    ],
+    "scripts": [
+      "scripts/benchmark_gpu.py",
+      "scripts/benchmark_inference.py",
+      "scripts/real_inference.py",
+      "scripts/reproduce_lidc_benchmark.sh",
+      "scripts/reproduce_protocol_overhead.sh",
+      "scripts/script_protocol_overhead_probe.py",
+      "scripts/script_protocol_overhead_benchmark.py",
+      "scripts/convert_lidc_to_nifti.py"
+    ],
+    "source_code": "src/",
+    "tests": "tests/",
+    "local_scripts": "local_scripts/"
+  },
+  "notes": {
+    "lidc_model_weights": "LIDC model weights are NOT included. The SimpleUNet3D architecture (22.6M params) is fully defined in scripts/real_inference.py; the model was randomly initialized as the experiment focuses on inference latency benchmarking of the protocol stack, not segmentation accuracy.",
+    "msd_heart_model_weights": "5-fold MSD Heart model weights ARE included (checkpoint_final_fold{0-4}.pth, ~235.3MB each).",
+    "datasets": "Neither MSD Task02 Heart nor LIDC-IDRI datasets are included due to license restrictions. Download links and preprocessing instructions are provided in README.md."
+  }
+}
