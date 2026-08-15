@@ -40,7 +40,7 @@ docker-compose -f config/orthanc/docker-compose.yml up -d
 ### 3. Run Unit Tests (Protocol Validation)
 ```bash
 pytest tests/ -v --tb=short
-# Expected: 134 passing tests across 10 validation scenarios
+# Expected: 132 passing, 3 skipped across 10 validation scenarios
 ```
 
 ### 4. Run Benchmarks
@@ -73,7 +73,7 @@ bash scripts/download_pretrained_weights.sh
 | MSD Heart 5-fold Dice | **0.9325 +/- 0.0064** | nnU-Net v2, 1000 epochs per fold |
 | LIDC Inference (n=200) | **5.40s** mean end-to-end | RTX 4090D, 22.58M params |
 | Protocol Overhead | **567.47ms** (99.8% L1 Transport) | n=98, 3.41% measurement error |
-| Unit Tests | **134 passing, 1 skipped** | 10 validation scenarios |
+| Unit Tests | **132 passing, 3 skipped** | 10 validation scenarios |
 
 **Analysis Figures**: Detailed analysis charts (LIDC bimodal distribution, PROTO error robustness) are available in the Zenodo dataset:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21941869.svg)](https://doi.org/10.5281/zenodo.21941869)
