@@ -1,10 +1,12 @@
 # MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-<!-- TODO: Add Zenodo DOI badge after registration -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21941869.svg)](https://doi.org/10.5281/zenodo.21941869)
 
 > Reference implementation for the paper:  
 > "MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol"
+>
+> **Author**: Xiong Shi (ORCID: [0009-0006-2745-491X](https://orcid.org/0009-0006-2745-491X))
 
 ## Architecture
 
