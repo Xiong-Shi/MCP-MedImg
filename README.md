@@ -27,7 +27,7 @@ MCP-MedImg extends the Model Context Protocol (MCP) with a four-layer protocol s
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/bailianfa/MCP-MedImg.git
+git clone https://github.com/Xiong-Shi/MCP-MedImg.git
 cd MCP-MedImg
 pip install -r requirements.txt
 ```
