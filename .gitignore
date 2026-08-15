@@ -65,3 +65,28 @@ logs/
 # Large experiment outputs
 docs/experiments/instance1/logs/*.log
 docs/experiments/instance2/logs/*.log
+
+# Working files & temporary data
+.dumate/
+.tmp/
+zenodo_data/
+zenodo_data_v*.tar.gz
+mcp-medimg-v*.zip
+
+# Internal documentation (not for repo)
+docs/*.docx
+docs/analysis/
+docs/pytest_fix_report_*.md
+docs/pytest修复报告_*.md
+docs/实例*_数据核实报告_*.md
+docs/实验日志.md
+docs/Zenodo数据清单确认文档_*.md
+docs/Zenodo上传操作清单.md
+
+# Temporary scripts
+run_pytest.py
+
+# Large model weights (managed separately via Zenodo)
+models/*.pth
+models/*.pkl
+models/*.onnx

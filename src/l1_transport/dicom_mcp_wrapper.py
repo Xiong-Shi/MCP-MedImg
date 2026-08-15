@@ -108,7 +108,7 @@ class DicomMCPCompatibleClient:
             De-identified query results with audit metadata
         """
         # Layer 2: Authorize operator
-        if not self.policy.authorize(operator, "medical_image_analyze"):
+        if not self.policy.authorize(operator, "query"):
             raise PermissionError(f"Operator '{operator}' not authorized for query")
 
         # Layer 1: Call underlying implementation
@@ -164,7 +164,7 @@ class DicomMCPCompatibleClient:
         operator: str = "system",
     ) -> dict:
         """Retrieve DICOM instances with security wrapper."""
-        if not self.policy.authorize(operator, "medical_image_analyze"):
+        if not self.policy.authorize(operator, "retrieve"):
             raise PermissionError(f"Operator '{operator}' not authorized for retrieve")
 
         # Layer 1: Retrieve
@@ -206,7 +206,7 @@ class DicomMCPCompatibleClient:
         target_pacs: str = "",
     ) -> dict:
         """Store DICOM object with security wrapper."""
-        if not self.policy.authorize(operator, "medical_image_analyze"):
+        if not self.policy.authorize(operator, "store"):
             raise PermissionError(f"Operator '{operator}' not authorized for store")
 
         # Layer 2: De-identify before storage

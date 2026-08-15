@@ -8,7 +8,9 @@ class PolicyEngine:
     def __init__(self, policy_file: str = None):
         if policy_file is None:
             policy_file = str(
-                Path(__file__).parent.parent.parent.parent / "configs" / "policy.json"
+                Path(__file__).resolve().parent.parent.parent
+                / "configs"
+                / "policy.json"
             )
         with open(policy_file) as f:
             self.policy = json.load(f)

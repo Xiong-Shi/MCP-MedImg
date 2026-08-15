@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "admin": ["all"],
+    "radiologist": ["view", "verify", "report", "medical_image_analyze", "store", "retrieve", "query"],
+    "technician": ["view"]
+  },
+  "verification_rules": [
+    {
+      "inspection_type": "LUNG_CANCER_SCREENING",
+      "modality": "CT",
+      "body_part": "CHEST",
+      "indication": "screening",
+      "mode": "MANDATORY"
+    },
+    {
+      "inspection_type": "NODULE_FOLLOWUP",
+      "modality": "CT",
+      "body_part": "CHEST",
+      "indication": "followup",
+      "mode": "AUTO"
+    },
+    {
+      "inspection_type": "BONE_AGE_ASSESSMENT",
+      "modality": "XR",
+      "body_part": "HAND",
+      "indication": "bone_age",
+      "mode": "ADVISORY"
+    }
+  ],
+  "users": {
+    "admin": ["admin"],
+    "dr_smith": ["radiologist"],
+    "tech_jones": ["technician"]
+  }
+}

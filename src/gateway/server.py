@@ -18,7 +18,7 @@ import sys
 import os
 from typing import Optional
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server import MCPServer as FastMCP
 
 from mcp_medimg.gateway import MCPMedimgGateway
 
@@ -61,6 +61,7 @@ def medical_image_analyze(
     outputFormat: str = "DICOM_SR",
     verificationMode: str = "ADVISORY",
     operator: str = "system",
+    dicom_data: dict = None,
 ) -> str:
     """Analyze a DICOM study with AI-assisted diagnosis.
 
@@ -78,6 +79,7 @@ def medical_image_analyze(
         outputFormat: Output format (DICOM_SR, DICOM_SEG, FHIR)
         verificationMode: Override verification mode (MANDATORY, ADVISORY, AUTO)
         operator: Operator identifier for audit trail
+        dicom_data: Optional DICOM data dict for testing (bypasses PACS query)
 
     Returns:
         JSON string with analysis results, verification info, and audit trail
@@ -92,6 +94,7 @@ def medical_image_analyze(
         outputFormat=outputFormat,
         verificationMode=verificationMode,
         operator=operator,
+        dicom_data=dicom_data,
     )
     return json.dumps(result, indent=2, default=str, ensure_ascii=False)
 

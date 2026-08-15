@@ -93,13 +93,15 @@ class TestMCPServer:
     def test_tool_returns_json_string(self, gateway, monkeypatch):
         from mcp_medimg import server
 
-        monkeypatch.setattr(server, "_gateway", gateway)
+        monkeypatch.setattr(server, "get_gateway", lambda: gateway)
 
+        dicom = make_mock_dicom("1.2.3.4.SERVER.1")
         result = server.medical_image_analyze(
             studyInstanceUID="1.2.3.4.SERVER.1",
             modality="CT",
             bodyPart="CHEST",
             clinicalIndication="screening",
+            dicom_data=dicom,
         )
         assert isinstance(result, str)
         parsed = json.loads(result)
@@ -109,7 +111,7 @@ class TestMCPServer:
     def test_list_models_tool(self, gateway, monkeypatch):
         from mcp_medimg import server
 
-        monkeypatch.setattr(server, "_gateway", gateway)
+        monkeypatch.setattr(server, "get_gateway", lambda: gateway)
 
         result = server.list_models()
         parsed = json.loads(result)
@@ -119,7 +121,7 @@ class TestMCPServer:
     def test_query_audit_trail_tool(self, gateway, monkeypatch):
         from mcp_medimg import server
 
-        monkeypatch.setattr(server, "_gateway", gateway)
+        monkeypatch.setattr(server, "get_gateway", lambda: gateway)
 
         # First run an analysis
         dicom = make_mock_dicom("1.2.3.4.SERVER.AUDIT")
@@ -194,7 +196,7 @@ class TestDicomMCPCompatibility:
         assert client.using_dicom_mcp is False
         assert client._native_client is not None
 
-    def test_wrapper_query_with_security(self):
+    def test_wrapper_query_with_security(self, monkeypatch):
         """Wrapped query should apply PHI de-identification and audit logging."""
         with tempfile.NamedTemporaryFile(suffix=".db", delete=False) as f:
             db_path = f.name
@@ -203,6 +205,10 @@ class TestDicomMCPCompatibility:
                 pacs_url="http://localhost:8042",
                 use_dicom_mcp=False,
                 audit_logger=AuditLogger(db_path=db_path),
+            )
+            # Mock PACS query to avoid requiring Orthanc in unit tests
+            monkeypatch.setattr(
+                client._native_client, "query_studies", lambda modality: []
             )
             result = client.query(
                 study_uid="1.2.3.4.DICOMMCP.1",

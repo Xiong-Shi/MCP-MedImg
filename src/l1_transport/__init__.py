@@ -1,3 +1,1 @@
-from .dicom_mcp_wrapper import DicomMCPCompatibleClient
-
-__all__ = ["DicomMCPCompatibleClient"]
+# Layer 1: Transport module
