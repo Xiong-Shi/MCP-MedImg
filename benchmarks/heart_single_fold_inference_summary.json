@@ -1,0 +1,109 @@
+{
+  "experiment": "EXP-HEART-004",
+  "name": "MSD Heart Single-Fold End-to-End Inference Latency",
+  "dataset": "MSD Task02 Heart",
+  "cases": 10,
+  "fold": "fold_0 only",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "cuda": "12.1",
+  "pytorch": "2.3.0+cu121",
+  "model_loading_ms": 2422.17,
+  "total_elapsed_ms": 64989.8,
+  "load_time_ms": {
+    "mean": 375.63,
+    "std": 203.24,
+    "p50": 291.0,
+    "p99": 778.15,
+    "min": 216.86,
+    "max": 778.76
+  },
+  "preprocess_inference_time_ms": {
+    "mean": 6123.29,
+    "std": 4182.93,
+    "p50": 4434.81,
+    "p99": 15131.48,
+    "min": 3116.27,
+    "max": 15330.41
+  },
+  "end_to_end_ms": {
+    "mean": 6498.92,
+    "std": 4381.9,
+    "p50": 4722.28,
+    "p99": 15909.64,
+    "min": 3347.65,
+    "max": 16109.17
+  },
+  "per_case_results": [
+    {
+      "case_id": "la_001",
+      "load_time_ms": 778.76,
+      "preprocess_inference_time_ms": 15330.41,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 16109.17
+    },
+    {
+      "case_id": "la_002",
+      "load_time_ms": 339.52,
+      "preprocess_inference_time_ms": 4658.99,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 4998.51
+    },
+    {
+      "case_id": "la_006",
+      "load_time_ms": 772.01,
+      "preprocess_inference_time_ms": 13120.12,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 13892.13
+    },
+    {
+      "case_id": "la_008",
+      "load_time_ms": 250.03,
+      "preprocess_inference_time_ms": 4440.85,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 4690.89
+    },
+    {
+      "case_id": "la_012",
+      "load_time_ms": 302.27,
+      "preprocess_inference_time_ms": 6304.06,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 6606.34
+    },
+    {
+      "case_id": "la_013",
+      "load_time_ms": 279.73,
+      "preprocess_inference_time_ms": 3417.12,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 3696.85
+    },
+    {
+      "case_id": "la_015",
+      "load_time_ms": 231.38,
+      "preprocess_inference_time_ms": 3116.27,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 3347.65
+    },
+    {
+      "case_id": "la_025",
+      "load_time_ms": 324.9,
+      "preprocess_inference_time_ms": 4428.77,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 4753.67
+    },
+    {
+      "case_id": "la_027",
+      "load_time_ms": 216.86,
+      "preprocess_inference_time_ms": 3176.84,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 3393.7
+    },
+    {
+      "case_id": "la_028",
+      "load_time_ms": 260.8,
+      "preprocess_inference_time_ms": 3239.51,
+      "format_time_ms": 0.0,
+      "end_to_end_ms": 3500.31
+    }
+  ]
+}

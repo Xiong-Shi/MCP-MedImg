@@ -1,0 +1,5178 @@
+{
+  "summary": {
+    "experiment": "EXP-PROTO-004",
+    "description": "Probe-based direct measurement, no differential subtraction",
+    "model_params": 22575362,
+    "count": 98,
+    "g0_mean_ms": 76.77970925510205,
+    "g0_std_ms": 64.66016140443317,
+    "g0_median_ms": 38.062017999999995,
+    "g4_mean_ms": 618.939641877551,
+    "protocol_overhead_mean_ms": 567.4683544387755,
+    "protocol_overhead_std_ms": 245.14633831903635,
+    "inference_mean_ms": 51.47128743877551,
+    "layer_means": {
+      "L1": 566.3497693265306,
+      "L2": 0.36438341836734695,
+      "L3": 0.4351410918367347,
+      "L4": 0.3190606020408163
+    },
+    "layer_stds": {
+      "L1": 245.135571011147,
+      "L2": 0.07389853496656484,
+      "L3": 0.1727444161753264,
+      "L4": 0.10110309121532142
+    },
+    "sub_layer_means": {
+      "L1_query": 327.23202760204083,
+      "L1_fetch": 239.1177417244898,
+      "L2_deid": 0.030522663265306123,
+      "L2_audit_start": 0.17782279591836736,
+      "L2_audit_complete": 0.15603795918367347,
+      "L3_registry": 0.003536673469387755,
+      "L3_formatter": 0.42912480612244897,
+      "L3_sr": 0.002479612244897959,
+      "L4_inspection": 0.31413336734693875,
+      "L4_verification": 0.0008270510204081633,
+      "L4_state": 0.004100183673469388
+    },
+    "wado_mean_mb": 82.51132653061225,
+    "wado_mean_instances": 151.44897959183675,
+    "spearman_correlation": {
+      "L1": {
+        "rho": -0.26917887123793816,
+        "p_value": 0.007357698531984251
+      },
+      "L2": {
+        "rho": -0.002514930147555341,
+        "p_value": 0.9803922564675898
+      },
+      "L3": {
+        "rho": 0.12303499239387991,
+        "p_value": 0.22745195570490037
+      },
+      "L4": {
+        "rho": 0.006948257146210848,
+        "p_value": 0.9458632453088327
+      },
+      "L1_vs_wado_bytes": {
+        "rho": 0.8717392898286863,
+        "p_value": 1.6755970487527961e-31
+      },
+      "G0_inference": {
+        "rho": 0.1824849584156059,
+        "p_value": 0.07210352708724704
+      },
+      "total_overhead": {
+        "rho": -0.27072443477875385,
+        "p_value": 0.007013679118965994
+      }
+    },
+    "validation": {
+      "mean_error_pct": 3.4114875201446315,
+      "max_error_pct": 24.441864856813798,
+      "l2_all_positive": true,
+      "l3_all_positive": true,
+      "l4_all_positive": true,
+      "l4_max_ms": 0.980615
+    }
+  },
+  "results": [
+    {
+      "volume_id": "100.000000-NA-47868.nii",
+      "volume_name": "100.000000-NA-47868.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.333224958421615824054029320306",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        249
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 65273856,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 134.566054,
+      "g4_total_ms": 938.9325,
+      "protocol_overhead_ms": 904.341686,
+      "inference_ms": 34.590814,
+      "validation_error_pct": 9.623110517975359,
+      "layers": {
+        "L1": {
+          "total": 902.744455,
+          "query": 473.116802,
+          "fetch": 429.627653
+        },
+        "L2": {
+          "total": 0.45241200000000004,
+          "deid": 0.070299,
+          "audit_start": 0.244118,
+          "audit_complete": 0.137995
+        },
+        "L3": {
+          "total": 0.16420400000000002,
+          "registry": 0.001977,
+          "formatter": 0.160527,
+          "sr": 0.0017
+        },
+        "L4": {
+          "total": 0.980615,
+          "inspection": 0.968663,
+          "verification": 0.000799,
+          "state": 0.011153
+        }
+      },
+      "wado_bytes": 131107496,
+      "wado_mb": 131.11,
+      "qido_instances": 249
+    },
+    {
+      "volume_id": "102.000000-CT CHEST 5 X 5-89059.nii",
+      "volume_name": "102.000000-CT CHEST 5 X 5-89059.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.752603750437458841409277737148",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        273
+      ],
+      "proc_shape": [
+        1,
+        192,
+        192,
+        96
+      ],
+      "raw_voxel_count": 71565312,
+      "proc_voxel_count": 3538944,
+      "g0_ms": 65.260406,
+      "g4_total_ms": 1140.7029200000002,
+      "protocol_overhead_ms": 1111.4720750000001,
+      "inference_ms": 29.230845,
+      "validation_error_pct": 3.061831094301208,
+      "layers": {
+        "L1": {
+          "total": 1110.400837,
+          "query": 655.526035,
+          "fetch": 454.874802
+        },
+        "L2": {
+          "total": 0.37266900000000003,
+          "deid": 0.034661,
+          "audit_start": 0.189828,
+          "audit_complete": 0.14818
+        },
+        "L3": {
+          "total": 0.37983000000000006,
+          "registry": 0.002309,
+          "formatter": 0.375192,
+          "sr": 0.002329
+        },
+        "L4": {
+          "total": 0.318739,
+          "inspection": 0.310817,
+          "verification": 0.000718,
+          "state": 0.007204
+        }
+      },
+      "wado_bytes": 143828532,
+      "wado_mb": 143.83,
+      "qido_instances": 273
+    },
+    {
+      "volume_id": "102.000000-NA-91582.nii",
+      "volume_name": "102.000000-NA-91582.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.311959464221077415127494283158",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        301
+      ],
+      "proc_shape": [
+        1,
+        192,
+        192,
+        112
+      ],
+      "raw_voxel_count": 78905344,
+      "proc_voxel_count": 4128768,
+      "g0_ms": 144.318901,
+      "g4_total_ms": 1027.45726,
+      "protocol_overhead_ms": 993.1201269999999,
+      "inference_ms": 34.337133,
+      "validation_error_pct": 9.669245145683545,
+      "layers": {
+        "L1": {
+          "total": 992.073896,
+          "query": 594.857534,
+          "fetch": 397.216362
+        },
+        "L2": {
+          "total": 0.334583,
+          "deid": 0.037694,
+          "audit_start": 0.156756,
+          "audit_complete": 0.140133
+        },
+        "L3": {
+          "total": 0.435558,
+          "registry": 0.006648,
+          "formatter": 0.426381,
+          "sr": 0.002529
+        },
+        "L4": {
+          "total": 0.27609,
+          "inspection": 0.272322,
+          "verification": 0.000675,
+          "state": 0.003093
+        }
+      },
+      "wado_bytes": 158508140,
+      "wado_mb": 158.51,
+      "qido_instances": 301
+    },
+    {
+      "volume_id": "12274.000000-CHEST PA  LATERAL-17327.nii",
+      "volume_name": "12274.000000-CHEST PA  LATERAL-17327.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.920307961399343006965300121699",
+      "raw_shape": [
+        1,
+        1736,
+        2022,
+        4
+      ],
+      "proc_shape": [
+        1,
+        1200,
+        1392,
+        16
+      ],
+      "raw_voxel_count": 14040768,
+      "proc_voxel_count": 26726400,
+      "g0_ms": 262.568981,
+      "g4_total_ms": 417.536144,
+      "protocol_overhead_ms": 158.711322,
+      "inference_ms": 258.824822,
+      "validation_error_pct": 0.8887571940433266,
+      "layers": {
+        "L1": {
+          "total": 157.562022,
+          "query": 58.936098,
+          "fetch": 98.625924
+        },
+        "L2": {
+          "total": 0.350323,
+          "deid": 0.022031,
+          "audit_start": 0.16976,
+          "audit_complete": 0.158532
+        },
+        "L3": {
+          "total": 0.467055,
+          "registry": 0.002096,
+          "formatter": 0.462509,
+          "sr": 0.00245
+        },
+        "L4": {
+          "total": 0.331922,
+          "inspection": 0.327909,
+          "verification": 0.000857,
+          "state": 0.003156
+        }
+      },
+      "wado_bytes": 28090650,
+      "wado_mb": 28.09,
+      "qido_instances": 4
+    },
+    {
+      "volume_id": "19901.000000-CHEST PA  LATERAL-36018.nii",
+      "volume_name": "19901.000000-CHEST PA  LATERAL-36018.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.480553995498314956281939990589",
+      "raw_shape": [
+        1,
+        2022,
+        2022,
+        4
+      ],
+      "proc_shape": [
+        1,
+        1328,
+        1328,
+        16
+      ],
+      "raw_voxel_count": 16353936,
+      "proc_voxel_count": 28217344,
+      "g0_ms": 278.06419,
+      "g4_total_ms": 445.42221700000005,
+      "protocol_overhead_ms": 171.81508800000003,
+      "inference_ms": 273.607129,
+      "validation_error_pct": 0.9907237825699439,
+      "layers": {
+        "L1": {
+          "total": 169.339313,
+          "query": 47.186287,
+          "fetch": 122.153026
+        },
+        "L2": {
+          "total": 0.385559,
+          "deid": 0.047397,
+          "audit_start": 0.173187,
+          "audit_complete": 0.164975
+        },
+        "L3": {
+          "total": 1.778205,
+          "registry": 0.007678,
+          "formatter": 1.767461,
+          "sr": 0.003066
+        },
+        "L4": {
+          "total": 0.312011,
+          "inspection": 0.304471,
+          "verification": 0.000866,
+          "state": 0.006674
+        }
+      },
+      "wado_bytes": 32717100,
+      "wado_mb": 32.72,
+      "qido_instances": 4
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-13968.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-13968.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.563554930011057425448972918752",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        238
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 62390272,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 84.798544,
+      "g4_total_ms": 955.613469,
+      "protocol_overhead_ms": 922.080827,
+      "inference_ms": 33.532642,
+      "validation_error_pct": 5.091563446084345,
+      "layers": {
+        "L1": {
+          "total": 920.975363,
+          "query": 506.163076,
+          "fetch": 414.812287
+        },
+        "L2": {
+          "total": 0.35127699999999995,
+          "deid": 0.034654,
+          "audit_start": 0.170952,
+          "audit_complete": 0.145671
+        },
+        "L3": {
+          "total": 0.440152,
+          "registry": 0.002171,
+          "formatter": 0.43541,
+          "sr": 0.002571
+        },
+        "L4": {
+          "total": 0.31403500000000006,
+          "inspection": 0.307271,
+          "verification": 0.000777,
+          "state": 0.005987
+        }
+      },
+      "wado_bytes": 125389858,
+      "wado_mb": 125.39,
+      "qido_instances": 238
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-21075.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-21075.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.199795594928180609213453658461",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        233
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 61079552,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 102.162899,
+      "g4_total_ms": 838.6737109999999,
+      "protocol_overhead_ms": 804.1936549999999,
+      "inference_ms": 34.480056,
+      "validation_error_pct": 7.467573627762397,
+      "layers": {
+        "L1": {
+          "total": 803.104425,
+          "query": 429.800916,
+          "fetch": 373.303509
+        },
+        "L2": {
+          "total": 0.33723800000000004,
+          "deid": 0.023573,
+          "audit_start": 0.159254,
+          "audit_complete": 0.154411
+        },
+        "L3": {
+          "total": 0.44501599999999997,
+          "registry": 0.00303,
+          "formatter": 0.439699,
+          "sr": 0.002287
+        },
+        "L4": {
+          "total": 0.30697599999999997,
+          "inspection": 0.303135,
+          "verification": 0.000675,
+          "state": 0.003166
+        }
+      },
+      "wado_bytes": 122755484,
+      "wado_mb": 122.76,
+      "qido_instances": 233
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-22938.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-22938.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.267745911637906357699108280139",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        214
+      ],
+      "proc_shape": [
+        1,
+        224,
+        224,
+        80
+      ],
+      "raw_voxel_count": 56098816,
+      "proc_voxel_count": 4014080,
+      "g0_ms": 145.202518,
+      "g4_total_ms": 823.898731,
+      "protocol_overhead_ms": 790.246864,
+      "inference_ms": 33.651867,
+      "validation_error_pct": 11.924819572973968,
+      "layers": {
+        "L1": {
+          "total": 789.125708,
+          "query": 436.916542,
+          "fetch": 352.209166
+        },
+        "L2": {
+          "total": 0.383887,
+          "deid": 0.033884,
+          "audit_start": 0.191933,
+          "audit_complete": 0.15807
+        },
+        "L3": {
+          "total": 0.41769300000000004,
+          "registry": 0.002207,
+          "formatter": 0.413156,
+          "sr": 0.00233
+        },
+        "L4": {
+          "total": 0.31957599999999997,
+          "inspection": 0.30981,
+          "verification": 0.001212,
+          "state": 0.008554
+        }
+      },
+      "wado_bytes": 112744202,
+      "wado_mb": 112.74,
+      "qido_instances": 214
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-24767.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-24767.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.284091129290542528109405627934",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        251
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 65798144,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 76.837551,
+      "g4_total_ms": 997.6136700000001,
+      "protocol_overhead_ms": 963.0273960000001,
+      "inference_ms": 34.586274,
+      "validation_error_pct": 4.063150423705932,
+      "layers": {
+        "L1": {
+          "total": 961.440186,
+          "query": 445.130028,
+          "fetch": 516.310158
+        },
+        "L2": {
+          "total": 0.526478,
+          "deid": 0.059262,
+          "audit_start": 0.263655,
+          "audit_complete": 0.203561
+        },
+        "L3": {
+          "total": 0.605646,
+          "registry": 0.010342,
+          "formatter": 0.592392,
+          "sr": 0.002912
+        },
+        "L4": {
+          "total": 0.45508600000000005,
+          "inspection": 0.450583,
+          "verification": 0.000952,
+          "state": 0.003551
+        }
+      },
+      "wado_bytes": 132237582,
+      "wado_mb": 132.24,
+      "qido_instances": 251
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-33437.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-33437.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.201356741575321997579793754679",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        206
+      ],
+      "proc_shape": [
+        1,
+        224,
+        224,
+        80
+      ],
+      "raw_voxel_count": 54001664,
+      "proc_voxel_count": 4014080,
+      "g0_ms": 80.247519,
+      "g4_total_ms": 776.256146,
+      "protocol_overhead_ms": 742.612031,
+      "inference_ms": 33.644115,
+      "validation_error_pct": 5.6635915570281785,
+      "layers": {
+        "L1": {
+          "total": 741.566963,
+          "query": 423.165439,
+          "fetch": 318.401524
+        },
+        "L2": {
+          "total": 0.368457,
+          "deid": 0.031984,
+          "audit_start": 0.188858,
+          "audit_complete": 0.147615
+        },
+        "L3": {
+          "total": 0.396361,
+          "registry": 0.001914,
+          "formatter": 0.39239,
+          "sr": 0.002057
+        },
+        "L4": {
+          "total": 0.28024999999999994,
+          "inspection": 0.272302,
+          "verification": 0.001007,
+          "state": 0.006941
+        }
+      },
+      "wado_bytes": 108529046,
+      "wado_mb": 108.53,
+      "qido_instances": 206
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-47734.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-47734.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.194264995369749234588783691976",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        246
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 64487424,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 75.844046,
+      "g4_total_ms": 918.9267310000001,
+      "protocol_overhead_ms": 884.3836570000001,
+      "inference_ms": 34.543074,
+      "validation_error_pct": 4.301164387464042,
+      "layers": {
+        "L1": {
+          "total": 883.3182240000001,
+          "query": 496.660517,
+          "fetch": 386.657707
+        },
+        "L2": {
+          "total": 0.38206100000000004,
+          "deid": 0.045004,
+          "audit_start": 0.192422,
+          "audit_complete": 0.144635
+        },
+        "L3": {
+          "total": 0.394856,
+          "registry": 0.008038,
+          "formatter": 0.384787,
+          "sr": 0.002031
+        },
+        "L4": {
+          "total": 0.288516,
+          "inspection": 0.285104,
+          "verification": 0.000646,
+          "state": 0.002766
+        }
+      },
+      "wado_bytes": 129600058,
+      "wado_mb": 129.6,
+      "qido_instances": 246
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-58588.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-58588.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.783812685850339917048882413972",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        258
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 67633152,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 69.795917,
+      "g4_total_ms": 987.4597100000001,
+      "protocol_overhead_ms": 953.0180710000001,
+      "inference_ms": 34.441639,
+      "validation_error_pct": 3.456569661227592,
+      "layers": {
+        "L1": {
+          "total": 951.994432,
+          "query": 530.935599,
+          "fetch": 421.058833
+        },
+        "L2": {
+          "total": 0.340271,
+          "deid": 0.029521,
+          "audit_start": 0.165585,
+          "audit_complete": 0.145165
+        },
+        "L3": {
+          "total": 0.38475100000000007,
+          "registry": 0.002414,
+          "formatter": 0.380317,
+          "sr": 0.00202
+        },
+        "L4": {
+          "total": 0.298617,
+          "inspection": 0.291726,
+          "verification": 0.000813,
+          "state": 0.006078
+        }
+      },
+      "wado_bytes": 135910942,
+      "wado_mb": 135.91,
+      "qido_instances": 258
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-62523.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-62523.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.155422883755338970256390193392",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        232
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 60817408,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 116.53131,
+      "g4_total_ms": 766.4904369999999,
+      "protocol_overhead_ms": 732.125381,
+      "inference_ms": 34.365056,
+      "validation_error_pct": 9.681919069439115,
+      "layers": {
+        "L1": {
+          "total": 731.229662,
+          "query": 363.104754,
+          "fetch": 368.124908
+        },
+        "L2": {
+          "total": 0.333712,
+          "deid": 0.030128,
+          "audit_start": 0.16644,
+          "audit_complete": 0.137144
+        },
+        "L3": {
+          "total": 0.308708,
+          "registry": 0.002687,
+          "formatter": 0.303958,
+          "sr": 0.002063
+        },
+        "L4": {
+          "total": 0.253299,
+          "inspection": 0.249527,
+          "verification": 0.000718,
+          "state": 0.003054
+        }
+      },
+      "wado_bytes": 122228806,
+      "wado_mb": 122.23,
+      "qido_instances": 232
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-65701.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-65701.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.253735246078920128978742275635",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        230
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 60293120,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 65.882463,
+      "g4_total_ms": 971.4796180000001,
+      "protocol_overhead_ms": 937.4256110000001,
+      "inference_ms": 34.054007,
+      "validation_error_pct": 3.172351227385824,
+      "layers": {
+        "L1": {
+          "total": 936.4383190000001,
+          "query": 567.068702,
+          "fetch": 369.369617
+        },
+        "L2": {
+          "total": 0.335773,
+          "deid": 0.034071,
+          "audit_start": 0.157803,
+          "audit_complete": 0.143899
+        },
+        "L3": {
+          "total": 0.35832400000000003,
+          "registry": 0.002326,
+          "formatter": 0.353376,
+          "sr": 0.002622
+        },
+        "L4": {
+          "total": 0.293195,
+          "inspection": 0.283605,
+          "verification": 0.000768,
+          "state": 0.008822
+        }
+      },
+      "wado_bytes": 121171390,
+      "wado_mb": 121.17,
+      "qido_instances": 230
+    },
+    {
+      "volume_id": "2.000000-BOTTOM TO TOP-93409.nii",
+      "volume_name": "2.000000-BOTTOM TO TOP-93409.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.132644395812981309476663139204",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        238
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 62390272,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 92.35815,
+      "g4_total_ms": 850.579611,
+      "protocol_overhead_ms": 816.418396,
+      "inference_ms": 34.161215,
+      "validation_error_pct": 6.403877306930415,
+      "layers": {
+        "L1": {
+          "total": 815.176946,
+          "query": 425.713167,
+          "fetch": 389.463779
+        },
+        "L2": {
+          "total": 0.354939,
+          "deid": 0.027421,
+          "audit_start": 0.169226,
+          "audit_complete": 0.158292
+        },
+        "L3": {
+          "total": 0.5443399999999999,
+          "registry": 0.003006,
+          "formatter": 0.538145,
+          "sr": 0.003189
+        },
+        "L4": {
+          "total": 0.34217099999999995,
+          "inspection": 0.337045,
+          "verification": 0.000974,
+          "state": 0.004152
+        }
+      },
+      "wado_bytes": 125387850,
+      "wado_mb": 125.39,
+      "qido_instances": 238
+    },
+    {
+      "volume_id": "2.000000-CHEST-01585.nii",
+      "volume_name": "2.000000-CHEST-01585.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.253123637959400428278268237946",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 156.083567,
+      "g4_total_ms": 607.8915299999999,
+      "protocol_overhead_ms": 572.9861329999999,
+      "inference_ms": 34.905397,
+      "validation_error_pct": 16.62093075600317,
+      "layers": {
+        "L1": {
+          "total": 571.692225,
+          "query": 359.958607,
+          "fetch": 211.733618
+        },
+        "L2": {
+          "total": 0.380056,
+          "deid": 0.037249,
+          "audit_start": 0.186021,
+          "audit_complete": 0.156786
+        },
+        "L3": {
+          "total": 0.5295569999999999,
+          "registry": 0.002832,
+          "formatter": 0.524042,
+          "sr": 0.002683
+        },
+        "L4": {
+          "total": 0.38429500000000005,
+          "inspection": 0.374626,
+          "verification": 0.001103,
+          "state": 0.008566
+        }
+      },
+      "wado_bytes": 70066552,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "2.000000-CHEST-11210.nii",
+      "volume_name": "2.000000-CHEST-11210.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.100063870746088919758706456900",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 80.588546,
+      "g4_total_ms": 477.865444,
+      "protocol_overhead_ms": 441.802098,
+      "inference_ms": 36.063346,
+      "validation_error_pct": 8.523353262812252,
+      "layers": {
+        "L1": {
+          "total": 440.699398,
+          "query": 220.157424,
+          "fetch": 220.541974
+        },
+        "L2": {
+          "total": 0.348522,
+          "deid": 0.027294,
+          "audit_start": 0.174306,
+          "audit_complete": 0.146922
+        },
+        "L3": {
+          "total": 0.445189,
+          "registry": 0.003325,
+          "formatter": 0.439413,
+          "sr": 0.002451
+        },
+        "L4": {
+          "total": 0.308989,
+          "inspection": 0.304944,
+          "verification": 0.000738,
+          "state": 0.003307
+        }
+      },
+      "wado_bytes": 70066274,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "2.000000-CHEST-25249.nii",
+      "volume_name": "2.000000-CHEST-25249.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.229453814067948782185747812606",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        143
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 37486592,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.173531,
+      "g4_total_ms": 543.904062,
+      "protocol_overhead_ms": 508.97678099999996,
+      "inference_ms": 34.927281,
+      "validation_error_pct": 0.22860667463032322,
+      "layers": {
+        "L1": {
+          "total": 507.70165199999997,
+          "query": 292.852485,
+          "fetch": 214.849167
+        },
+        "L2": {
+          "total": 0.360244,
+          "deid": 0.02649,
+          "audit_start": 0.169859,
+          "audit_complete": 0.163895
+        },
+        "L3": {
+          "total": 0.5644159999999999,
+          "registry": 0.002401,
+          "formatter": 0.558672,
+          "sr": 0.003343
+        },
+        "L4": {
+          "total": 0.35046900000000003,
+          "inspection": 0.345542,
+          "verification": 0.000796,
+          "state": 0.004131
+        }
+      },
+      "wado_bytes": 75330562,
+      "wado_mb": 75.33,
+      "qido_instances": 143
+    },
+    {
+      "volume_id": "2.000000-CHEST-32481.nii",
+      "volume_name": "2.000000-CHEST-32481.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.182529561822199780545440408033",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 96.038619,
+      "g4_total_ms": 495.79244300000005,
+      "protocol_overhead_ms": 461.084646,
+      "inference_ms": 34.707797,
+      "validation_error_pct": 11.008483373962134,
+      "layers": {
+        "L1": {
+          "total": 460.06847200000004,
+          "query": 254.908564,
+          "fetch": 205.159908
+        },
+        "L2": {
+          "total": 0.33074000000000003,
+          "deid": 0.022876,
+          "audit_start": 0.156093,
+          "audit_complete": 0.151771
+        },
+        "L3": {
+          "total": 0.413252,
+          "registry": 0.003013,
+          "formatter": 0.407471,
+          "sr": 0.002768
+        },
+        "L4": {
+          "total": 0.272182,
+          "inspection": 0.268084,
+          "verification": 0.000732,
+          "state": 0.003366
+        }
+      },
+      "wado_bytes": 70065604,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "2.000000-CHEST-39227.nii",
+      "volume_name": "2.000000-CHEST-39227.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.106078428010894478241933303675",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        123
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 32243712,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.471497,
+      "g4_total_ms": 525.0814730000001,
+      "protocol_overhead_ms": 491.05485500000003,
+      "inference_ms": 34.026618,
+      "validation_error_pct": 0.08465398515353886,
+      "layers": {
+        "L1": {
+          "total": 490.051459,
+          "query": 315.059569,
+          "fetch": 174.99189
+        },
+        "L2": {
+          "total": 0.326864,
+          "deid": 0.022673,
+          "audit_start": 0.154773,
+          "audit_complete": 0.149418
+        },
+        "L3": {
+          "total": 0.386566,
+          "registry": 0.002361,
+          "formatter": 0.382162,
+          "sr": 0.002043
+        },
+        "L4": {
+          "total": 0.289966,
+          "inspection": 0.286217,
+          "verification": 0.000842,
+          "state": 0.002907
+        }
+      },
+      "wado_bytes": 64798126,
+      "wado_mb": 64.8,
+      "qido_instances": 123
+    },
+    {
+      "volume_id": "2.000000-CHEST-44656.nii",
+      "volume_name": "2.000000-CHEST-44656.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.327833349640691088534060439127",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.159279,
+      "g4_total_ms": 504.64776300000005,
+      "protocol_overhead_ms": 469.69365600000003,
+      "inference_ms": 34.954107,
+      "validation_error_pct": 0.04063995389072022,
+      "layers": {
+        "L1": {
+          "total": 468.38772400000005,
+          "query": 237.244311,
+          "fetch": 231.143413
+        },
+        "L2": {
+          "total": 0.377306,
+          "deid": 0.032223,
+          "audit_start": 0.177523,
+          "audit_complete": 0.16756
+        },
+        "L3": {
+          "total": 0.565965,
+          "registry": 0.003328,
+          "formatter": 0.559266,
+          "sr": 0.003371
+        },
+        "L4": {
+          "total": 0.36266099999999996,
+          "inspection": 0.357988,
+          "verification": 0.000764,
+          "state": 0.003909
+        }
+      },
+      "wado_bytes": 70066028,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "2.000000-CHEST-47718.nii",
+      "volume_name": "2.000000-CHEST-47718.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.642978488349899622121412557061",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        151
+      ],
+      "proc_shape": [
+        1,
+        240,
+        240,
+        64
+      ],
+      "raw_voxel_count": 39583744,
+      "proc_voxel_count": 3686400,
+      "g0_ms": 62.841535,
+      "g4_total_ms": 632.6090689999999,
+      "protocol_overhead_ms": 602.4837789999999,
+      "inference_ms": 30.12529,
+      "validation_error_pct": 4.917330561692723,
+      "layers": {
+        "L1": {
+          "total": 601.3792599999999,
+          "query": 339.673181,
+          "fetch": 261.706079
+        },
+        "L2": {
+          "total": 0.37960499999999997,
+          "deid": 0.039571,
+          "audit_start": 0.18172,
+          "audit_complete": 0.158314
+        },
+        "L3": {
+          "total": 0.435999,
+          "registry": 0.008878,
+          "formatter": 0.424769,
+          "sr": 0.002352
+        },
+        "L4": {
+          "total": 0.288915,
+          "inspection": 0.280842,
+          "verification": 0.000856,
+          "state": 0.007217
+        }
+      },
+      "wado_bytes": 79547886,
+      "wado_mb": 79.55,
+      "qido_instances": 151
+    },
+    {
+      "volume_id": "2.000000-CHEST-55114.nii",
+      "volume_name": "2.000000-CHEST-55114.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.481620140149228611720235499832",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 37.243048,
+      "g4_total_ms": 593.228968,
+      "protocol_overhead_ms": 558.516614,
+      "inference_ms": 34.712354,
+      "validation_error_pct": 0.4247843822632018,
+      "layers": {
+        "L1": {
+          "total": 557.411082,
+          "query": 346.14849,
+          "fetch": 211.262592
+        },
+        "L2": {
+          "total": 0.37512100000000004,
+          "deid": 0.036302,
+          "audit_start": 0.190254,
+          "audit_complete": 0.148565
+        },
+        "L3": {
+          "total": 0.42327600000000004,
+          "registry": 0.002261,
+          "formatter": 0.418881,
+          "sr": 0.002134
+        },
+        "L4": {
+          "total": 0.307135,
+          "inspection": 0.297558,
+          "verification": 0.000759,
+          "state": 0.008818
+        }
+      },
+      "wado_bytes": 66902588,
+      "wado_mb": 66.9,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "2.000000-CHEST-61082.nii",
+      "volume_name": "2.000000-CHEST-61082.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.178508585973524477692282321864",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 74.053265,
+      "g4_total_ms": 468.75640000000004,
+      "protocol_overhead_ms": 434.86288900000005,
+      "inference_ms": 33.893511,
+      "validation_error_pct": 7.891231921869789,
+      "layers": {
+        "L1": {
+          "total": 433.737454,
+          "query": 251.985938,
+          "fetch": 181.751516
+        },
+        "L2": {
+          "total": 0.330974,
+          "deid": 0.020921,
+          "audit_start": 0.15548,
+          "audit_complete": 0.154573
+        },
+        "L3": {
+          "total": 0.472231,
+          "registry": 0.002413,
+          "formatter": 0.467389,
+          "sr": 0.002429
+        },
+        "L4": {
+          "total": 0.32222999999999996,
+          "inspection": 0.317758,
+          "verification": 0.001137,
+          "state": 0.003335
+        }
+      },
+      "wado_bytes": 70066786,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "2.000000-CHEST-71960.nii",
+      "volume_name": "2.000000-CHEST-71960.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.902763751470786794946912471631",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.457803,
+      "g4_total_ms": 565.549219,
+      "protocol_overhead_ms": 530.536358,
+      "inference_ms": 35.012861,
+      "validation_error_pct": 0.07861247176363877,
+      "layers": {
+        "L1": {
+          "total": 529.217017,
+          "query": 285.487651,
+          "fetch": 243.729366
+        },
+        "L2": {
+          "total": 0.42482299999999995,
+          "deid": 0.042122,
+          "audit_start": 0.207865,
+          "audit_complete": 0.174836
+        },
+        "L3": {
+          "total": 0.530054,
+          "registry": 0.009319,
+          "formatter": 0.518382,
+          "sr": 0.002353
+        },
+        "L4": {
+          "total": 0.364464,
+          "inspection": 0.356072,
+          "verification": 0.000799,
+          "state": 0.007593
+        }
+      },
+      "wado_bytes": 70065342,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "2.000000-CHEST-78363.nii",
+      "volume_name": "2.000000-CHEST-78363.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.769199091929930563098632346243",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        135
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 35389440,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 81.985766,
+      "g4_total_ms": 558.901976,
+      "protocol_overhead_ms": 524.198335,
+      "inference_ms": 34.703641,
+      "validation_error_pct": 7.7999612530253515,
+      "layers": {
+        "L1": {
+          "total": 523.021459,
+          "query": 307.458117,
+          "fetch": 215.563342
+        },
+        "L2": {
+          "total": 0.37998200000000004,
+          "deid": 0.032235,
+          "audit_start": 0.188054,
+          "audit_complete": 0.159693
+        },
+        "L3": {
+          "total": 0.463182,
+          "registry": 0.005033,
+          "formatter": 0.455395,
+          "sr": 0.002754
+        },
+        "L4": {
+          "total": 0.333712,
+          "inspection": 0.324818,
+          "verification": 0.001066,
+          "state": 0.007828
+        }
+      },
+      "wado_bytes": 71119768,
+      "wado_mb": 71.12,
+      "qido_instances": 135
+    },
+    {
+      "volume_id": "2.000000-CHEST-94975.nii",
+      "volume_name": "2.000000-CHEST-94975.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.310090830439147530838142668838",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        149
+      ],
+      "proc_shape": [
+        1,
+        240,
+        240,
+        64
+      ],
+      "raw_voxel_count": 39059456,
+      "proc_voxel_count": 3686400,
+      "g0_ms": 31.995612,
+      "g4_total_ms": 688.412057,
+      "protocol_overhead_ms": 658.404138,
+      "inference_ms": 30.007919,
+      "validation_error_pct": 0.28790465234091345,
+      "layers": {
+        "L1": {
+          "total": 657.409234,
+          "query": 437.99343,
+          "fetch": 219.415804
+        },
+        "L2": {
+          "total": 0.32613400000000003,
+          "deid": 0.022013,
+          "audit_start": 0.151728,
+          "audit_complete": 0.152393
+        },
+        "L3": {
+          "total": 0.396004,
+          "registry": 0.002669,
+          "formatter": 0.391234,
+          "sr": 0.002101
+        },
+        "L4": {
+          "total": 0.27276599999999995,
+          "inspection": 0.268976,
+          "verification": 0.000671,
+          "state": 0.003119
+        }
+      },
+      "wado_bytes": 78495048,
+      "wado_mb": 78.5,
+      "qido_instances": 149
+    },
+    {
+      "volume_id": "2.000000-CHEST-99234.nii",
+      "volume_name": "2.000000-CHEST-99234.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.304088547901303960997044129270",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        128
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33554432,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.019632,
+      "g4_total_ms": 516.9347369999999,
+      "protocol_overhead_ms": 482.94001299999996,
+      "inference_ms": 33.994724,
+      "validation_error_pct": 0.19787410272087558,
+      "layers": {
+        "L1": {
+          "total": 481.832122,
+          "query": 299.167665,
+          "fetch": 182.664457
+        },
+        "L2": {
+          "total": 0.33016,
+          "deid": 0.020765,
+          "audit_start": 0.149501,
+          "audit_complete": 0.159894
+        },
+        "L3": {
+          "total": 0.478751,
+          "registry": 0.002503,
+          "formatter": 0.47339,
+          "sr": 0.002858
+        },
+        "L4": {
+          "total": 0.29898,
+          "inspection": 0.294926,
+          "verification": 0.000736,
+          "state": 0.003318
+        }
+      },
+      "wado_bytes": 67435626,
+      "wado_mb": 67.44,
+      "qido_instances": 128
+    },
+    {
+      "volume_id": "2.000000-CT PE PROTOCOL BOTTOM TO TOP-90470.nii",
+      "volume_name": "2.000000-CT PE PROTOCOL BOTTOM TO TOP-90470.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.324827271082263044582582668595",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        238
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 62390272,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 92.110433,
+      "g4_total_ms": 938.6658420000001,
+      "protocol_overhead_ms": 904.0940260000001,
+      "inference_ms": 34.571816,
+      "validation_error_pct": 5.775783924693307,
+      "layers": {
+        "L1": {
+          "total": 902.292091,
+          "query": 530.434547,
+          "fetch": 371.857544
+        },
+        "L2": {
+          "total": 0.6041529999999999,
+          "deid": 0.120349,
+          "audit_start": 0.294587,
+          "audit_complete": 0.189217
+        },
+        "L3": {
+          "total": 0.661187,
+          "registry": 0.011636,
+          "formatter": 0.646121,
+          "sr": 0.00343
+        },
+        "L4": {
+          "total": 0.5365949999999999,
+          "inspection": 0.530605,
+          "verification": 0.001324,
+          "state": 0.004666
+        }
+      },
+      "wado_bytes": 125374734,
+      "wado_mb": 125.37,
+      "qido_instances": 238
+    },
+    {
+      "volume_id": "2.000000-NA-09778.nii",
+      "volume_name": "2.000000-NA-09778.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.193060940991432251540234479399",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        217
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        80
+      ],
+      "raw_voxel_count": 56885248,
+      "proc_voxel_count": 3461120,
+      "g0_ms": 140.787644,
+      "g4_total_ms": 1010.334665,
+      "protocol_overhead_ms": 981.320118,
+      "inference_ms": 29.014547,
+      "validation_error_pct": 9.960994904872614,
+      "layers": {
+        "L1": {
+          "total": 979.9806189999999,
+          "query": 592.691276,
+          "fetch": 387.289343
+        },
+        "L2": {
+          "total": 0.453513,
+          "deid": 0.029735,
+          "audit_start": 0.210673,
+          "audit_complete": 0.213105
+        },
+        "L3": {
+          "total": 0.5069899999999999,
+          "registry": 0.004129,
+          "formatter": 0.499071,
+          "sr": 0.00379
+        },
+        "L4": {
+          "total": 0.37899599999999994,
+          "inspection": 0.372368,
+          "verification": 0.001382,
+          "state": 0.005246
+        }
+      },
+      "wado_bytes": 114248526,
+      "wado_mb": 114.25,
+      "qido_instances": 217
+    },
+    {
+      "volume_id": "3.000000-CHEST-35275.nii",
+      "volume_name": "3.000000-CHEST-35275.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.254734404186354295325724812720",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.641508,
+      "g4_total_ms": 558.486674,
+      "protocol_overhead_ms": 524.347931,
+      "inference_ms": 34.138743,
+      "validation_error_pct": 0.26835595376291865,
+      "layers": {
+        "L1": {
+          "total": 522.749714,
+          "query": 310.058133,
+          "fetch": 212.691581
+        },
+        "L2": {
+          "total": 0.466916,
+          "deid": 0.03339,
+          "audit_start": 0.220948,
+          "audit_complete": 0.212578
+        },
+        "L3": {
+          "total": 0.65352,
+          "registry": 0.004119,
+          "formatter": 0.646338,
+          "sr": 0.003063
+        },
+        "L4": {
+          "total": 0.477781,
+          "inspection": 0.472119,
+          "verification": 0.001282,
+          "state": 0.00438
+        }
+      },
+      "wado_bytes": 70065996,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-NA-55750.nii",
+      "volume_name": "3.000000-NA-55750.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.106941897938005462856300775001",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 37.336972,
+      "g4_total_ms": 495.28483300000005,
+      "protocol_overhead_ms": 460.48118600000004,
+      "inference_ms": 34.803647,
+      "validation_error_pct": 0.5088856160204567,
+      "layers": {
+        "L1": {
+          "total": 459.488712,
+          "query": 266.815176,
+          "fetch": 192.673536
+        },
+        "L2": {
+          "total": 0.331653,
+          "deid": 0.025171,
+          "audit_start": 0.159127,
+          "audit_complete": 0.147355
+        },
+        "L3": {
+          "total": 0.380326,
+          "registry": 0.002337,
+          "formatter": 0.375504,
+          "sr": 0.002485
+        },
+        "L4": {
+          "total": 0.280495,
+          "inspection": 0.276599,
+          "verification": 0.000821,
+          "state": 0.003075
+        }
+      },
+      "wado_bytes": 70035688,
+      "wado_mb": 70.04,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-NA-92139.nii",
+      "volume_name": "3.000000-NA-92139.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.190578678221433604759795450204",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.119255,
+      "g4_total_ms": 615.237418,
+      "protocol_overhead_ms": 580.996383,
+      "inference_ms": 34.241035,
+      "validation_error_pct": 0.14254142336830963,
+      "layers": {
+        "L1": {
+          "total": 579.957038,
+          "query": 392.696191,
+          "fetch": 187.260847
+        },
+        "L2": {
+          "total": 0.361025,
+          "deid": 0.027468,
+          "audit_start": 0.181424,
+          "audit_complete": 0.152133
+        },
+        "L3": {
+          "total": 0.394248,
+          "registry": 0.002631,
+          "formatter": 0.388827,
+          "sr": 0.00279
+        },
+        "L4": {
+          "total": 0.284072,
+          "inspection": 0.279755,
+          "verification": 0.001002,
+          "state": 0.003315
+        }
+      },
+      "wado_bytes": 70035954,
+      "wado_mb": 70.04,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-Recon 2 C-A-P-16964.nii",
+      "volume_name": "3.000000-Recon 2 C-A-P-16964.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.280531413986295071283803322793",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 77.395532,
+      "g4_total_ms": 486.32197800000006,
+      "protocol_overhead_ms": 451.49818700000003,
+      "inference_ms": 34.823791,
+      "validation_error_pct": 8.049205250629942,
+      "layers": {
+        "L1": {
+          "total": 450.48297,
+          "query": 257.085255,
+          "fetch": 193.397715
+        },
+        "L2": {
+          "total": 0.333938,
+          "deid": 0.023921,
+          "audit_start": 0.158085,
+          "audit_complete": 0.151932
+        },
+        "L3": {
+          "total": 0.394764,
+          "registry": 0.002326,
+          "formatter": 0.390299,
+          "sr": 0.002139
+        },
+        "L4": {
+          "total": 0.28651499999999996,
+          "inspection": 0.282784,
+          "verification": 0.00066,
+          "state": 0.003071
+        }
+      },
+      "wado_bytes": 66898270,
+      "wado_mb": 66.9,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "3.000000-Recon 2 C-A-P-38704.nii",
+      "volume_name": "3.000000-Recon 2 C-A-P-38704.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.180685600263085599637486877417",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.075502,
+      "g4_total_ms": 547.108502,
+      "protocol_overhead_ms": 512.4623720000001,
+      "inference_ms": 34.64613,
+      "validation_error_pct": 0.2605785430232767,
+      "layers": {
+        "L1": {
+          "total": 511.500366,
+          "query": 302.854626,
+          "fetch": 208.64574
+        },
+        "L2": {
+          "total": 0.33487,
+          "deid": 0.02364,
+          "audit_start": 0.157386,
+          "audit_complete": 0.153844
+        },
+        "L3": {
+          "total": 0.364222,
+          "registry": 0.002507,
+          "formatter": 0.359074,
+          "sr": 0.002641
+        },
+        "L4": {
+          "total": 0.262914,
+          "inspection": 0.259228,
+          "verification": 0.00077,
+          "state": 0.002916
+        }
+      },
+      "wado_bytes": 66906398,
+      "wado_mb": 66.91,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "3.000000-Recon 2 C-A-P-49228.nii",
+      "volume_name": "3.000000-Recon 2 C-A-P-49228.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.286257039861864871390665013995",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        137
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 35913728,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.357409,
+      "g4_total_ms": 508.418477,
+      "protocol_overhead_ms": 474.579686,
+      "inference_ms": 33.838791,
+      "validation_error_pct": 0.4929409167287029,
+      "layers": {
+        "L1": {
+          "total": 473.548407,
+          "query": 254.51232,
+          "fetch": 219.036087
+        },
+        "L2": {
+          "total": 0.343462,
+          "deid": 0.025926,
+          "audit_start": 0.168726,
+          "audit_complete": 0.14881
+        },
+        "L3": {
+          "total": 0.397601,
+          "registry": 0.002111,
+          "formatter": 0.393215,
+          "sr": 0.002275
+        },
+        "L4": {
+          "total": 0.290216,
+          "inspection": 0.286792,
+          "verification": 0.000645,
+          "state": 0.002779
+        }
+      },
+      "wado_bytes": 72162026,
+      "wado_mb": 72.16,
+      "qido_instances": 137
+    },
+    {
+      "volume_id": "3.000000-Recon 2 C-A-P-85333.nii",
+      "volume_name": "3.000000-Recon 2 C-A-P-85333.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.166470028796367356611092393530",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.14757,
+      "g4_total_ms": 550.6092290000001,
+      "protocol_overhead_ms": 516.6402540000001,
+      "inference_ms": 33.968975,
+      "validation_error_pct": 0.21359568818611208,
+      "layers": {
+        "L1": {
+          "total": 515.714384,
+          "query": 337.35167,
+          "fetch": 178.362714
+        },
+        "L2": {
+          "total": 0.33260899999999993,
+          "deid": 0.027296,
+          "audit_start": 0.164674,
+          "audit_complete": 0.140639
+        },
+        "L3": {
+          "total": 0.310456,
+          "registry": 0.002136,
+          "formatter": 0.306102,
+          "sr": 0.002218
+        },
+        "L4": {
+          "total": 0.282805,
+          "inspection": 0.279005,
+          "verification": 0.000712,
+          "state": 0.003088
+        }
+      },
+      "wado_bytes": 66897762,
+      "wado_mb": 66.9,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-04872.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-04872.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.577239032421661596436882763701",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        140
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 36700160,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.493098,
+      "g4_total_ms": 531.300246,
+      "protocol_overhead_ms": 497.499867,
+      "inference_ms": 33.800379,
+      "validation_error_pct": 0.3175874938612015,
+      "layers": {
+        "L1": {
+          "total": 496.434984,
+          "query": 278.6308,
+          "fetch": 217.804184
+        },
+        "L2": {
+          "total": 0.353548,
+          "deid": 0.041382,
+          "audit_start": 0.158794,
+          "audit_complete": 0.153372
+        },
+        "L3": {
+          "total": 0.40872400000000003,
+          "registry": 0.009068,
+          "formatter": 0.397326,
+          "sr": 0.00233
+        },
+        "L4": {
+          "total": 0.30261099999999996,
+          "inspection": 0.295075,
+          "verification": 0.000835,
+          "state": 0.006701
+        }
+      },
+      "wado_bytes": 73752702,
+      "wado_mb": 73.75,
+      "qido_instances": 140
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-05032.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-05032.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.309564852246680613688744241427",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        131
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34340864,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.423635,
+      "g4_total_ms": 551.167867,
+      "protocol_overhead_ms": 516.837433,
+      "inference_ms": 34.330434,
+      "validation_error_pct": 0.37833874838994125,
+      "layers": {
+        "L1": {
+          "total": 515.546818,
+          "query": 274.152476,
+          "fetch": 241.394342
+        },
+        "L2": {
+          "total": 0.44586800000000004,
+          "deid": 0.04155,
+          "audit_start": 0.215319,
+          "audit_complete": 0.188999
+        },
+        "L3": {
+          "total": 0.441867,
+          "registry": 0.002606,
+          "formatter": 0.436726,
+          "sr": 0.002535
+        },
+        "L4": {
+          "total": 0.40287999999999996,
+          "inspection": 0.398709,
+          "verification": 0.000779,
+          "state": 0.003392
+        }
+      },
+      "wado_bytes": 69010860,
+      "wado_mb": 69.01,
+      "qido_instances": 131
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-06551.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-06551.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.175760080411828194592094064838",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.143337,
+      "g4_total_ms": 517.691546,
+      "protocol_overhead_ms": 483.829045,
+      "inference_ms": 33.862501,
+      "validation_error_pct": 0.4386456048352241,
+      "layers": {
+        "L1": {
+          "total": 482.721696,
+          "query": 285.485627,
+          "fetch": 197.236069
+        },
+        "L2": {
+          "total": 0.362937,
+          "deid": 0.029642,
+          "audit_start": 0.173066,
+          "audit_complete": 0.160229
+        },
+        "L3": {
+          "total": 0.435744,
+          "registry": 0.002371,
+          "formatter": 0.430732,
+          "sr": 0.002641
+        },
+        "L4": {
+          "total": 0.308668,
+          "inspection": 0.304442,
+          "verification": 0.001079,
+          "state": 0.003147
+        }
+      },
+      "wado_bytes": 66894198,
+      "wado_mb": 66.89,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-06819.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-06819.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.337712862699308652663458299448",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        131
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34340864,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 83.388694,
+      "g4_total_ms": 587.2165599999998,
+      "protocol_overhead_ms": 550.3030049999999,
+      "inference_ms": 36.913555,
+      "validation_error_pct": 7.334029950737926,
+      "layers": {
+        "L1": {
+          "total": 548.0512269999999,
+          "query": 359.280599,
+          "fetch": 188.770628
+        },
+        "L2": {
+          "total": 0.656308,
+          "deid": 0.051492,
+          "audit_start": 0.360839,
+          "audit_complete": 0.243977
+        },
+        "L3": {
+          "total": 0.880764,
+          "registry": 0.00632,
+          "formatter": 0.871235,
+          "sr": 0.003209
+        },
+        "L4": {
+          "total": 0.714706,
+          "inspection": 0.707727,
+          "verification": 0.002166,
+          "state": 0.004813
+        }
+      },
+      "wado_bytes": 68999264,
+      "wado_mb": 69.0,
+      "qido_instances": 131
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-13394.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-13394.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.278420383577925795821592801973",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        145
+      ],
+      "proc_shape": [
+        1,
+        240,
+        240,
+        64
+      ],
+      "raw_voxel_count": 38010880,
+      "proc_voxel_count": 3686400,
+      "g0_ms": 30.497992,
+      "g4_total_ms": 505.002975,
+      "protocol_overhead_ms": 475.002457,
+      "inference_ms": 30.000518,
+      "validation_error_pct": 0.09841217767148037,
+      "layers": {
+        "L1": {
+          "total": 474.10153,
+          "query": 252.832723,
+          "fetch": 221.268807
+        },
+        "L2": {
+          "total": 0.316151,
+          "deid": 0.02459,
+          "audit_start": 0.169654,
+          "audit_complete": 0.121907
+        },
+        "L3": {
+          "total": 0.28911400000000004,
+          "registry": 0.002914,
+          "formatter": 0.28448,
+          "sr": 0.00172
+        },
+        "L4": {
+          "total": 0.295662,
+          "inspection": 0.292356,
+          "verification": 0.00082,
+          "state": 0.002486
+        }
+      },
+      "wado_bytes": 76377920,
+      "wado_mb": 76.38,
+      "qido_instances": 145
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-51928.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-51928.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.205295494158831463556858756520",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.978596,
+      "g4_total_ms": 502.215116,
+      "protocol_overhead_ms": 468.16721,
+      "inference_ms": 34.047906,
+      "validation_error_pct": 0.18497421401540412,
+      "layers": {
+        "L1": {
+          "total": 467.27333,
+          "query": 285.491067,
+          "fetch": 181.782263
+        },
+        "L2": {
+          "total": 0.32133900000000004,
+          "deid": 0.022674,
+          "audit_start": 0.162003,
+          "audit_complete": 0.136662
+        },
+        "L3": {
+          "total": 0.30794900000000003,
+          "registry": 0.002742,
+          "formatter": 0.303413,
+          "sr": 0.001794
+        },
+        "L4": {
+          "total": 0.264592,
+          "inspection": 0.26106,
+          "verification": 0.000641,
+          "state": 0.002891
+        }
+      },
+      "wado_bytes": 70065076,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-54230.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-54230.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.274709137328120797052487052456",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.2639,
+      "g4_total_ms": 440.03949099999994,
+      "protocol_overhead_ms": 406.12123699999995,
+      "inference_ms": 33.918254,
+      "validation_error_pct": 0.0784872083455414,
+      "layers": {
+        "L1": {
+          "total": 405.225444,
+          "query": 228.383876,
+          "fetch": 176.841568
+        },
+        "L2": {
+          "total": 0.309243,
+          "deid": 0.023206,
+          "audit_start": 0.152636,
+          "audit_complete": 0.133401
+        },
+        "L3": {
+          "total": 0.31109200000000004,
+          "registry": 0.002377,
+          "formatter": 0.306765,
+          "sr": 0.00195
+        },
+        "L4": {
+          "total": 0.27545800000000004,
+          "inspection": 0.272162,
+          "verification": 0.000676,
+          "state": 0.00262
+        }
+      },
+      "wado_bytes": 70055658,
+      "wado_mb": 70.06,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-55819.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-55819.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.217723017594466509330246364292",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        139
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 36438016,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.559256,
+      "g4_total_ms": 585.7722070000001,
+      "protocol_overhead_ms": 551.2470870000001,
+      "inference_ms": 34.52512,
+      "validation_error_pct": 0.3460554694966926,
+      "layers": {
+        "L1": {
+          "total": 550.3271520000001,
+          "query": 346.522105,
+          "fetch": 203.805047
+        },
+        "L2": {
+          "total": 0.34408099999999997,
+          "deid": 0.023516,
+          "audit_start": 0.171261,
+          "audit_complete": 0.149304
+        },
+        "L3": {
+          "total": 0.315324,
+          "registry": 0.002462,
+          "formatter": 0.310743,
+          "sr": 0.002119
+        },
+        "L4": {
+          "total": 0.26053000000000004,
+          "inspection": 0.256213,
+          "verification": 0.000622,
+          "state": 0.003695
+        }
+      },
+      "wado_bytes": 73213048,
+      "wado_mb": 73.21,
+      "qido_instances": 139
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-61062.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-61062.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.561164700626233888666112673613",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 37.478547,
+      "g4_total_ms": 510.867338,
+      "protocol_overhead_ms": 476.639205,
+      "inference_ms": 34.228133,
+      "validation_error_pct": 0.6322314270136267,
+      "layers": {
+        "L1": {
+          "total": 475.38228,
+          "query": 272.843737,
+          "fetch": 202.538543
+        },
+        "L2": {
+          "total": 0.6017399999999999,
+          "deid": 0.023343,
+          "audit_start": 0.43481,
+          "audit_complete": 0.143587
+        },
+        "L3": {
+          "total": 0.36044600000000004,
+          "registry": 0.002497,
+          "formatter": 0.355831,
+          "sr": 0.002118
+        },
+        "L4": {
+          "total": 0.294739,
+          "inspection": 0.291105,
+          "verification": 0.00066,
+          "state": 0.002974
+        }
+      },
+      "wado_bytes": 70061974,
+      "wado_mb": 70.06,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-67131.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-67131.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.103909846248671377349144781232",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        95
+      ],
+      "proc_shape": [
+        1,
+        288,
+        288,
+        48
+      ],
+      "raw_voxel_count": 24903680,
+      "proc_voxel_count": 3981312,
+      "g0_ms": 145.157417,
+      "g4_total_ms": 345.06362,
+      "protocol_overhead_ms": 311.528841,
+      "inference_ms": 33.534779,
+      "validation_error_pct": 24.441864856813798,
+      "layers": {
+        "L1": {
+          "total": 310.642362,
+          "query": 166.164231,
+          "fetch": 144.478131
+        },
+        "L2": {
+          "total": 0.311033,
+          "deid": 0.023608,
+          "audit_start": 0.15746,
+          "audit_complete": 0.129965
+        },
+        "L3": {
+          "total": 0.305844,
+          "registry": 0.002053,
+          "formatter": 0.301929,
+          "sr": 0.001862
+        },
+        "L4": {
+          "total": 0.269602,
+          "inspection": 0.265573,
+          "verification": 0.000975,
+          "state": 0.003054
+        }
+      },
+      "wado_bytes": 50038150,
+      "wado_mb": 50.04,
+      "qido_instances": 95
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-67838.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-67838.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.305703349227966644337102413678",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        140
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 36700160,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.715753,
+      "g4_total_ms": 476.59958500000005,
+      "protocol_overhead_ms": 442.40269700000005,
+      "inference_ms": 34.196888,
+      "validation_error_pct": 0.317675463057325,
+      "layers": {
+        "L1": {
+          "total": 441.41524000000004,
+          "query": 234.824306,
+          "fetch": 206.590934
+        },
+        "L2": {
+          "total": 0.326656,
+          "deid": 0.024812,
+          "audit_start": 0.155001,
+          "audit_complete": 0.146843
+        },
+        "L3": {
+          "total": 0.37152599999999997,
+          "registry": 0.002479,
+          "formatter": 0.36704,
+          "sr": 0.002007
+        },
+        "L4": {
+          "total": 0.289275,
+          "inspection": 0.285781,
+          "verification": 0.000641,
+          "state": 0.002853
+        }
+      },
+      "wado_bytes": 73742714,
+      "wado_mb": 73.74,
+      "qido_instances": 140
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-74757.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-74757.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.300568323537528705778699437287",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        137
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 35913728,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.791276,
+      "g4_total_ms": 571.368503,
+      "protocol_overhead_ms": 536.577935,
+      "inference_ms": 34.790568,
+      "validation_error_pct": 0.00012391287216760114,
+      "layers": {
+        "L1": {
+          "total": 535.567133,
+          "query": 341.251547,
+          "fetch": 194.315586
+        },
+        "L2": {
+          "total": 0.33245899999999995,
+          "deid": 0.02408,
+          "audit_start": 0.159933,
+          "audit_complete": 0.148446
+        },
+        "L3": {
+          "total": 0.40151899999999996,
+          "registry": 0.002814,
+          "formatter": 0.396205,
+          "sr": 0.0025
+        },
+        "L4": {
+          "total": 0.276824,
+          "inspection": 0.273122,
+          "verification": 0.000829,
+          "state": 0.002873
+        }
+      },
+      "wado_bytes": 72159294,
+      "wado_mb": 72.16,
+      "qido_instances": 137
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-92308.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-92308.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.159154526664736300420420966290",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 38.645489,
+      "g4_total_ms": 536.668864,
+      "protocol_overhead_ms": 502.865525,
+      "inference_ms": 33.803339,
+      "validation_error_pct": 0.8941923386252579,
+      "layers": {
+        "L1": {
+          "total": 501.790544,
+          "query": 287.74826,
+          "fetch": 214.042284
+        },
+        "L2": {
+          "total": 0.341301,
+          "deid": 0.025514,
+          "audit_start": 0.162673,
+          "audit_complete": 0.153114
+        },
+        "L3": {
+          "total": 0.41894000000000003,
+          "registry": 0.002577,
+          "formatter": 0.413766,
+          "sr": 0.002597
+        },
+        "L4": {
+          "total": 0.31474,
+          "inspection": 0.310942,
+          "verification": 0.000692,
+          "state": 0.003106
+        }
+      },
+      "wado_bytes": 70067334,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-92345.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-92345.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.973595488903805096383507205745",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 37.270037,
+      "g4_total_ms": 527.582848,
+      "protocol_overhead_ms": 493.622821,
+      "inference_ms": 33.960027,
+      "validation_error_pct": 0.623479850994703,
+      "layers": {
+        "L1": {
+          "total": 492.610201,
+          "query": 293.731824,
+          "fetch": 198.878377
+        },
+        "L2": {
+          "total": 0.337028,
+          "deid": 0.023907,
+          "audit_start": 0.160045,
+          "audit_complete": 0.153076
+        },
+        "L3": {
+          "total": 0.38758699999999996,
+          "registry": 0.002221,
+          "formatter": 0.383141,
+          "sr": 0.002225
+        },
+        "L4": {
+          "total": 0.288005,
+          "inspection": 0.28419,
+          "verification": 0.000719,
+          "state": 0.003096
+        }
+      },
+      "wado_bytes": 70052466,
+      "wado_mb": 70.05,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-94040.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-94040.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.166043246571762775528650569121",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 37.016701,
+      "g4_total_ms": 488.405819,
+      "protocol_overhead_ms": 454.401207,
+      "inference_ms": 34.004612,
+      "validation_error_pct": 0.6129383872595875,
+      "layers": {
+        "L1": {
+          "total": 453.247137,
+          "query": 262.220278,
+          "fetch": 191.026859
+        },
+        "L2": {
+          "total": 0.365117,
+          "deid": 0.026024,
+          "audit_start": 0.173367,
+          "audit_complete": 0.165726
+        },
+        "L3": {
+          "total": 0.476339,
+          "registry": 0.002557,
+          "formatter": 0.471135,
+          "sr": 0.002647
+        },
+        "L4": {
+          "total": 0.312614,
+          "inspection": 0.308392,
+          "verification": 0.000784,
+          "state": 0.003438
+        }
+      },
+      "wado_bytes": 66906334,
+      "wado_mb": 66.91,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-95147.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-95147.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.150188222462440903489565305064",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        150
+      ],
+      "proc_shape": [
+        1,
+        240,
+        240,
+        64
+      ],
+      "raw_voxel_count": 39321600,
+      "proc_voxel_count": 3686400,
+      "g0_ms": 92.584452,
+      "g4_total_ms": 645.082901,
+      "protocol_overhead_ms": 615.024537,
+      "inference_ms": 30.058364,
+      "validation_error_pct": 8.83624840441365,
+      "layers": {
+        "L1": {
+          "total": 613.8786789999999,
+          "query": 401.365279,
+          "fetch": 212.5134
+        },
+        "L2": {
+          "total": 0.36570400000000003,
+          "deid": 0.026507,
+          "audit_start": 0.164751,
+          "audit_complete": 0.174446
+        },
+        "L3": {
+          "total": 0.47839299999999996,
+          "registry": 0.0025,
+          "formatter": 0.473778,
+          "sr": 0.002115
+        },
+        "L4": {
+          "total": 0.301761,
+          "inspection": 0.297321,
+          "verification": 0.000799,
+          "state": 0.003641
+        }
+      },
+      "wado_bytes": 79019482,
+      "wado_mb": 79.02,
+      "qido_instances": 150
+    },
+    {
+      "volume_id": "3.000000-Recon 2 CHEST-96610.nii",
+      "volume_name": "3.000000-Recon 2 CHEST-96610.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.257497390857480311387964520553",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        145
+      ],
+      "proc_shape": [
+        1,
+        240,
+        240,
+        64
+      ],
+      "raw_voxel_count": 38010880,
+      "proc_voxel_count": 3686400,
+      "g0_ms": 80.488148,
+      "g4_total_ms": 588.5433340000001,
+      "protocol_overhead_ms": 557.1984970000001,
+      "inference_ms": 31.344837,
+      "validation_error_pct": 7.706498385268838,
+      "layers": {
+        "L1": {
+          "total": 556.026291,
+          "query": 333.80888,
+          "fetch": 222.217411
+        },
+        "L2": {
+          "total": 0.350739,
+          "deid": 0.026091,
+          "audit_start": 0.164612,
+          "audit_complete": 0.160036
+        },
+        "L3": {
+          "total": 0.47773499999999997,
+          "registry": 0.003198,
+          "formatter": 0.472267,
+          "sr": 0.00227
+        },
+        "L4": {
+          "total": 0.343732,
+          "inspection": 0.338538,
+          "verification": 0.000793,
+          "state": 0.004401
+        }
+      },
+      "wado_bytes": 76373308,
+      "wado_mb": 76.37,
+      "qido_instances": 145
+    },
+    {
+      "volume_id": "3000645.000000-NA-19348.nii",
+      "volume_name": "3000645.000000-NA-19348.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.143992300791476122502099615811",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        238
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 62390272,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 70.469501,
+      "g4_total_ms": 811.035309,
+      "protocol_overhead_ms": 776.409715,
+      "inference_ms": 34.625594,
+      "validation_error_pct": 4.232469792953339,
+      "layers": {
+        "L1": {
+          "total": 775.43397,
+          "query": 421.62802,
+          "fetch": 353.80595
+        },
+        "L2": {
+          "total": 0.356208,
+          "deid": 0.026343,
+          "audit_start": 0.172442,
+          "audit_complete": 0.157423
+        },
+        "L3": {
+          "total": 0.3294,
+          "registry": 0.002798,
+          "formatter": 0.324644,
+          "sr": 0.001958
+        },
+        "L4": {
+          "total": 0.290137,
+          "inspection": 0.286306,
+          "verification": 0.000741,
+          "state": 0.00309
+        }
+      },
+      "wado_bytes": 125327430,
+      "wado_mb": 125.33,
+      "qido_instances": 238
+    },
+    {
+      "volume_id": "3000653.000000-NA-67579.nii",
+      "volume_name": "3000653.000000-NA-67579.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.212697393127299815450339637649",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        310
+      ],
+      "proc_shape": [
+        1,
+        192,
+        192,
+        112
+      ],
+      "raw_voxel_count": 81264640,
+      "proc_voxel_count": 4128768,
+      "g0_ms": 84.417544,
+      "g4_total_ms": 1105.6998929999997,
+      "protocol_overhead_ms": 1071.7180549999998,
+      "inference_ms": 33.981838,
+      "validation_error_pct": 4.362438631214572,
+      "layers": {
+        "L1": {
+          "total": 1070.863191,
+          "query": 627.537852,
+          "fetch": 443.325339
+        },
+        "L2": {
+          "total": 0.308942,
+          "deid": 0.0237,
+          "audit_start": 0.160736,
+          "audit_complete": 0.124506
+        },
+        "L3": {
+          "total": 0.270958,
+          "registry": 0.002067,
+          "formatter": 0.266934,
+          "sr": 0.001957
+        },
+        "L4": {
+          "total": 0.27496400000000004,
+          "inspection": 0.27183,
+          "verification": 0.000599,
+          "state": 0.002535
+        }
+      },
+      "wado_bytes": 163246074,
+      "wado_mb": 163.25,
+      "qido_instances": 310
+    },
+    {
+      "volume_id": "3000668.000000-NA-22488.nii",
+      "volume_name": "3000668.000000-NA-22488.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.289084067435838460184299744241",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        139
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 36438016,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 79.189863,
+      "g4_total_ms": 462.828438,
+      "protocol_overhead_ms": 428.957399,
+      "inference_ms": 33.871039,
+      "validation_error_pct": 8.91844301622942,
+      "layers": {
+        "L1": {
+          "total": 428.162423,
+          "query": 235.015332,
+          "fetch": 193.147091
+        },
+        "L2": {
+          "total": 0.28624099999999997,
+          "deid": 0.023304,
+          "audit_start": 0.158228,
+          "audit_complete": 0.104709
+        },
+        "L3": {
+          "total": 0.24454099999999998,
+          "registry": 0.002244,
+          "formatter": 0.239885,
+          "sr": 0.002412
+        },
+        "L4": {
+          "total": 0.264194,
+          "inspection": 0.260696,
+          "verification": 0.000912,
+          "state": 0.002586
+        }
+      },
+      "wado_bytes": 73196066,
+      "wado_mb": 73.2,
+      "qido_instances": 139
+    },
+    {
+      "volume_id": "3000669.000000-NA-59527.nii",
+      "volume_name": "3000669.000000-NA-59527.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.200556866344536431817884531386",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        139
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 36438016,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.66412,
+      "g4_total_ms": 588.169624,
+      "protocol_overhead_ms": 554.037627,
+      "inference_ms": 34.131997,
+      "validation_error_pct": 0.2598132035040536,
+      "layers": {
+        "L1": {
+          "total": 552.979699,
+          "query": 350.961725,
+          "fetch": 202.017974
+        },
+        "L2": {
+          "total": 0.355036,
+          "deid": 0.025573,
+          "audit_start": 0.167737,
+          "audit_complete": 0.161726
+        },
+        "L3": {
+          "total": 0.391882,
+          "registry": 0.00233,
+          "formatter": 0.387263,
+          "sr": 0.002289
+        },
+        "L4": {
+          "total": 0.31101,
+          "inspection": 0.307301,
+          "verification": 0.000612,
+          "state": 0.003097
+        }
+      },
+      "wado_bytes": 73195740,
+      "wado_mb": 73.2,
+      "qido_instances": 139
+    },
+    {
+      "volume_id": "3000689.000000-NA-47209.nii",
+      "volume_name": "3000689.000000-NA-47209.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.138751917514248782010778675083",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        238
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 62390272,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 62.778103,
+      "g4_total_ms": 966.1648270000001,
+      "protocol_overhead_ms": 931.675153,
+      "inference_ms": 34.489674,
+      "validation_error_pct": 2.844621286050669,
+      "layers": {
+        "L1": {
+          "total": 930.115994,
+          "query": 577.56611,
+          "fetch": 352.549884
+        },
+        "L2": {
+          "total": 0.544443,
+          "deid": 0.103943,
+          "audit_start": 0.233755,
+          "audit_complete": 0.206745
+        },
+        "L3": {
+          "total": 0.616857,
+          "registry": 0.021331,
+          "formatter": 0.592459,
+          "sr": 0.003067
+        },
+        "L4": {
+          "total": 0.39785899999999996,
+          "inspection": 0.392388,
+          "verification": 0.001416,
+          "state": 0.004055
+        }
+      },
+      "wado_bytes": 125329426,
+      "wado_mb": 125.33,
+      "qido_instances": 238
+    },
+    {
+      "volume_id": "3000692.000000-NA-24156.nii",
+      "volume_name": "3000692.000000-NA-24156.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.168697575496383193075236640012",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        114
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 29884416,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 78.603889,
+      "g4_total_ms": 547.5598570000001,
+      "protocol_overhead_ms": 517.913577,
+      "inference_ms": 29.64628,
+      "validation_error_pct": 8.207238143132582,
+      "layers": {
+        "L1": {
+          "total": 515.912914,
+          "query": 310.109374,
+          "fetch": 205.80354
+        },
+        "L2": {
+          "total": 0.6878420000000001,
+          "deid": 0.072952,
+          "audit_start": 0.35119,
+          "audit_complete": 0.2637
+        },
+        "L3": {
+          "total": 0.669842,
+          "registry": 0.004133,
+          "formatter": 0.661283,
+          "sr": 0.004426
+        },
+        "L4": {
+          "total": 0.642979,
+          "inspection": 0.635478,
+          "verification": 0.001626,
+          "state": 0.005875
+        }
+      },
+      "wado_bytes": 60032346,
+      "wado_mb": 60.03,
+      "qido_instances": 114
+    },
+    {
+      "volume_id": "3000694.000000-NA-09852.nii",
+      "volume_name": "3000694.000000-NA-09852.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.178055839088630125000227320316",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        113
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 29622272,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 31.290318,
+      "g4_total_ms": 378.727628,
+      "protocol_overhead_ms": 349.714766,
+      "inference_ms": 29.012862,
+      "validation_error_pct": 0.5977495040459957,
+      "layers": {
+        "L1": {
+          "total": 348.827968,
+          "query": 198.53088,
+          "fetch": 150.297088
+        },
+        "L2": {
+          "total": 0.309984,
+          "deid": 0.022218,
+          "audit_start": 0.155786,
+          "audit_complete": 0.13198
+        },
+        "L3": {
+          "total": 0.30952100000000005,
+          "registry": 0.002089,
+          "formatter": 0.305586,
+          "sr": 0.001846
+        },
+        "L4": {
+          "total": 0.267293,
+          "inspection": 0.263656,
+          "verification": 0.000736,
+          "state": 0.002901
+        }
+      },
+      "wado_bytes": 59503758,
+      "wado_mb": 59.5,
+      "qido_instances": 113
+    },
+    {
+      "volume_id": "3000696.000000-NA-27171.nii",
+      "volume_name": "3000696.000000-NA-27171.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.662868666186676193600672178489",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        135
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 35389440,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.03989,
+      "g4_total_ms": 558.0605830000001,
+      "protocol_overhead_ms": 524.11779,
+      "inference_ms": 33.942793,
+      "validation_error_pct": 0.1962052993710043,
+      "layers": {
+        "L1": {
+          "total": 523.079133,
+          "query": 317.525968,
+          "fetch": 205.553165
+        },
+        "L2": {
+          "total": 0.347987,
+          "deid": 0.022424,
+          "audit_start": 0.177199,
+          "audit_complete": 0.148364
+        },
+        "L3": {
+          "total": 0.392359,
+          "registry": 0.002201,
+          "formatter": 0.387723,
+          "sr": 0.002435
+        },
+        "L4": {
+          "total": 0.298311,
+          "inspection": 0.294049,
+          "verification": 0.000732,
+          "state": 0.00353
+        }
+      },
+      "wado_bytes": 71093196,
+      "wado_mb": 71.09,
+      "qido_instances": 135
+    },
+    {
+      "volume_id": "3000697.000000-NA-12235.nii",
+      "volume_name": "3000697.000000-NA-12235.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.229037285595999197108233114060",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.317923,
+      "g4_total_ms": 434.868933,
+      "protocol_overhead_ms": 400.18107100000003,
+      "inference_ms": 34.687862,
+      "validation_error_pct": 0.08514150898125854,
+      "layers": {
+        "L1": {
+          "total": 399.226814,
+          "query": 195.670369,
+          "fetch": 203.556445
+        },
+        "L2": {
+          "total": 0.32454,
+          "deid": 0.021707,
+          "audit_start": 0.153507,
+          "audit_complete": 0.149326
+        },
+        "L3": {
+          "total": 0.36357799999999996,
+          "registry": 0.002173,
+          "formatter": 0.359616,
+          "sr": 0.001789
+        },
+        "L4": {
+          "total": 0.266139,
+          "inspection": 0.261926,
+          "verification": 0.000651,
+          "state": 0.003562
+        }
+      },
+      "wado_bytes": 70035084,
+      "wado_mb": 70.04,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3000703.000000-NA-75826.nii",
+      "volume_name": "3000703.000000-NA-75826.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.219081768759399413645906161308",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 78.316912,
+      "g4_total_ms": 534.0670539999999,
+      "protocol_overhead_ms": 500.0414809999999,
+      "inference_ms": 34.025573,
+      "validation_error_pct": 7.658112951427352,
+      "layers": {
+        "L1": {
+          "total": 499.02338,
+          "query": 307.32495,
+          "fetch": 191.69843
+        },
+        "L2": {
+          "total": 0.323268,
+          "deid": 0.020279,
+          "audit_start": 0.155323,
+          "audit_complete": 0.147666
+        },
+        "L3": {
+          "total": 0.406708,
+          "registry": 0.002275,
+          "formatter": 0.401472,
+          "sr": 0.002961
+        },
+        "L4": {
+          "total": 0.28812499999999996,
+          "inspection": 0.284359,
+          "verification": 0.000778,
+          "state": 0.002988
+        }
+      },
+      "wado_bytes": 70039400,
+      "wado_mb": 70.04,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "3000737.000000-NA-58706.nii",
+      "volume_name": "3000737.000000-NA-58706.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.107117680739311641559517949056",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        251
+      ],
+      "proc_shape": [
+        1,
+        208,
+        208,
+        96
+      ],
+      "raw_voxel_count": 65798144,
+      "proc_voxel_count": 4153344,
+      "g0_ms": 71.417417,
+      "g4_total_ms": 922.917822,
+      "protocol_overhead_ms": 889.204763,
+      "inference_ms": 33.713059,
+      "validation_error_pct": 3.9249934870335763,
+      "layers": {
+        "L1": {
+          "total": 888.2780399999999,
+          "query": 530.698624,
+          "fetch": 357.579416
+        },
+        "L2": {
+          "total": 0.34830700000000003,
+          "deid": 0.042796,
+          "audit_start": 0.175095,
+          "audit_complete": 0.130416
+        },
+        "L3": {
+          "total": 0.29114100000000004,
+          "registry": 0.007771,
+          "formatter": 0.281272,
+          "sr": 0.002098
+        },
+        "L4": {
+          "total": 0.287275,
+          "inspection": 0.283283,
+          "verification": 0.000896,
+          "state": 0.003096
+        }
+      },
+      "wado_bytes": 132168644,
+      "wado_mb": 132.17,
+      "qido_instances": 251
+    },
+    {
+      "volume_id": "3000993.000000-NA-96632.nii",
+      "volume_name": "3000993.000000-NA-96632.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.244189239525688960213049258320",
+      "raw_shape": [
+        1,
+        2022,
+        2022,
+        4
+      ],
+      "proc_shape": [
+        1,
+        1328,
+        1328,
+        16
+      ],
+      "raw_voxel_count": 16353936,
+      "proc_voxel_count": 28217344,
+      "g0_ms": 273.434257,
+      "g4_total_ms": 433.085685,
+      "protocol_overhead_ms": 160.40845,
+      "inference_ms": 272.677235,
+      "validation_error_pct": 0.17449227284118118,
+      "layers": {
+        "L1": {
+          "total": 159.346028,
+          "query": 63.342151,
+          "fetch": 96.003877
+        },
+        "L2": {
+          "total": 0.33020400000000005,
+          "deid": 0.021848,
+          "audit_start": 0.153788,
+          "audit_complete": 0.154568
+        },
+        "L3": {
+          "total": 0.43910899999999997,
+          "registry": 0.00247,
+          "formatter": 0.434075,
+          "sr": 0.002564
+        },
+        "L4": {
+          "total": 0.29310899999999995,
+          "inspection": 0.288942,
+          "verification": 0.000671,
+          "state": 0.003496
+        }
+      },
+      "wado_bytes": 32715944,
+      "wado_mb": 32.72,
+      "qido_instances": 4
+    },
+    {
+      "volume_id": "3000995.000000-NA-12025.nii",
+      "volume_name": "3000995.000000-NA-12025.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.238358259238393314809951113622",
+      "raw_shape": [
+        1,
+        2022,
+        2022,
+        8
+      ],
+      "proc_shape": [
+        1,
+        1056,
+        1056,
+        16
+      ],
+      "raw_voxel_count": 32707872,
+      "proc_voxel_count": 17842176,
+      "g0_ms": 181.457556,
+      "g4_total_ms": 539.2447010000001,
+      "protocol_overhead_ms": 366.021854,
+      "inference_ms": 173.222847,
+      "validation_error_pct": 1.5041130039940591,
+      "layers": {
+        "L1": {
+          "total": 365.029378,
+          "query": 182.509136,
+          "fetch": 182.520242
+        },
+        "L2": {
+          "total": 0.345734,
+          "deid": 0.026329,
+          "audit_start": 0.165849,
+          "audit_complete": 0.153556
+        },
+        "L3": {
+          "total": 0.384585,
+          "registry": 0.002315,
+          "formatter": 0.379895,
+          "sr": 0.002375
+        },
+        "L4": {
+          "total": 0.262157,
+          "inspection": 0.258162,
+          "verification": 0.000972,
+          "state": 0.003023
+        }
+      },
+      "wado_bytes": 65431812,
+      "wado_mb": 65.43,
+      "qido_instances": 8
+    },
+    {
+      "volume_id": "3001574.000000-NA-66716.nii",
+      "volume_name": "3001574.000000-NA-66716.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.139924979295136441934494193333",
+      "raw_shape": [
+        1,
+        2022,
+        2022,
+        4
+      ],
+      "proc_shape": [
+        1,
+        1328,
+        1328,
+        16
+      ],
+      "raw_voxel_count": 16353936,
+      "proc_voxel_count": 28217344,
+      "g0_ms": 268.779631,
+      "g4_total_ms": 427.980229,
+      "protocol_overhead_ms": 154.44940599999998,
+      "inference_ms": 273.530823,
+      "validation_error_pct": 1.1226053943931216,
+      "layers": {
+        "L1": {
+          "total": 153.425524,
+          "query": 60.731181,
+          "fetch": 92.694343
+        },
+        "L2": {
+          "total": 0.33962400000000004,
+          "deid": 0.021704,
+          "audit_start": 0.156781,
+          "audit_complete": 0.161139
+        },
+        "L3": {
+          "total": 0.388459,
+          "registry": 0.003328,
+          "formatter": 0.382913,
+          "sr": 0.002218
+        },
+        "L4": {
+          "total": 0.295799,
+          "inspection": 0.291518,
+          "verification": 0.000714,
+          "state": 0.003567
+        }
+      },
+      "wado_bytes": 32715944,
+      "wado_mb": 32.72,
+      "qido_instances": 4
+    },
+    {
+      "volume_id": "3001603.000000-NA-88945.nii",
+      "volume_name": "3001603.000000-NA-88945.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.193227635862205780735785260671",
+      "raw_shape": [
+        1,
+        1906,
+        2022,
+        4
+      ],
+      "proc_shape": [
+        1,
+        1280,
+        1360,
+        16
+      ],
+      "raw_voxel_count": 15415728,
+      "proc_voxel_count": 27852800,
+      "g0_ms": 273.01296,
+      "g4_total_ms": 415.276754,
+      "protocol_overhead_ms": 145.301239,
+      "inference_ms": 269.975515,
+      "validation_error_pct": 0.7261156822458344,
+      "layers": {
+        "L1": {
+          "total": 144.408155,
+          "query": 51.76441,
+          "fetch": 92.643745
+        },
+        "L2": {
+          "total": 0.317156,
+          "deid": 0.02129,
+          "audit_start": 0.149786,
+          "audit_complete": 0.14608
+        },
+        "L3": {
+          "total": 0.33314099999999996,
+          "registry": 0.001971,
+          "formatter": 0.328879,
+          "sr": 0.002291
+        },
+        "L4": {
+          "total": 0.242787,
+          "inspection": 0.238893,
+          "verification": 0.000946,
+          "state": 0.002948
+        }
+      },
+      "wado_bytes": 30839528,
+      "wado_mb": 30.84,
+      "qido_instances": 4
+    },
+    {
+      "volume_id": "3001604.000000-NA-26119.nii",
+      "volume_name": "3001604.000000-NA-26119.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.120422147283297222244384961130",
+      "raw_shape": [
+        1,
+        2022,
+        2022,
+        4
+      ],
+      "proc_shape": [
+        1,
+        1328,
+        1328,
+        16
+      ],
+      "raw_voxel_count": 16353936,
+      "proc_voxel_count": 28217344,
+      "g0_ms": 273.84971,
+      "g4_total_ms": 447.999511,
+      "protocol_overhead_ms": 173.818187,
+      "inference_ms": 274.181324,
+      "validation_error_pct": 0.07407589470279682,
+      "layers": {
+        "L1": {
+          "total": 172.802194,
+          "query": 58.004693,
+          "fetch": 114.797501
+        },
+        "L2": {
+          "total": 0.329907,
+          "deid": 0.02454,
+          "audit_start": 0.146756,
+          "audit_complete": 0.158611
+        },
+        "L3": {
+          "total": 0.408182,
+          "registry": 0.002056,
+          "formatter": 0.403483,
+          "sr": 0.002643
+        },
+        "L4": {
+          "total": 0.277904,
+          "inspection": 0.273829,
+          "verification": 0.000652,
+          "state": 0.003423
+        }
+      },
+      "wado_bytes": 32715928,
+      "wado_mb": 32.72,
+      "qido_instances": 4
+    },
+    {
+      "volume_id": "3112.000000-NA-40121.nii",
+      "volume_name": "3112.000000-NA-40121.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.803342036141517365362713834879",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        115
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 30146560,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 91.065351,
+      "g4_total_ms": 393.045572,
+      "protocol_overhead_ms": 365.765177,
+      "inference_ms": 27.280395,
+      "validation_error_pct": 13.962498583282073,
+      "layers": {
+        "L1": {
+          "total": 364.96283900000003,
+          "query": 193.088625,
+          "fetch": 171.874214
+        },
+        "L2": {
+          "total": 0.300232,
+          "deid": 0.022528,
+          "audit_start": 0.153752,
+          "audit_complete": 0.123952
+        },
+        "L3": {
+          "total": 0.25124399999999997,
+          "registry": 0.00219,
+          "formatter": 0.247193,
+          "sr": 0.001861
+        },
+        "L4": {
+          "total": 0.250862,
+          "inspection": 0.247768,
+          "verification": 0.000563,
+          "state": 0.002531
+        }
+      },
+      "wado_bytes": 60534502,
+      "wado_mb": 60.53,
+      "qido_instances": 115
+    },
+    {
+      "volume_id": "3133.000000-ChestRoutine  3.0  B31f-06739.nii",
+      "volume_name": "3133.000000-ChestRoutine  3.0  B31f-06739.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.338445093314190310902086699869",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        153
+      ],
+      "proc_shape": [
+        1,
+        240,
+        240,
+        64
+      ],
+      "raw_voxel_count": 40108032,
+      "proc_voxel_count": 3686400,
+      "g0_ms": 30.760778,
+      "g4_total_ms": 613.9651650000001,
+      "protocol_overhead_ms": 583.738631,
+      "inference_ms": 30.226534,
+      "validation_error_pct": 0.08693970932687166,
+      "layers": {
+        "L1": {
+          "total": 582.499945,
+          "query": 360.762421,
+          "fetch": 221.737524
+        },
+        "L2": {
+          "total": 0.400875,
+          "deid": 0.030333,
+          "audit_start": 0.186538,
+          "audit_complete": 0.184004
+        },
+        "L3": {
+          "total": 0.506692,
+          "registry": 0.003441,
+          "formatter": 0.500543,
+          "sr": 0.002708
+        },
+        "L4": {
+          "total": 0.331119,
+          "inspection": 0.326474,
+          "verification": 0.000807,
+          "state": 0.003838
+        }
+      },
+      "wado_bytes": 80561268,
+      "wado_mb": 80.56,
+      "qido_instances": 153
+    },
+    {
+      "volume_id": "3144.000000-ThoraxRoutine  3.0  B31s-72998.nii",
+      "volume_name": "3144.000000-ThoraxRoutine  3.0  B31s-72998.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.222444895275634974977432374937",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        111
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 29097984,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 30.495982,
+      "g4_total_ms": 396.48012800000004,
+      "protocol_overhead_ms": 367.535165,
+      "inference_ms": 28.944963,
+      "validation_error_pct": 0.38967277101055525,
+      "layers": {
+        "L1": {
+          "total": 366.597853,
+          "query": 221.133258,
+          "fetch": 145.464595
+        },
+        "L2": {
+          "total": 0.343712,
+          "deid": 0.022799,
+          "audit_start": 0.172275,
+          "audit_complete": 0.148638
+        },
+        "L3": {
+          "total": 0.31994700000000004,
+          "registry": 0.004821,
+          "formatter": 0.312799,
+          "sr": 0.002327
+        },
+        "L4": {
+          "total": 0.27365300000000004,
+          "inspection": 0.264901,
+          "verification": 0.000686,
+          "state": 0.008066
+        }
+      },
+      "wado_bytes": 58446468,
+      "wado_mb": 58.45,
+      "qido_instances": 111
+    },
+    {
+      "volume_id": "3163.000000-ChestRoutine  3.0  B31f-22057.nii",
+      "volume_name": "3163.000000-ChestRoutine  3.0  B31f-22057.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.218658642102832118810712329678",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.217566,
+      "g4_total_ms": 503.4310230000001,
+      "protocol_overhead_ms": 469.1156020000001,
+      "inference_ms": 34.315421,
+      "validation_error_pct": 0.17887877642026542,
+      "layers": {
+        "L1": {
+          "total": 467.90343900000005,
+          "query": 286.965032,
+          "fetch": 180.938407
+        },
+        "L2": {
+          "total": 0.389339,
+          "deid": 0.043557,
+          "audit_start": 0.174823,
+          "audit_complete": 0.170959
+        },
+        "L3": {
+          "total": 0.491306,
+          "registry": 0.008061,
+          "formatter": 0.480891,
+          "sr": 0.002354
+        },
+        "L4": {
+          "total": 0.33151800000000003,
+          "inspection": 0.327622,
+          "verification": 0.000742,
+          "state": 0.003154
+        }
+      },
+      "wado_bytes": 66869616,
+      "wado_mb": 66.87,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "3185.000000-NA-66614.nii",
+      "volume_name": "3185.000000-NA-66614.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.249778071616205114955151949358",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        102
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 26738688,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 103.405791,
+      "g4_total_ms": 487.45714,
+      "protocol_overhead_ms": 459.019854,
+      "inference_ms": 28.437286,
+      "validation_error_pct": 13.32949620389377,
+      "layers": {
+        "L1": {
+          "total": 457.91702699999996,
+          "query": 300.432216,
+          "fetch": 157.484811
+        },
+        "L2": {
+          "total": 0.36619,
+          "deid": 0.026661,
+          "audit_start": 0.173848,
+          "audit_complete": 0.165681
+        },
+        "L3": {
+          "total": 0.441434,
+          "registry": 0.002338,
+          "formatter": 0.436137,
+          "sr": 0.002959
+        },
+        "L4": {
+          "total": 0.295203,
+          "inspection": 0.291458,
+          "verification": 0.000645,
+          "state": 0.0031
+        }
+      },
+      "wado_bytes": 53691414,
+      "wado_mb": 53.69,
+      "qido_instances": 102
+    },
+    {
+      "volume_id": "3313.000000-NA-45208.nii",
+      "volume_name": "3313.000000-NA-45208.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.899353684702041035700102438716",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        136
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 35651584,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.035973,
+      "g4_total_ms": 507.72360999999995,
+      "protocol_overhead_ms": 473.86071999999996,
+      "inference_ms": 33.86289,
+      "validation_error_pct": 0.23051495836700586,
+      "layers": {
+        "L1": {
+          "total": 472.72691799999996,
+          "query": 263.955539,
+          "fetch": 208.771379
+        },
+        "L2": {
+          "total": 0.351519,
+          "deid": 0.024598,
+          "audit_start": 0.165365,
+          "audit_complete": 0.161556
+        },
+        "L3": {
+          "total": 0.461446,
+          "registry": 0.002358,
+          "formatter": 0.456604,
+          "sr": 0.002484
+        },
+        "L4": {
+          "total": 0.320837,
+          "inspection": 0.316619,
+          "verification": 0.000758,
+          "state": 0.00346
+        }
+      },
+      "wado_bytes": 71587482,
+      "wado_mb": 71.59,
+      "qido_instances": 136
+    },
+    {
+      "volume_id": "4.000000-NA-00450.nii",
+      "volume_name": "4.000000-NA-00450.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.128882236014679059490275573019",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.234552,
+      "g4_total_ms": 554.4958630000001,
+      "protocol_overhead_ms": 520.2742680000001,
+      "inference_ms": 34.221595,
+      "validation_error_pct": 0.18234759980949147,
+      "layers": {
+        "L1": {
+          "total": 518.8808710000001,
+          "query": 302.025791,
+          "fetch": 216.85508
+        },
+        "L2": {
+          "total": 0.4202,
+          "deid": 0.027712,
+          "audit_start": 0.205141,
+          "audit_complete": 0.187347
+        },
+        "L3": {
+          "total": 0.6192709999999999,
+          "registry": 0.003269,
+          "formatter": 0.612381,
+          "sr": 0.003621
+        },
+        "L4": {
+          "total": 0.35392599999999996,
+          "inspection": 0.347103,
+          "verification": 0.000938,
+          "state": 0.005885
+        }
+      },
+      "wado_bytes": 70022348,
+      "wado_mb": 70.02,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "4.000000-NA-45994.nii",
+      "volume_name": "4.000000-NA-45994.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.213021675581421639588001132423",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.688637,
+      "g4_total_ms": 500.66308300000003,
+      "protocol_overhead_ms": 466.66195200000004,
+      "inference_ms": 34.001131,
+      "validation_error_pct": 0.13713078533951514,
+      "layers": {
+        "L1": {
+          "total": 465.332083,
+          "query": 274.136468,
+          "fetch": 191.195615
+        },
+        "L2": {
+          "total": 0.406938,
+          "deid": 0.026412,
+          "audit_start": 0.189525,
+          "audit_complete": 0.191001
+        },
+        "L3": {
+          "total": 0.5524709999999999,
+          "registry": 0.002996,
+          "formatter": 0.546527,
+          "sr": 0.002948
+        },
+        "L4": {
+          "total": 0.37046,
+          "inspection": 0.365649,
+          "verification": 0.000823,
+          "state": 0.003988
+        }
+      },
+      "wado_bytes": 70024726,
+      "wado_mb": 70.02,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "4.000000-NA-56843.nii",
+      "volume_name": "4.000000-NA-56843.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.255996783379921037765414923334",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        141
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 36962304,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.71438,
+      "g4_total_ms": 722.8747210000001,
+      "protocol_overhead_ms": 687.8213230000001,
+      "inference_ms": 35.053398,
+      "validation_error_pct": 0.22924777800770293,
+      "layers": {
+        "L1": {
+          "total": 686.1530700000001,
+          "query": 440.950826,
+          "fetch": 245.202244
+        },
+        "L2": {
+          "total": 0.49151599999999995,
+          "deid": 0.031833,
+          "audit_start": 0.233853,
+          "audit_complete": 0.22583
+        },
+        "L3": {
+          "total": 0.6721180000000001,
+          "registry": 0.004075,
+          "formatter": 0.66503,
+          "sr": 0.003013
+        },
+        "L4": {
+          "total": 0.504619,
+          "inspection": 0.498892,
+          "verification": 0.001008,
+          "state": 0.004719
+        }
+      },
+      "wado_bytes": 74248392,
+      "wado_mb": 74.25,
+      "qido_instances": 141
+    },
+    {
+      "volume_id": "4.000000-NA-60014.nii",
+      "volume_name": "4.000000-NA-60014.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.159596875781736451820677432740",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        109
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 28573696,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 79.021312,
+      "g4_total_ms": 445.495731,
+      "protocol_overhead_ms": 417.18008699999996,
+      "inference_ms": 28.315644,
+      "validation_error_pct": 10.218767641967078,
+      "layers": {
+        "L1": {
+          "total": 416.072775,
+          "query": 260.381188,
+          "fetch": 155.691587
+        },
+        "L2": {
+          "total": 0.329439,
+          "deid": 0.023881,
+          "audit_start": 0.155082,
+          "audit_complete": 0.150476
+        },
+        "L3": {
+          "total": 0.45706199999999997,
+          "registry": 0.002312,
+          "formatter": 0.45209,
+          "sr": 0.00266
+        },
+        "L4": {
+          "total": 0.320811,
+          "inspection": 0.31667,
+          "verification": 0.000753,
+          "state": 0.003388
+        }
+      },
+      "wado_bytes": 57384464,
+      "wado_mb": 57.38,
+      "qido_instances": 109
+    },
+    {
+      "volume_id": "4.000000-Recon 2 C-A-P-15124.nii",
+      "volume_name": "4.000000-Recon 2 C-A-P-15124.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.908741193082513651836950434578",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        147
+      ],
+      "proc_shape": [
+        1,
+        240,
+        240,
+        64
+      ],
+      "raw_voxel_count": 38535168,
+      "proc_voxel_count": 3686400,
+      "g0_ms": 81.911885,
+      "g4_total_ms": 571.735835,
+      "protocol_overhead_ms": 541.7868729999999,
+      "inference_ms": 29.948962,
+      "validation_error_pct": 8.331413576424012,
+      "layers": {
+        "L1": {
+          "total": 540.7477779999999,
+          "query": 324.200294,
+          "fetch": 216.547484
+        },
+        "L2": {
+          "total": 0.352279,
+          "deid": 0.022753,
+          "audit_start": 0.182796,
+          "audit_complete": 0.14673
+        },
+        "L3": {
+          "total": 0.397415,
+          "registry": 0.006276,
+          "formatter": 0.388619,
+          "sr": 0.00252
+        },
+        "L4": {
+          "total": 0.289401,
+          "inspection": 0.279383,
+          "verification": 0.000807,
+          "state": 0.009211
+        }
+      },
+      "wado_bytes": 77432286,
+      "wado_mb": 77.43,
+      "qido_instances": 147
+    },
+    {
+      "volume_id": "4.000000-Recon 2 C-A-P-84739.nii",
+      "volume_name": "4.000000-Recon 2 C-A-P-84739.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.279896786227805041031596230124",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        113
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 29622272,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 28.541087,
+      "g4_total_ms": 432.85048600000005,
+      "protocol_overhead_ms": 403.195034,
+      "inference_ms": 29.655452,
+      "validation_error_pct": 0.2581125242471942,
+      "layers": {
+        "L1": {
+          "total": 402.09724600000004,
+          "query": 222.630188,
+          "fetch": 179.467058
+        },
+        "L2": {
+          "total": 0.387318,
+          "deid": 0.045674,
+          "audit_start": 0.187734,
+          "audit_complete": 0.15391
+        },
+        "L3": {
+          "total": 0.398998,
+          "registry": 0.006871,
+          "formatter": 0.38993,
+          "sr": 0.002197
+        },
+        "L4": {
+          "total": 0.311472,
+          "inspection": 0.307215,
+          "verification": 0.001097,
+          "state": 0.00316
+        }
+      },
+      "wado_bytes": 59518690,
+      "wado_mb": 59.52,
+      "qido_instances": 113
+    },
+    {
+      "volume_id": "4.000000-Recon 3 C-A-P-28406.nii",
+      "volume_name": "4.000000-Recon 3 C-A-P-28406.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.370700630609225608130630902041",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        135
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 35389440,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.513001,
+      "g4_total_ms": 694.0328010000001,
+      "protocol_overhead_ms": 660.242689,
+      "inference_ms": 33.790112,
+      "validation_error_pct": 0.24762844555392843,
+      "layers": {
+        "L1": {
+          "total": 659.190508,
+          "query": 442.440807,
+          "fetch": 216.749701
+        },
+        "L2": {
+          "total": 0.334833,
+          "deid": 0.024751,
+          "audit_start": 0.161421,
+          "audit_complete": 0.148661
+        },
+        "L3": {
+          "total": 0.44332199999999994,
+          "registry": 0.001951,
+          "formatter": 0.438916,
+          "sr": 0.002455
+        },
+        "L4": {
+          "total": 0.27402600000000005,
+          "inspection": 0.270091,
+          "verification": 0.000912,
+          "state": 0.003023
+        }
+      },
+      "wado_bytes": 71123278,
+      "wado_mb": 71.12,
+      "qido_instances": 135
+    },
+    {
+      "volume_id": "4.000000-Recon 3 C-A-P-77603.nii",
+      "volume_name": "4.000000-Recon 3 C-A-P-77603.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.218441204865582835284481030822",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        125
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 32768000,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.685163,
+      "g4_total_ms": 492.88880700000004,
+      "protocol_overhead_ms": 458.93648300000007,
+      "inference_ms": 33.952324,
+      "validation_error_pct": 0.1484616823306838,
+      "layers": {
+        "L1": {
+          "total": 457.939905,
+          "query": 263.220799,
+          "fetch": 194.719106
+        },
+        "L2": {
+          "total": 0.336792,
+          "deid": 0.022506,
+          "audit_start": 0.165753,
+          "audit_complete": 0.148533
+        },
+        "L3": {
+          "total": 0.372355,
+          "registry": 0.002315,
+          "formatter": 0.367538,
+          "sr": 0.002502
+        },
+        "L4": {
+          "total": 0.28743100000000005,
+          "inspection": 0.284023,
+          "verification": 0.000726,
+          "state": 0.002682
+        }
+      },
+      "wado_bytes": 65852878,
+      "wado_mb": 65.85,
+      "qido_instances": 125
+    },
+    {
+      "volume_id": "4.000000-Recon 3 C-A-P-82679.nii",
+      "volume_name": "4.000000-Recon 3 C-A-P-82679.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.145676616748203729170191829666",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        111
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 29097984,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 30.326112,
+      "g4_total_ms": 434.939168,
+      "protocol_overhead_ms": 406.217354,
+      "inference_ms": 28.721814,
+      "validation_error_pct": 0.36750017465615403,
+      "layers": {
+        "L1": {
+          "total": 405.21097599999996,
+          "query": 238.097143,
+          "fetch": 167.113833
+        },
+        "L2": {
+          "total": 0.326,
+          "deid": 0.021481,
+          "audit_start": 0.149563,
+          "audit_complete": 0.154956
+        },
+        "L3": {
+          "total": 0.411897,
+          "registry": 0.002022,
+          "formatter": 0.406889,
+          "sr": 0.002986
+        },
+        "L4": {
+          "total": 0.26848099999999997,
+          "inspection": 0.263832,
+          "verification": 0.000679,
+          "state": 0.00397
+        }
+      },
+      "wado_bytes": 58473790,
+      "wado_mb": 58.47,
+      "qido_instances": 111
+    },
+    {
+      "volume_id": "4.000000-Recon 3 CHEST-14593.nii",
+      "volume_name": "4.000000-Recon 3 CHEST-14593.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.477738775879476870029318616682",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        143
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 37486592,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.583671,
+      "g4_total_ms": 532.564395,
+      "protocol_overhead_ms": 498.60610699999995,
+      "inference_ms": 33.958288,
+      "validation_error_pct": 0.11729088324719207,
+      "layers": {
+        "L1": {
+          "total": 497.552938,
+          "query": 287.350489,
+          "fetch": 210.202449
+        },
+        "L2": {
+          "total": 0.3359,
+          "deid": 0.022776,
+          "audit_start": 0.165972,
+          "audit_complete": 0.147152
+        },
+        "L3": {
+          "total": 0.420588,
+          "registry": 0.005125,
+          "formatter": 0.413057,
+          "sr": 0.002406
+        },
+        "L4": {
+          "total": 0.29668100000000003,
+          "inspection": 0.290575,
+          "verification": 0.000732,
+          "state": 0.005374
+        }
+      },
+      "wado_bytes": 75332158,
+      "wado_mb": 75.33,
+      "qido_instances": 143
+    },
+    {
+      "volume_id": "5.000000-NA-47975.nii",
+      "volume_name": "5.000000-NA-47975.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.115862643355747092400544598419",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 35.386671,
+      "g4_total_ms": 604.484097,
+      "protocol_overhead_ms": 570.404457,
+      "inference_ms": 34.07964,
+      "validation_error_pct": 0.21575604851049227,
+      "layers": {
+        "L1": {
+          "total": 569.400209,
+          "query": 378.114671,
+          "fetch": 191.285538
+        },
+        "L2": {
+          "total": 0.340523,
+          "deid": 0.029725,
+          "audit_start": 0.15551,
+          "audit_complete": 0.155288
+        },
+        "L3": {
+          "total": 0.393086,
+          "registry": 0.002013,
+          "formatter": 0.388313,
+          "sr": 0.00276
+        },
+        "L4": {
+          "total": 0.27063899999999996,
+          "inspection": 0.266196,
+          "verification": 0.000696,
+          "state": 0.003747
+        }
+      },
+      "wado_bytes": 70026136,
+      "wado_mb": 70.03,
+      "qido_instances": 133
+    },
+    {
+      "volume_id": "5408.000000-NA-86657.nii",
+      "volume_name": "5408.000000-NA-86657.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.780121538270617222115253441513",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        112
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 29360128,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 28.746506,
+      "g4_total_ms": 374.147012,
+      "protocol_overhead_ms": 345.842078,
+      "inference_ms": 28.304934,
+      "validation_error_pct": 0.11788186262505207,
+      "layers": {
+        "L1": {
+          "total": 344.840492,
+          "query": 177.455074,
+          "fetch": 167.385418
+        },
+        "L2": {
+          "total": 0.321726,
+          "deid": 0.020906,
+          "audit_start": 0.152089,
+          "audit_complete": 0.148731
+        },
+        "L3": {
+          "total": 0.38432099999999997,
+          "registry": 0.002511,
+          "formatter": 0.379662,
+          "sr": 0.002148
+        },
+        "L4": {
+          "total": 0.295539,
+          "inspection": 0.291595,
+          "verification": 0.000803,
+          "state": 0.003141
+        }
+      },
+      "wado_bytes": 58940774,
+      "wado_mb": 58.94,
+      "qido_instances": 112
+    },
+    {
+      "volume_id": "5418.000000-ThorRoutine  3.0  B31f-62989.nii",
+      "volume_name": "5418.000000-ThorRoutine  3.0  B31f-62989.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.314138616411061948052843767346",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        116
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 30408704,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 28.023496,
+      "g4_total_ms": 451.82410300000004,
+      "protocol_overhead_ms": 422.86866100000003,
+      "inference_ms": 28.955442,
+      "validation_error_pct": 0.2066893348069441,
+      "layers": {
+        "L1": {
+          "total": 421.876527,
+          "query": 251.480733,
+          "fetch": 170.395794
+        },
+        "L2": {
+          "total": 0.332913,
+          "deid": 0.026593,
+          "audit_start": 0.162034,
+          "audit_complete": 0.144286
+        },
+        "L3": {
+          "total": 0.39181,
+          "registry": 0.002066,
+          "formatter": 0.387474,
+          "sr": 0.00227
+        },
+        "L4": {
+          "total": 0.267411,
+          "inspection": 0.263873,
+          "verification": 0.000627,
+          "state": 0.002911
+        }
+      },
+      "wado_bytes": 61053854,
+      "wado_mb": 61.05,
+      "qido_instances": 116
+    },
+    {
+      "volume_id": "5508.000000-NA-62582.nii",
+      "volume_name": "5508.000000-NA-62582.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.593684538737645231443136404239",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        118
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 30932992,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 30.210257,
+      "g4_total_ms": 455.16409100000004,
+      "protocol_overhead_ms": 426.33932500000003,
+      "inference_ms": 28.824766,
+      "validation_error_pct": 0.3034699963869426,
+      "layers": {
+        "L1": {
+          "total": 425.34481300000004,
+          "query": 244.505593,
+          "fetch": 180.83922
+        },
+        "L2": {
+          "total": 0.326499,
+          "deid": 0.021808,
+          "audit_start": 0.160097,
+          "audit_complete": 0.144594
+        },
+        "L3": {
+          "total": 0.377171,
+          "registry": 0.002177,
+          "formatter": 0.372911,
+          "sr": 0.002083
+        },
+        "L4": {
+          "total": 0.29084200000000004,
+          "inspection": 0.287009,
+          "verification": 0.000688,
+          "state": 0.003145
+        }
+      },
+      "wado_bytes": 62109914,
+      "wado_mb": 62.11,
+      "qido_instances": 118
+    },
+    {
+      "volume_id": "5585.000000-EASETLC0.5mmB50f-42411.nii",
+      "volume_name": "5585.000000-EASETLC0.5mmB50f-42411.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.850568285181410483219385441815",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        588
+      ],
+      "proc_shape": [
+        1,
+        160,
+        160,
+        176
+      ],
+      "raw_voxel_count": 154140672,
+      "proc_voxel_count": 4505600,
+      "g0_ms": 115.881635,
+      "g4_total_ms": 1544.884107,
+      "protocol_overhead_ms": 1508.112556,
+      "inference_ms": 36.771551,
+      "validation_error_pct": 4.871328015729332,
+      "layers": {
+        "L1": {
+          "total": 1507.241495,
+          "query": 743.150855,
+          "fetch": 764.09064
+        },
+        "L2": {
+          "total": 0.294667,
+          "deid": 0.01921,
+          "audit_start": 0.141219,
+          "audit_complete": 0.134238
+        },
+        "L3": {
+          "total": 0.35748800000000003,
+          "registry": 0.002011,
+          "formatter": 0.352621,
+          "sr": 0.002856
+        },
+        "L4": {
+          "total": 0.218906,
+          "inspection": 0.215748,
+          "verification": 0.000636,
+          "state": 0.002522
+        }
+      },
+      "wado_bytes": 309579526,
+      "wado_mb": 309.58,
+      "qido_instances": 588
+    },
+    {
+      "volume_id": "5593.000000-ThorRoutine  2.0  B70f-43044.nii",
+      "volume_name": "5593.000000-ThorRoutine  2.0  B70f-43044.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.934701751347399243333120058853",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        333
+      ],
+      "proc_shape": [
+        1,
+        192,
+        192,
+        112
+      ],
+      "raw_voxel_count": 87293952,
+      "proc_voxel_count": 4128768,
+      "g0_ms": 82.137803,
+      "g4_total_ms": 1104.1602639999999,
+      "protocol_overhead_ms": 1070.4509139999998,
+      "inference_ms": 33.70935,
+      "validation_error_pct": 4.201711528640619,
+      "layers": {
+        "L1": {
+          "total": 1069.542864,
+          "query": 589.857878,
+          "fetch": 479.684986
+        },
+        "L2": {
+          "total": 0.29243600000000003,
+          "deid": 0.020036,
+          "audit_start": 0.138902,
+          "audit_complete": 0.133498
+        },
+        "L3": {
+          "total": 0.365165,
+          "registry": 0.001869,
+          "formatter": 0.361339,
+          "sr": 0.001957
+        },
+        "L4": {
+          "total": 0.250449,
+          "inspection": 0.247313,
+          "verification": 0.000576,
+          "state": 0.00256
+        }
+      },
+      "wado_bytes": 175329644,
+      "wado_mb": 175.33,
+      "qido_instances": 333
+    },
+    {
+      "volume_id": "5595.000000-NA-18854.nii",
+      "volume_name": "5595.000000-NA-18854.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.316733915710399203923795639422",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        127
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 33292288,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 36.4115,
+      "g4_total_ms": 404.85888100000005,
+      "protocol_overhead_ms": 370.22962500000006,
+      "inference_ms": 34.629256,
+      "validation_error_pct": 0.43828424879554206,
+      "layers": {
+        "L1": {
+          "total": 369.36994100000004,
+          "query": 208.648483,
+          "fetch": 160.721458
+        },
+        "L2": {
+          "total": 0.283725,
+          "deid": 0.01941,
+          "audit_start": 0.135104,
+          "audit_complete": 0.129211
+        },
+        "L3": {
+          "total": 0.33980200000000005,
+          "registry": 0.001985,
+          "formatter": 0.335351,
+          "sr": 0.002466
+        },
+        "L4": {
+          "total": 0.236157,
+          "inspection": 0.232582,
+          "verification": 0.000723,
+          "state": 0.002852
+        }
+      },
+      "wado_bytes": 66841502,
+      "wado_mb": 66.84,
+      "qido_instances": 127
+    },
+    {
+      "volume_id": "5606.000000-ThorRoutine  2.0  B70f-83786.nii",
+      "volume_name": "5606.000000-ThorRoutine  2.0  B70f-83786.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.160881090830720390023167668360",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        368
+      ],
+      "proc_shape": [
+        1,
+        176,
+        176,
+        128
+      ],
+      "raw_voxel_count": 96468992,
+      "proc_voxel_count": 3964928,
+      "g0_ms": 127.146918,
+      "g4_total_ms": 1213.1849189999998,
+      "protocol_overhead_ms": 1180.4304799999998,
+      "inference_ms": 32.754439,
+      "validation_error_pct": 7.218882732630401,
+      "layers": {
+        "L1": {
+          "total": 1179.553931,
+          "query": 711.885819,
+          "fetch": 467.668112
+        },
+        "L2": {
+          "total": 0.293277,
+          "deid": 0.019983,
+          "audit_start": 0.138837,
+          "audit_complete": 0.134457
+        },
+        "L3": {
+          "total": 0.33185099999999995,
+          "registry": 0.001986,
+          "formatter": 0.32742,
+          "sr": 0.002445
+        },
+        "L4": {
+          "total": 0.251421,
+          "inspection": 0.248194,
+          "verification": 0.000577,
+          "state": 0.00265
+        }
+      },
+      "wado_bytes": 193758954,
+      "wado_mb": 193.76,
+      "qido_instances": 368
+    },
+    {
+      "volume_id": "59000.000000-CHEST 2 VIEW-21882.nii",
+      "volume_name": "59000.000000-CHEST 2 VIEW-21882.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.188179045829675473487314195009",
+      "raw_shape": [
+        1,
+        2022,
+        2022,
+        4
+      ],
+      "proc_shape": [
+        1,
+        1328,
+        1328,
+        16
+      ],
+      "raw_voxel_count": 16353936,
+      "proc_voxel_count": 28217344,
+      "g0_ms": 274.550136,
+      "g4_total_ms": 435.696871,
+      "protocol_overhead_ms": 163.5029,
+      "inference_ms": 272.193971,
+      "validation_error_pct": 0.5378720854248417,
+      "layers": {
+        "L1": {
+          "total": 162.62378999999999,
+          "query": 76.088854,
+          "fetch": 86.534936
+        },
+        "L2": {
+          "total": 0.285887,
+          "deid": 0.019342,
+          "audit_start": 0.130461,
+          "audit_complete": 0.136084
+        },
+        "L3": {
+          "total": 0.36899499999999996,
+          "registry": 0.001834,
+          "formatter": 0.364878,
+          "sr": 0.002283
+        },
+        "L4": {
+          "total": 0.224228,
+          "inspection": 0.220842,
+          "verification": 0.000584,
+          "state": 0.002802
+        }
+      },
+      "wado_bytes": 32716920,
+      "wado_mb": 32.72,
+      "qido_instances": 4
+    },
+    {
+      "volume_id": "6.000000-Recon 3 C-A-P-08613.nii",
+      "volume_name": "6.000000-Recon 3 C-A-P-08613.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.185852472264155752604841654643",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        117
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 30670848,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 27.285592,
+      "g4_total_ms": 470.795914,
+      "protocol_overhead_ms": 443.51216,
+      "inference_ms": 27.283754,
+      "validation_error_pct": 0.0003904011844178594,
+      "layers": {
+        "L1": {
+          "total": 442.619889,
+          "query": 292.906274,
+          "fetch": 149.713615
+        },
+        "L2": {
+          "total": 0.286918,
+          "deid": 0.020206,
+          "audit_start": 0.133044,
+          "audit_complete": 0.133668
+        },
+        "L3": {
+          "total": 0.35872699999999996,
+          "registry": 0.001944,
+          "formatter": 0.354616,
+          "sr": 0.002167
+        },
+        "L4": {
+          "total": 0.246626,
+          "inspection": 0.243433,
+          "verification": 0.00066,
+          "state": 0.002533
+        }
+      },
+      "wado_bytes": 61642966,
+      "wado_mb": 61.64,
+      "qido_instances": 117
+    },
+    {
+      "volume_id": "6.000000-Recon 3 CHEST-ABD-73682.nii",
+      "volume_name": "6.000000-Recon 3 CHEST-ABD-73682.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.252138532085237959349640216202",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        117
+      ],
+      "proc_shape": [
+        1,
+        272,
+        272,
+        48
+      ],
+      "raw_voxel_count": 30670848,
+      "proc_voxel_count": 3551232,
+      "g0_ms": 30.127181,
+      "g4_total_ms": 431.100685,
+      "protocol_overhead_ms": 402.257759,
+      "inference_ms": 28.842926,
+      "validation_error_pct": 0.29701658896816113,
+      "layers": {
+        "L1": {
+          "total": 401.358514,
+          "query": 265.790892,
+          "fetch": 135.567622
+        },
+        "L2": {
+          "total": 0.297408,
+          "deid": 0.021506,
+          "audit_start": 0.142892,
+          "audit_complete": 0.13301
+        },
+        "L3": {
+          "total": 0.36272400000000005,
+          "registry": 0.0023,
+          "formatter": 0.358358,
+          "sr": 0.002066
+        },
+        "L4": {
+          "total": 0.239113,
+          "inspection": 0.235476,
+          "verification": 0.000829,
+          "state": 0.002808
+        }
+      },
+      "wado_bytes": 61637818,
+      "wado_mb": 61.64,
+      "qido_instances": 117
+    },
+    {
+      "volume_id": "8.000000-Recon 2 CHEST  BLADDER-11210.nii",
+      "volume_name": "8.000000-Recon 2 CHEST  BLADDER-11210.nii.gz",
+      "study_id": "1.3.6.1.4.1.14519.5.2.1.6279.6001.178008579082565292854358918057",
+      "raw_shape": [
+        1,
+        512,
+        512,
+        133
+      ],
+      "proc_shape": [
+        1,
+        256,
+        256,
+        64
+      ],
+      "raw_voxel_count": 34865152,
+      "proc_voxel_count": 4194304,
+      "g0_ms": 34.843675,
+      "g4_total_ms": 649.7791300000001,
+      "protocol_overhead_ms": 615.7987370000001,
+      "inference_ms": 33.980393,
+      "validation_error_pct": 0.13268148280501468,
+      "layers": {
+        "L1": {
+          "total": 614.748295,
+          "query": 406.547983,
+          "fetch": 208.200312
+        },
+        "L2": {
+          "total": 0.34153,
+          "deid": 0.028139,
+          "audit_start": 0.164238,
+          "audit_complete": 0.149153
+        },
+        "L3": {
+          "total": 0.397496,
+          "registry": 0.003058,
+          "formatter": 0.391533,
+          "sr": 0.002905
+        },
+        "L4": {
+          "total": 0.31141599999999997,
+          "inspection": 0.307314,
+          "verification": 0.000758,
+          "state": 0.003344
+        }
+      },
+      "wado_bytes": 70068164,
+      "wado_mb": 70.07,
+      "qido_instances": 133
+    }
+  ]
+}
