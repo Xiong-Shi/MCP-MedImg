@@ -1,6 +1,7 @@
 # MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![CI](https://github.com/Xiong-Shi/MCP-MedImg/actions/workflows/ci.yml/badge.svg)](https://github.com/Xiong-Shi/MCP-MedImg/actions)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21941869.svg)](https://doi.org/10.5281/zenodo.21941869)
 
 > Reference implementation for the preprint:  
