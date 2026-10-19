@@ -18,7 +18,7 @@ import sys
 import os
 from typing import Optional
 
-from mcp.server import MCPServer as FastMCP
+from mcp.server import FastMCP
 
 from mcp_medimg.gateway import MCPMedimgGateway
 

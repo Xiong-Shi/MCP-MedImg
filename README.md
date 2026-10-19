@@ -119,6 +119,8 @@ Full walkthrough: see `docs/integrate_custom_model.md` (or open an issue and we 
 **Analysis Figures**: Detailed analysis charts (LIDC bimodal distribution, PROTO error robustness) are available in the Zenodo dataset:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21941869.svg)](https://doi.org/10.5281/zenodo.21941869)
 
+## Security
+
 This implementation addresses the MCP-38 threat taxonomy for medical imaging:
 - Hierarchical PHI de-identification (Patient / Department / System level)
 - Cryptographic audit trails with SHA-256 hashing
