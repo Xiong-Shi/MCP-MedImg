@@ -3,10 +3,10 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21941869.svg)](https://doi.org/10.5281/zenodo.21941869)
 
-> Reference implementation for the paper:  
+> Reference implementation for the preprint:  
 > "MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol"
 >
-> **Author**: Xiong Shi (ORCID: [0009-0006-2745-491X](https://orcid.org/0009-0006-2745-491X))
+> **DOI**: https://doi.org/10.21203/rs.3.rs-11357800 | **Author**: Xiong Shi (ORCID: [0009-0006-2745-491X](https://orcid.org/0009-0006-2745-491X))
 
 ## Architecture
 
@@ -50,6 +50,36 @@ bash scripts/reproduce_heart_benchmark.sh     # Table 19, 22: MSD Heart 5-fold v
 bash scripts/reproduce_protocol_overhead.sh   # Table 20, 21: Protocol overhead decomposition (n=98)
 ```
 
+### 5. Try the Gateway (5-minute demo)
+
+With Orthanc running, start the MCP-MedImg gateway and invoke a tool call:
+
+```bash
+# Start the gateway (stdio transport for local clients)
+MCP_MEDIMG_TRANSPORT=stdio python src/gateway/server.py
+
+# Or expose as an HTTP service
+MCP_MEDIMG_TRANSPORT=http python src/gateway/server.py
+```
+
+Connect from any MCP client (e.g., Claude Desktop / Cursor) by pointing the client config at the gateway, then invoke:
+
+```json
+{
+  "tool": "medical_image_analyze",
+  "arguments": {
+    "studyInstanceUID": "<uid-from-orthanc>",
+    "modality": "CT",
+    "bodyPart": "CHEST",
+    "clinicalIndication": "screening",
+    "outputFormat": "DICOM_SR",
+    "verificationMode": "MANDATORY"
+  }
+}
+```
+
+Expected: the gateway executes L1→L2→L3→L4→L2→L1, returns structured findings, writes a DICOM SR, and records a complete 14-column audit entry. Query the audit trail via the `audit://trails/{study_uid}` resource.
+
 ## Datasets & Model Weights
 
 Due to file size limits, pretrained model weights and full preprocessed datasets are available via separate download:
@@ -65,6 +95,16 @@ Download instructions:
 ```bash
 bash scripts/download_pretrained_weights.sh
 ```
+
+## Integrate Your Own AI Model
+
+The protocol is model-agnostic: any inference backend can be registered with the ModelRegistry (L3) without touching the lower layers.
+
+1. **Register** your model metadata (modality, bodyPart, indications, performance metrics)
+2. **Attach** your inference engine via the `engine` interface (see `MockNNUNetEngine` for the minimal contract)
+3. **Route** automatically: the AIRouter dispatches studies to your model by inspection type — no manual wiring needed
+
+Full walkthrough: see `docs/integrate_custom_model.md` (or open an issue and we will help).
 
 ## Key Experimental Results
 
@@ -90,7 +130,7 @@ All experimental results from the paper can be reproduced via the scripts in `sc
 
 | Paper Table/Figure | Reproduce Script | Expected Runtime |
 |-------------------|------------------|------------------|
-| Table 16 (134 tests) | `pytest tests/` | ~5 min (CPU) |
+| Table 16 (132 tests) | `pytest tests/` | ~5 min (CPU) |
 | Table 18 (LIDC, n=200) | `scripts/reproduce_lidc_benchmark.sh` | ~20 min (RTX 4090D) |
 | Table 19 (Heart, n=20) | `scripts/reproduce_heart_benchmark.sh` | ~12 min (RTX 4090D) |
 | Table 20-21 (Overhead) | `scripts/reproduce_protocol_overhead.sh` | ~15 min (RTX 4090D) |
@@ -98,13 +138,19 @@ All experimental results from the paper can be reproduced via the scripts in `sc
 
 ## Citation
 
-If you use this code, please cite:
+If you use this code or the protocol specification, please cite the preprint:
+
+> Shi, X. (2026). MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol [Preprint]. Research Square. https://doi.org/10.21203/rs.3.rs-11357800
+
 ```bibtex
-@article{mcp_medimg_2026,
-  title={MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol},
-  author={[Author Names]},
-  journal={[Journal Name]},
-  year={2026}
+@article{shi2026mcpmedimg,
+  title   = {{MCP-MedImg}: Enabling Standardized {PACS}-{AI} Integration through the Model Context Protocol},
+  author  = {Shi, Xiong},
+  journal = {Research Square},
+  year    = {2026},
+  doi     = {10.21203/rs.3.rs-11357800},
+  url     = {https://doi.org/10.21203/rs.3.rs-11357800},
+  note    = {Preprint}
 }
 ```
 
