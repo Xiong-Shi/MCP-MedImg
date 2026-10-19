@@ -7,7 +7,7 @@
 > Reference implementation for the preprint:  
 > "MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol"
 >
-> **DOI**: https://doi.org/10.21203/rs.3.rs-11357800 | **Author**: Xiong Shi (ORCID: [0009-0006-2745-491X](https://orcid.org/0009-0006-2745-491X))
+> **DOI**: https://doi.org/10.21203/rs.3.rs-11357800/v1 | **Author**: Xiong Shi (ORCID: [0009-0006-2745-491X](https://orcid.org/0009-0006-2745-491X))
 
 ## Architecture
 
@@ -143,17 +143,16 @@ All experimental results from the paper can be reproduced via the scripts in `sc
 
 If you use this code or the protocol specification, please cite the preprint:
 
-> Shi, X. (2026). MCP-MedImg: Enabling Standardized PACS-AI Integration through the Model Context Protocol [Preprint]. Research Square. https://doi.org/10.21203/rs.3.rs-11357800
+> Shi, X. (2026). MCP-MedImg: Enabling standardized PACS-AI integration through the Model Context Protocol [Preprint]. Research Square. https://doi.org/10.21203/rs.3.rs-11357800/v1
 
 ```bibtex
-@article{shi2026mcpmedimg,
-  title   = {{MCP-MedImg}: Enabling Standardized {PACS}-{AI} Integration through the Model Context Protocol},
-  author  = {Shi, Xiong},
-  journal = {Research Square},
-  year    = {2026},
-  doi     = {10.21203/rs.3.rs-11357800},
-  url     = {https://doi.org/10.21203/rs.3.rs-11357800},
-  note    = {Preprint}
+@misc{shi2026mcpmedimg,
+  author       = {Shi, Xiong},
+  title        = {{MCP-MedImg}: Enabling Standardized {PACS}-{AI} Integration through the Model Context Protocol},
+  year         = {2026},
+  doi          = {10.21203/rs.3.rs-11357800},
+  url          = {https://doi.org/10.21203/rs.3.rs-11357800/v1},
+  note         = {Preprint posted October 14, 2026, Research Square}
 }
 ```
 
